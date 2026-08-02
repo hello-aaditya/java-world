@@ -162,13 +162,23 @@
               "icon": "lucide-list",
               "title": "Outline"
             }
+          },
+          {
+            "id": "3b82857056536616",
+            "type": "leaf",
+            "state": {
+              "type": "git-view",
+              "state": {},
+              "icon": "git-pull-request",
+              "title": "Source Control"
+            }
           }
-        ]
+        ],
+        "currentTab": 5
       }
     ],
     "direction": "horizontal",
-    "width": 300,
-    "collapsed": true
+    "width": 300
   },
   "left-ribbon": {
     "hiddenItems": {
@@ -178,9 +188,57 @@
       "daily-notes:Open today's daily note": false,
       "templates:Insert template": false,
       "command-palette:Open command palette": false,
-      "bases:Create new base": false
+      "bases:Create new base": false,
+      "obsidian-git:Open Git source control": false
     }
   },
-  "active": "b5cdd9c32ad2cb95",
-  "lastOpenFiles": []
+  "active": "8bf0306927ff6ed0",
+  "lastOpenFiles": [
+    "00-JAVA/03-ADVANCED-JAVA/02-FILE-HANDLING/images/byteStreams.drawio.svg",
+    "00-JAVA/03-ADVANCED-JAVA/02-FILE-HANDLING/images/byteStreams.drawio",
+    "00-JAVA/03-ADVANCED-JAVA/02-FILE-HANDLING/images/CharacterStreams.drawio.svg",
+    "00-JAVA/03-ADVANCED-JAVA/00-EXCEPTION-HANDLING/images/ExceptionsTree.drawio.svg",
+    "00-JAVA/03-ADVANCED-JAVA/02-FILE-HANDLING/images",
+    "00-JAVA/03-ADVANCED-JAVA/02-FILE-HANDLING/08-FILE-CLASS.md",
+    "00-JAVA/03-ADVANCED-JAVA/02-FILE-HANDLING/07-RESOURCE-MANAGEMENT.md",
+    "00-JAVA/03-ADVANCED-JAVA/02-FILE-HANDLING/06-EXCEPTIONS-IN-FILE-HANDLING.md",
+    "00-JAVA/03-ADVANCED-JAVA/02-FILE-HANDLING/05-COPYING-FILES.md",
+    "00-JAVA/03-ADVANCED-JAVA/02-FILE-HANDLING/04-BUFFERED-STREAMS.md",
+    "00-JAVA/03-ADVANCED-JAVA/02-FILE-HANDLING/03-TYPES-OF-STREAMS-IN-JAVA.md",
+    "00-JAVA/03-ADVANCED-JAVA/02-FILE-HANDLING/02-JAVA-IO-OVERVIEW.md",
+    "00-JAVA/03-ADVANCED-JAVA/02-FILE-HANDLING/01-BASIC-FILE-CONCEPTS.md",
+    "00-JAVA/03-ADVANCED-JAVA/02-FILE-HANDLING/00-INTRODUCTION.md",
+    "00-JAVA/03-ADVANCED-JAVA/00-EXCEPTION-HANDLING/images",
+    "00-JAVA/03-ADVANCED-JAVA/00-EXCEPTION-HANDLING/04_THROW_THROWS_FINALLY.md",
+    "00-JAVA/03-ADVANCED-JAVA/00-EXCEPTION-HANDLING/03_MULTIPLE_CATCH_AND_CATCH_ORDER.md",
+    "00-JAVA/03-ADVANCED-JAVA/00-EXCEPTION-HANDLING/02-EXCEPTION-FLOW-AND-TRY-CATCH.md",
+    "00-JAVA/03-ADVANCED-JAVA/00-EXCEPTION-HANDLING/01-INTRODUCTION.md",
+    "00-JAVA/03-ADVANCED-JAVA/00-EXCEPTION-HANDLING/00-EXCEPTION-HANDLING.md",
+    "00-JAVA/03-ADVANCED-JAVA/02-FILE-HANDLING",
+    "00-JAVA/03-ADVANCED-JAVA/00-EXCEPTION-HANDLING",
+    "00-JAVA/03-ADVANCED-JAVA",
+    "00-JAVA/01-CORE-JAVA/160-JAVA-VARIABLE.md",
+    "00-JAVA/01-CORE-JAVA/150-METHOD.md",
+    "00-JAVA/01-CORE-JAVA/120-SUFFIX-FOR-FLOAT-AND-LONG-LITERALS.md",
+    "00-JAVA/01-CORE-JAVA/100-TYPE-CASTING.md",
+    "00-JAVA/01-CORE-JAVA/90-DATA-TYPE.md",
+    "00-JAVA/01-CORE-JAVA/110-OPERATORS.md",
+    "00-JAVA/01-CORE-JAVA/80-CONCATENATION.md",
+    "00-JAVA/01-CORE-JAVA/70-VARIABLES.md",
+    "00-JAVA/01-CORE-JAVA/60-print-VS-println.md",
+    "00-JAVA/01-CORE-JAVA/50-DIFFERENT-MAIN-METHOD-SYNTAX.md",
+    "00-JAVA/01-CORE-JAVA/images/jvm.png",
+    "00-JAVA/01-CORE-JAVA/images/identifiers.drawio.svg",
+    "00-JAVA/01-CORE-JAVA/images/identifiers.drawio",
+    "00-JAVA/01-CORE-JAVA/images/jdk.drawio.svg",
+    "00-JAVA/01-CORE-JAVA/images/memory.drawio.svg",
+    "00-JAVA/01-CORE-JAVA/images/data_type.drawio.svg",
+    "00-JAVA/01-CORE-JAVA/images/control constructs.drawio.svg",
+    "00-JAVA/01-CORE-JAVA/images/Take_User_Input.drawio.svg",
+    "00-JAVA/01-CORE-JAVA/images/Source_Code_To_Dot_class.png",
+    "00-JAVA/01-CORE-JAVA/images",
+    "00-JAVA/01-CORE-JAVA/40-IDENTIFIERS-RESERVED-KEYWORDS.md",
+    "00-JAVA/01-CORE-JAVA",
+    "00-JAVA/04-JAVA-COLLECTION-FRAMEWORK/images"
+  ]
 }
