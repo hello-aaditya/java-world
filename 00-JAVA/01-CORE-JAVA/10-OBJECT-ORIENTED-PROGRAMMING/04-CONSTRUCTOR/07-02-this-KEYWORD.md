@@ -113,7 +113,7 @@ When `main()` completes:
 - The **activation record of `main()`** is removed from the stack.
 - All local references (`p1`, `p2`, `p3`) are destroyed.
 - The heap objects (`0x1000`, `0x2000`, `0x3000`) become **unreachable**, and the **Garbage Collector** will clean them later.
-![`this` keyword](thisKeyword.drawio.svg)
+![`this` keyword](./images/thisKeyword.drawio.svg)
 
 ---
 ## Understanding `this` Keyword Through Example
