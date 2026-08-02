@@ -32,7 +32,7 @@ A **Database** is a place where an application stores and manages data, and we c
 **JDK (Java Development Kit)** is a software package provided by Oracle/OpenJDK.
 It contains everything which is required to **write, compile, debug, and execute** a Java application. It is structured into two main parts — Development Tools and JRE.
 #### JDK Hierarchy
-![JDK](./images/jdk.drawio.svg)
+![JDK](jdk.drawio.svg)
 ```java
 JDK (Java Development Kit)
 │
@@ -88,7 +88,7 @@ It provides **JVM + core Java libraries + supporting files**, so that a compiled
 **JAVAC** is the Java compiler that converts **Java source code (.java)** into **bytecode (.class)**.
 ### 1.3 JVM (Java Virtual Machine)
 **JVM** is the virtual machine that **runs Java bytecode (.class files)** by converting it into machine-level instructions for the operating system.
-![JVM](./images/jvm.png)
+![JVM](jvm.png)
 ## Java Program Journey: Source Code → Machine Code
 In Java, first we write the program in a **.java file**, which is called **source code**.  
 Then the **Java compiler (javac)** compiles this source code and converts it into **bytecode**, which is stored in a **.class file**.  
@@ -96,7 +96,7 @@ This bytecode is not directly understood by the operating system, so it is execu
 The JVM uses an internal component like **JIT (Just-In-Time compiler)** to convert bytecode into **machine code**, and then the CPU runs that machine code.  
 This is the reason Java is **platform independent**, because the same bytecode can run on any OS as long as that system has a JVM.
 
-![Source_Code_To_Dot_class](./images/Source_Code_To_Dot_class.png)
+![Source_Code_To_Dot_class](Source_Code_To_Dot_class.png)
 
 ---
 #### Complete picture of JDK
