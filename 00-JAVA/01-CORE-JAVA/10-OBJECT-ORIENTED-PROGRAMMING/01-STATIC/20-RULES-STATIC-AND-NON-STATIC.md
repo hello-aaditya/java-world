@@ -15,7 +15,7 @@
 | 11     | **NON-STATIC METHODS** can call **STATIC METHODS** directly (no object needed)                                                       |
 
 **One-liner to remember it by:** _"Static world doesn't know about the instance world unless you hand it a reference to that instance."_
-![Rules: Static & Non-Static](staticAndNonStaticRules.png)
+![Rules: Static & Non-Static](./images/staticAndNonStaticRules.png)
 # Execution Behavior
 ```java
 class Program {
