@@ -1,5 +1,5 @@
 
-![Class & Object: Memory: Prospective](00-JAVA/01-CORE-JAVA/10-OBJECT-ORIENTED-PROGRAMMING/00-INTRODUCTION-TO-OOP/images/memory_management_Employee.drawio.svg)
+![Class & Object: Memory: Prospective](./images/memory_management_Employee.drawio.svg)
 # Flow of Memory in Java (Objects, Stack, Heap)
 
 ### 1. **Class Definition**

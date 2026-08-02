@@ -40,7 +40,7 @@ class Main{
 }
 ```
 ##### Explanation
-![Example: Normal Object](Student_Memory.drawio.svg)
+![Example: Normal Object](./images/Student_Memory.drawio.svg)
 
 As soon as we run the program that has the `main()` method, JVM sends its control to the `main()` method.
 
@@ -115,7 +115,7 @@ When JVM executes the second line, `s1` now starts pointing to the new object at
 The old object at **0x1000** loses its reference — no one is pointing to it.  
 So that old object becomes a **Garbage Object**.
 
-![Example: Garbage Object- When reference is reassigned](Student_GarbageObject.drawio.svg)
+![Example: Garbage Object- When reference is reassigned](./images/Student_GarbageObject.drawio.svg)
 #### 2.2 When the reference goes out of scope
 As soon as we run the program, JVM sends its control to the `main()` method.  
 Inside it, a **reference variable `s1`** is created under the **activation record of `main()`** method (inside the stack segment).
@@ -130,7 +130,7 @@ That means it’s now **unreachable** — and such objects are known as **Garbag
 
 JVM’s **Garbage Collector (GC)** automatically identifies these unreachable objects.  
 It runs in the background and frees up their memory from the heap whenever needed, keeping memory usage efficient.
-![Example: Garbage Object- When the reference goes out of scope](Student_GarbageObject2.drawio.svg)
+![Example: Garbage Object- When the reference goes out of scope](./images/Student_GarbageObject2.drawio.svg)
 ## 3. Anonymous Object- Example:
 As soon as we run the program that has the `main()` method, JVM sends its control to the `main()` method.
 
