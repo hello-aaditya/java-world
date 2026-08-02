@@ -197,8 +197,9 @@
       "obsidian-git:Open Git source control": false
     }
   },
-  "active": "b5cdd9c32ad2cb95",
+  "active": "8bf0306927ff6ed0",
   "lastOpenFiles": [
+    "00-JAVA/01-CORE-JAVA/00-BASICS",
     "00-JAVA/03-ADVANCED-JAVA/02-FILE-HANDLING/images/byteStreams.drawio.svg",
     "00-JAVA/03-ADVANCED-JAVA/02-FILE-HANDLING/images/byteStreams.drawio",
     "00-JAVA/03-ADVANCED-JAVA/02-FILE-HANDLING/images/CharacterStreams.drawio.svg",
@@ -240,7 +241,6 @@
     "00-JAVA/01-CORE-JAVA/images/data_type.drawio.svg",
     "00-JAVA/01-CORE-JAVA/images/control constructs.drawio.svg",
     "00-JAVA/01-CORE-JAVA/images/Take_User_Input.drawio.svg",
-    "00-JAVA/01-CORE-JAVA/images/Source_Code_To_Dot_class.png",
     "00-JAVA/01-CORE-JAVA/images",
     "00-JAVA/01-CORE-JAVA/40-IDENTIFIERS-RESERVED-KEYWORDS.md",
     "00-JAVA/01-CORE-JAVA",
