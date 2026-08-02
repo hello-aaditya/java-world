@@ -42,7 +42,7 @@ customer1.customerId = null;
 customer1.fullName = "";
 ```
 As a result, the object can enter an **invalid or inconsistent state**.
-![Without-Encapsulation](without-encapsulation.drawio.svg)
+![Without-Encapsulation](./images/without-encapsulation.drawio.svg)
 
 | Field      | Invalid Value | Why is it a problem?                                |
 | ---------- | ------------- | --------------------------------------------------- |
@@ -68,7 +68,7 @@ In Java, Encapsulation is commonly achieved by-
 - Declare all Data members as private.
 - Provide public methods to access those data members or update the data whenever needed but Validate the data before assigning it to the data members.
 
-![With-Encapsulation](with-encapsulation.drawio.svg)
+![With-Encapsulation](./images/with-encapsulation.drawio.svg)
 ### Example
 #### BankCustomer
 ```java
@@ -187,7 +187,7 @@ public class BankCustomer {
 	}
 }
 ```
-![UML-Class-Diagram](BankCustomerClassDiagram.svg)
+![UML-Class-Diagram](./images/BankCustomerClassDiagram.svg)
 #### Driver
 ```java
 package com.practice;

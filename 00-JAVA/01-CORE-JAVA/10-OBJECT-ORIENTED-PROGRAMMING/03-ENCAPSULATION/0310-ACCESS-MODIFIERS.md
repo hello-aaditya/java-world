@@ -13,7 +13,7 @@
 |`protected`|✅|✅|✅|❌|
 |`public`|✅|✅|✅|✅|
 
-![Access-Modifiers](access-modifiers.drawio.svg)
+![Access-Modifiers](./images/access-modifiers.drawio.svg)
 
 ## Diagram Explanation
 - The **`private`** ring is the innermost and smallest — `balance` sits here because it should only ever be touched by code inside `BankCustomer` itself.
