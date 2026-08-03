@@ -53,14 +53,11 @@ public class Driver {
 
         int operand1 = 10;
         int operand2 = 0;
-
         processCalculation(operand1, operand2);
     }
 
     static void processCalculation(int operand1, int operand2) {
-
         int result = calculate(operand1, operand2);
-
         System.out.println("Result = " + result);
     }
 
