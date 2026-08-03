@@ -40,10 +40,10 @@
           <mxGeometry height="153" width="824" x="120" y="940" as="geometry" />
         </mxCell>
         <mxCell id="2H91Zrknd4F4C6ArUBS5-12" parent="1" style="rounded=0;whiteSpace=wrap;html=1;fillColor=none;" value="" vertex="1">
-          <mxGeometry height="30" width="355" x="441" y="940" as="geometry" />
+          <mxGeometry height="30" width="355" x="441" y="938" as="geometry" />
         </mxCell>
         <mxCell id="2H91Zrknd4F4C6ArUBS5-13" parent="1" style="rounded=0;whiteSpace=wrap;html=1;fillColor=none;" value="" vertex="1">
-          <mxGeometry height="30" width="117" x="813" y="940" as="geometry" />
+          <mxGeometry height="30" width="117" x="813" y="938" as="geometry" />
         </mxCell>
         <mxCell id="2H91Zrknd4F4C6ArUBS5-16" edge="1" parent="1" source="2H91Zrknd4F4C6ArUBS5-14" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;" target="2H91Zrknd4F4C6ArUBS5-12" value="">
           <mxGeometry relative="1" as="geometry" />
@@ -56,6 +56,15 @@
         </mxCell>
         <mxCell id="2H91Zrknd4F4C6ArUBS5-15" parent="1" style="text;html=1;whiteSpace=wrap;strokeColor=none;fillColor=none;align=center;verticalAlign=middle;rounded=0;" value="&lt;font face=&quot;Georgia&quot; style=&quot;font-size: 18px;&quot;&gt;Error Message&lt;/font&gt;" vertex="1">
           <mxGeometry height="30" width="170" x="786.5" y="850" as="geometry" />
+        </mxCell>
+        <mxCell id="2H91Zrknd4F4C6ArUBS5-18" parent="1" style="rounded=0;whiteSpace=wrap;html=1;fillColor=none;fontStyle=1;strokeWidth=2;" value="" vertex="1">
+          <mxGeometry height="119" width="730" x="210" y="971" as="geometry" />
+        </mxCell>
+        <mxCell id="2H91Zrknd4F4C6ArUBS5-20" edge="1" parent="1" source="2H91Zrknd4F4C6ArUBS5-19" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;" target="2H91Zrknd4F4C6ArUBS5-18" value="">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="2H91Zrknd4F4C6ArUBS5-19" parent="1" style="text;html=1;whiteSpace=wrap;strokeColor=none;fillColor=none;align=center;verticalAlign=middle;rounded=0;" value="&lt;font face=&quot;Georgia&quot; style=&quot;font-size: 18px;&quot;&gt;Stack Trace&lt;/font&gt;" vertex="1">
+          <mxGeometry height="30" width="110" x="1040" y="1015.5" as="geometry" />
         </mxCell>
       </root>
     </mxGraphModel>
