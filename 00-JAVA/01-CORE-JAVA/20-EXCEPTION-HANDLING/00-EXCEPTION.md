@@ -10,6 +10,8 @@
 - After a method throws an exception, the runtime system attempts to find a matching exception handler. The ordered list of methods that were called to reach the method where the exception occurred is known as the **Call Stack**.
 - The runtime system searches the Call Stack in reverse order, starting from the method where the exception occurred and moving back through each calling method. If it finds a matching exception handler (`catch` block), the exception is passed to that handler.
 - If the runtime system searches the entire Call Stack without finding a matching exception handler, the exception remains uncaught. In this case, the JVM prints the **Stack Trace** and terminates the program.
+
+![](./images/exception-process.drawio.svg)
 #### Example
 ```java
 package com.mathematics;
