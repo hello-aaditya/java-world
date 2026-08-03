@@ -1,6 +1,6 @@
 <mxfile host="Electron">
   <diagram name="Page-1" id="P9iwP05zYik0_BAM0TiC">
-    <mxGraphModel dx="646" dy="800" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="1300" pageHeight="1800" math="0" shadow="0">
+    <mxGraphModel dx="1414" dy="844" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="1300" pageHeight="1800" math="0" shadow="0">
       <root>
         <mxCell id="0" />
         <mxCell id="1" parent="0" />
@@ -44,6 +44,18 @@
         </mxCell>
         <mxCell id="2H91Zrknd4F4C6ArUBS5-13" parent="1" style="rounded=0;whiteSpace=wrap;html=1;fillColor=none;" value="" vertex="1">
           <mxGeometry height="30" width="117" x="813" y="940" as="geometry" />
+        </mxCell>
+        <mxCell id="2H91Zrknd4F4C6ArUBS5-16" edge="1" parent="1" source="2H91Zrknd4F4C6ArUBS5-14" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;" target="2H91Zrknd4F4C6ArUBS5-12" value="">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="2H91Zrknd4F4C6ArUBS5-14" parent="1" style="text;html=1;whiteSpace=wrap;strokeColor=none;fillColor=none;align=center;verticalAlign=middle;rounded=0;" value="&lt;font face=&quot;Georgia&quot; style=&quot;font-size: 18px;&quot;&gt;Exception Type&lt;/font&gt;" vertex="1">
+          <mxGeometry height="40" width="170" x="533.5" y="850" as="geometry" />
+        </mxCell>
+        <mxCell id="2H91Zrknd4F4C6ArUBS5-17" edge="1" parent="1" source="2H91Zrknd4F4C6ArUBS5-15" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;" target="2H91Zrknd4F4C6ArUBS5-13" value="">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="2H91Zrknd4F4C6ArUBS5-15" parent="1" style="text;html=1;whiteSpace=wrap;strokeColor=none;fillColor=none;align=center;verticalAlign=middle;rounded=0;" value="&lt;font face=&quot;Georgia&quot; style=&quot;font-size: 18px;&quot;&gt;Error Message&lt;/font&gt;" vertex="1">
+          <mxGeometry height="30" width="170" x="786.5" y="850" as="geometry" />
         </mxCell>
       </root>
     </mxGraphModel>
