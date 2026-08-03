@@ -38,4 +38,4 @@ public class Driver {
     }
 }
 ```
-![](./images/exception-call-stackdrawio.svg)
+![](./images/exception-call-stack.drawio.svg)
