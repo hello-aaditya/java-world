@@ -40,4 +40,41 @@ public class Driver {
     }
 }
 ```
+
 ![Exception Call Stack](./images/exception-call-stack.drawio.svg)
+
+#### Solution Code
+```java
+package com.mathematics;
+
+public class Driver {
+
+    public static void main(String[] args) {
+
+        int operand1 = 10;
+        int operand2 = 0;
+
+        processCalculation(operand1, operand2);
+    }
+
+    static void processCalculation(int operand1, int operand2) {
+
+        int result = calculate(operand1, operand2);
+
+        System.out.println("Result = " + result);
+    }
+
+    static int calculate(int operand1, int operand2) {
+    	try {
+    		return divide(operand1, operand2);
+    	} catch (ArithmeticException e) {
+    		System.out.println("Exception Handled in calculate()");
+    		return 0;
+    	}
+    }
+
+    static int divide(int dividend, int divisor) {
+        return dividend / divisor;      // Exception occurs here
+    }
+}
+```
