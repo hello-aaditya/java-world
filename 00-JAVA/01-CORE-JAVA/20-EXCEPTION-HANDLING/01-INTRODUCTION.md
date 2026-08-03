@@ -156,4 +156,4 @@ That’s why Java programs are considered more **secure, stable, and reliable** 
 
 Note- Java doesn’t “fix” runtime errors automatically — it **handles them gracefully** using `try-catch`, instead of crashing the program suddenly.
 
-**[PTO](./02-EXCEPTION-FLOW-AND-TRY-CATCH.md)**
+**[PTO](02-EXCEPTION-FLOW-AND-TRY-CATCH.md)**

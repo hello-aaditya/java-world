@@ -1,4 +1,4 @@
-![Throwable Tree](./images/ExceptionsTree.drawio.svg)
+![Throwable Tree](ExceptionsTree.drawio.svg)
 ### 1. Error
 - **OutOfMemoryError**
 - **StackOverflowError**
@@ -47,4 +47,4 @@
 - I → InputMismatchException
 - N → NegativeArraySizeException
 - N → NullPointerException
-**[PTO](./01-INTRODUCTION)**
+**[PTO](01-INTRODUCTION.md)**
