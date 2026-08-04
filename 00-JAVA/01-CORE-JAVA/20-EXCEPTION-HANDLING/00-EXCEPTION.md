@@ -43,29 +43,29 @@ public class PricingService {
 
 #### Solution Code
 ```java
-package com.mathematics;
+package com.billing;
 
-public class Driver {
+public class PricingService {
 
     public static void main(String[] args) {
 
-        int operand1 = 10;
-        int operand2 = 0;
-        processCalculation(operand1, operand2);
+        int totalAmount = 5000;
+        int quantity = 0;
+        processOrder(totalAmount, quantity);
     }
 
-    static void processCalculation(int operand1, int operand2) {
-        int result = calculate(operand1, operand2);
-        System.out.println("Result = " + result);
+    static void processOrder(int totalAmount, int quantity) {
+        int unitPrice = calculateUnitPrice(totalAmount, quantity);
+        System.out.println("Unit Price = " + unitPrice);
     }
 
-    static int calculate(int operand1, int operand2) {
-    	try {
-    		return divide(operand1, operand2);
-    	} catch (ArithmeticException e) {
-    		System.out.println("Exception Handled in calculate()");
-    		return 0;
-    	}
+    static int calculateUnitPrice(int totalAmount, int quantity) {
+        try {
+            return divide(totalAmount, quantity);
+        } catch (ArithmeticException e) {
+            System.out.println("Exception Handled in calculateUnitPrice()");
+            return 0;
+        }
     }
 
     static int divide(int dividend, int divisor) {
@@ -73,3 +73,4 @@ public class Driver {
     }
 }
 ```
+>[!Note]
