@@ -47,4 +47,6 @@ public class PricingService {
 >The `catch` sits in `calculationPrice()` because that's the lowest layer that knows how to recover meaningfully- falling back to a zero unit price.
 >`processOrder()` and `main()` have no business context to decide that. so the exception shouldn't be allowed to propagate that for up.
 ## Rules of `try`Block
-1. 
+1. A `try` block **must be followed by at least one `catch` block or a `finally` block**. A `try` block cannot exist alone.
+2. A `try` block **cannot appear without braces (`{}`)**, even if it contains only a single statement.
+3. 
