@@ -57,7 +57,7 @@ public class PricingService {
 	If a value computed inside `try` is needed later (in `catch` or `finally`, or after the block), declare that variable _before_ the `try` and only assign it inside.
 8. A `try` block can contain another complete `try`-`catch` inside it.
 9. If the inner `try` block does not have a matching `catch` block for the thrown exception, the exception propagates to the outer `try` block, where the JVM searches its `catch` blocks for a matching handler.
-## Rules of `finally` block
+## Rules of `catch` block
 - A `catch` block **must always be associated with a `try` block**. It cannot exist independently.
 - A `catch` block **must declare exactly one exception parameter**.
     ```java
