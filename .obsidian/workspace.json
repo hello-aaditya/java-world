@@ -13,12 +13,12 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "00-JAVA/01-CORE-JAVA/20-EXCEPTION-HANDLING/20-ERROR.md",
+                "file": "00-JAVA/01-CORE-JAVA/20-EXCEPTION-HANDLING/00-EXCEPTION.md",
                 "mode": "source",
                 "source": false
               },
               "icon": "lucide-file",
-              "title": "20-ERROR"
+              "title": "00-EXCEPTION"
             }
           }
         ]
@@ -200,10 +200,10 @@
   },
   "active": "b5cdd9c32ad2cb95",
   "lastOpenFiles": [
+    "00-JAVA/01-CORE-JAVA/20-EXCEPTION-HANDLING/20-ERROR.md",
     "00-JAVA/01-CORE-JAVA/20-EXCEPTION-HANDLING/images/ExceptionsTree.drawio.svg",
     "00-JAVA/01-CORE-JAVA/20-EXCEPTION-HANDLING/images/exception-hierarchy.drawio.svg",
     "00-JAVA/01-CORE-JAVA/20-EXCEPTION-HANDLING/images/exception-hierarchy.drawio",
-    "00-JAVA/01-CORE-JAVA/20-EXCEPTION-HANDLING/20-ERROR.md",
     "00-JAVA/01-CORE-JAVA/20-EXCEPTION-HANDLING/00-EXCEPTION.md",
     "00-JAVA/01-CORE-JAVA/20-EXCEPTION-HANDLING/10",
     "00-JAVA/01-CORE-JAVA/20-EXCEPTION-HANDLING/images/exception-process.drawio.svg",
@@ -244,7 +244,6 @@
     "00-JAVA/01-CORE-JAVA/00-BASICS/images/identifiers.drawio",
     "00-JAVA/01-CORE-JAVA/00-BASICS/images/jdk.drawio.svg",
     "00-JAVA/01-CORE-JAVA/00-BASICS/images/memory.drawio.svg",
-    "00-JAVA/01-CORE-JAVA/00-BASICS/images/data_type.drawio.svg",
-    "00-JAVA/01-CORE-JAVA/00-BASICS/images/control constructs.drawio.svg"
+    "00-JAVA/01-CORE-JAVA/00-BASICS/images/data_type.drawio.svg"
   ]
 }
