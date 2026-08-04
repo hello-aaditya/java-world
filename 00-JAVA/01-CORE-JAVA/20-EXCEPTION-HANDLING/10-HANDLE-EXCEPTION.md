@@ -68,3 +68,5 @@ public class PricingService {
 - The JVM executes **only the first matching `catch` block**. The remaining `catch` blocks are skipped.
 - If no `catch` block matches the thrown exception, the exception **propagates to the caller**. If it remains unhandled, the JVM prints the exception details and stack trace, then terminates the program.
 - A `catch` block **cannot appear without a preceding `try` block**.
+- - `catch` must immediately follow `try` or another `catch` — nothing else can sit between them.
+- `try` can have zero `catch` blocks only if a `finally` block is present.
