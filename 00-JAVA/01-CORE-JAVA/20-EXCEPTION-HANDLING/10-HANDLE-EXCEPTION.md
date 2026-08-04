@@ -54,3 +54,13 @@ public class PricingService {
 5. If an exception occurs inside the `try` block, the JVM **immediately stops executing the remaining statements** in that `try` block and transfers control to a matching `catch` block.
 6. If no exception occurs, all statements inside the `try` block execute normally, and the associated `catch` blocks are skipped.
 ## Rules of `finally` block
+- A `catch` block **must always be associated with a `try` block**. It cannot exist independently.
+- A `catch` block **must declare exactly one exception parameter**.
+    ```java
+    catch (ArithmeticException e)
+    ```
+- A single `try` block **can have multiple `catch` blocks** to handle different exception types.
+- When multiple `catch` blocks are used, **more specific exceptions must be placed before more general exceptions**. Otherwise, the code will result in a compile-time error.
+- The JVM executes **only the first matching `catch` block**. The remaining `catch` blocks are skipped.
+- If no `catch` block matches the thrown exception, the exception **propagates to the caller**. If it remains unhandled, the JVM prints the exception details and stack trace, then terminates the program.
+- A `catch` block **cannot appear without a preceding `try` block**.
