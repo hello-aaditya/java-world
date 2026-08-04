@@ -20,14 +20,13 @@ public class PricingService {
 
     public static void main(String[] args) {
 
-        int totalAmou = 10;
-        int operand2 = 0;
-        processCalculation(operand1, operand2);
+        int totalAmount = 5000;
+        int quantity = 0;
+        calculateUnitPrice(totalAmount, quantity);
     }
 
-    static void processCalculation(int operand1, int operand2) {
-
-        int result = calculate(operand1, operand2);
+    static void calculateUnitPrice(int totalAmount, int quantity) {
+        int unitPrice = calculate(operand1, operand2);
         System.out.println("Result = " + result);
     }
 
