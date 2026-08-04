@@ -74,3 +74,4 @@ public class PricingService {
 }
 ```
 >[!Note]
+>The `catch` sits in `calculationPrice()` because that's the lowest layer that knows how to recover meaningfully- 
