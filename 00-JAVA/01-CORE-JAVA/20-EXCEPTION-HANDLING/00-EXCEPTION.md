@@ -74,4 +74,5 @@ public class PricingService {
 }
 ```
 >[!Note]
->The `catch` sits in `calculationPrice()` because that's the lowest layer that knows how to recover meaningfully- 
+>The `catch` sits in `calculationPrice()` because that's the lowest layer that knows how to recover meaningfully- Falling back to a zero unit price.
+>`processOrder()` and `main()` have no business context to decide that. so the exception should
