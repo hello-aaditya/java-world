@@ -53,6 +53,9 @@ public class PricingService {
 4. A `try` block **can have only one `finally` block**.
 5. If an exception occurs inside the `try` block, the JVM **immediately stops executing the remaining statements** in that `try` block and transfers control to a matching `catch` block.
 6. If no exception occurs, all statements inside the `try` block execute normally, and the associated `catch` blocks are skipped.
+7. Variables declared inside `try` are local to that block — not visible inside `catch` or `finally`.
+	If a value computed inside `try` is needed later (in `catch` or `finally`, or after the block), declare that variable _before_ the `try` and only assign it inside.
+8. 
 ## Rules of `finally` block
 - A `catch` block **must always be associated with a `try` block**. It cannot exist independently.
 - A `catch` block **must declare exactly one exception parameter**.
