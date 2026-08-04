@@ -55,7 +55,8 @@ public class PricingService {
 6. If no exception occurs, all statements inside the `try` block execute normally, and the associated `catch` blocks are skipped.
 7. Variables declared inside `try` are local to that block — not visible inside `catch` or `finally`.
 	If a value computed inside `try` is needed later (in `catch` or `finally`, or after the block), declare that variable _before_ the `try` and only assign it inside.
-8. 
+8. A `try` block can contain another complete `try`-`catch` inside it.
+9. If the inner `try` block does not have a matching `catch` block for the thrown exception, the exception propagates to the outer `try` block, where the JVM searches its `catch` blocks for a matching handler.
 ## Rules of `finally` block
 - A `catch` block **must always be associated with a `try` block**. It cannot exist independently.
 - A `catch` block **must declare exactly one exception parameter**.
