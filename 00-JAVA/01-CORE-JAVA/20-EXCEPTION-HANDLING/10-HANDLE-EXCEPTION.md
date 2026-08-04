@@ -70,3 +70,6 @@ public class PricingService {
 - A `catch` block **cannot appear without a preceding `try` block**.
 - `catch` must immediately follow `try` or another `catch` — nothing else can sit between them.
 - `try` can have zero `catch` blocks only if a `finally` block is present.
+- When multiple `catch` blocks exist, subclasses must be listed before their superclasses.
+- Writing a superclass catch (e.g. `RuntimeException`) before a subclass catch (e.g. `NullPointerException`) is a compile error — "unreachable catch block" — because the broader type would swallow the exception first, making the later, more specific block dead code.
+- 
