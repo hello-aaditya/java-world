@@ -11,14 +11,12 @@
             "id": "b5cdd9c32ad2cb95",
             "type": "leaf",
             "state": {
-              "type": "markdown",
+              "type": "image",
               "state": {
-                "file": "00-JAVA/01-CORE-JAVA/20-EXCEPTION-HANDLING/00-EXCEPTION.md",
-                "mode": "source",
-                "source": false
+                "file": "00-JAVA/01-CORE-JAVA/20-EXCEPTION-HANDLING/images/ExceptionsTree.drawio.svg"
               },
-              "icon": "lucide-file",
-              "title": "00-EXCEPTION"
+              "icon": "lucide-image",
+              "title": "ExceptionsTree.drawio"
             }
           }
         ]
@@ -183,7 +181,8 @@
       }
     ],
     "direction": "horizontal",
-    "width": 300
+    "width": 300,
+    "collapsed": true
   },
   "left-ribbon": {
     "hiddenItems": {
@@ -199,9 +198,11 @@
   },
   "active": "b5cdd9c32ad2cb95",
   "lastOpenFiles": [
+    "00-JAVA/01-CORE-JAVA/20-EXCEPTION-HANDLING/20-ERROR.md",
+    "00-JAVA/01-CORE-JAVA/20-EXCEPTION-HANDLING/00-EXCEPTION.md",
+    "00-JAVA/01-CORE-JAVA/20-EXCEPTION-HANDLING/10",
     "00-JAVA/01-CORE-JAVA/20-EXCEPTION-HANDLING/images/exception-process.drawio.svg",
     "00-JAVA/01-CORE-JAVA/20-EXCEPTION-HANDLING/images/ExceptionsTree.drawio.svg",
-    "00-JAVA/01-CORE-JAVA/20-EXCEPTION-HANDLING/00-EXCEPTION.md",
     "00-JAVA/01-CORE-JAVA/20-EXCEPTION-HANDLING/01-INTRODUCTION.md",
     "00-JAVA/01-CORE-JAVA/20-EXCEPTION-HANDLING/02-EXCEPTION-FLOW-AND-TRY-CATCH.md",
     "00-JAVA/01-CORE-JAVA/20-EXCEPTION-HANDLING/00-EXCEPTION-HANDLING.md",
@@ -242,8 +243,6 @@
     "00-JAVA/01-CORE-JAVA/00-BASICS/images/memory.drawio.svg",
     "00-JAVA/01-CORE-JAVA/00-BASICS/images/data_type.drawio.svg",
     "00-JAVA/01-CORE-JAVA/00-BASICS/images/control constructs.drawio.svg",
-    "00-JAVA/01-CORE-JAVA/00-BASICS/images/Take_User_Input.drawio.svg",
-    "00-JAVA/01-CORE-JAVA/00-BASICS/images",
-    "00-JAVA/01-CORE-JAVA"
+    "00-JAVA/01-CORE-JAVA/00-BASICS/images"
   ]
 }
