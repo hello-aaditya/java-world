@@ -38,7 +38,8 @@ public class PricingService {
 ![Exception Call Stack](./images/exception-call-stack.drawio.svg)
 
 >[!NOTE] 
-`quantity` is zero, so `divide()` triggers `ArithmeticException`. the call stack is four FOUR FRAMES DEEP: `MAIN() → PROCESSORDER() → CALCULATEUNITPRICE() → DIVIDE()`.
+`quantity` is zero, so `divide()` triggers `ArithmeticException`. the call stack is four frames deep: 
+`divide() ← MAIN() → PROCESSORDER() → CALCULATEUNITPRICE() → DIVIDE()`.
 
 #### Solution Code
 ```java
