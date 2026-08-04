@@ -1,0 +1,1 @@
+![](./images/exception-hierarchy.drawio.svg)
