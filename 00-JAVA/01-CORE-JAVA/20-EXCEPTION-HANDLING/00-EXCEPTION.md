@@ -14,13 +14,13 @@
 ![](./images/exception-process.drawio.svg)
 #### Example
 ```java
-package com.mathematics;
+package com.billing;
 
-public class Driver {
+public class PricingService {
 
     public static void main(String[] args) {
 
-        int operand1 = 10;
+        int totalAmou = 10;
         int operand2 = 0;
         processCalculation(operand1, operand2);
     }
