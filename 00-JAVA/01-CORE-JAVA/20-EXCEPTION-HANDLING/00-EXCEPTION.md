@@ -40,39 +40,3 @@ public class PricingService {
 >[!NOTE] 
 `quantity` is zero, so `divide()` triggers `ArithmeticException`. the call stack is four frames deep: 
 `divide()` ← `calculateUnitPrice()` ← `processOrder()` ← `main()`
-#### Solution Code
-```java
-package com.billing;
-
-public class PricingService {
-
-    public static void main(String[] args) {
-
-        int totalAmount = 5000;
-        int quantity = 0;
-        processOrder(totalAmount, quantity);
-    }
-
-    static void processOrder(int totalAmount, int quantity) {
-        int unitPrice = calculateUnitPrice(totalAmount, quantity);
-        System.out.println("Unit Price = " + unitPrice);
-    }
-
-    static int calculateUnitPrice(int totalAmount, int quantity) {
-        try {
-            return divide(totalAmount, quantity);
-        } catch (ArithmeticException e) {
-            System.out.println("Exception Handled in calculateUnitPrice()");
-            return 0;
-        }
-    }
-
-    static int divide(int dividend, int divisor) {
-        return dividend / divisor;      // Exception occurs here
-    }
-}
-```
->[!Note]
->The `catch` sits in `calculationPrice()` because that's the lowest layer that knows how to recover meaningfully- falling back to a zero unit price.
->`processOrder()` and `main()` have no business context to decide that. so the exception shouldn't be allowed to propagate that for up.
-

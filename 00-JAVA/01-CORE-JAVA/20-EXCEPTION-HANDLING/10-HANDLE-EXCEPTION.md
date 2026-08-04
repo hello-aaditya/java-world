@@ -7,9 +7,8 @@ An exception is handled by enclosing the risky code inside a `try` block and wri
 ```java
 try {
 	// CODE THAT MAY THROW AN EXCEPTION
-	// code that may throw an exception
 } catch (ExceptionType e) {
 	// CODE TO HANDLE THE EXCEPTION
 }
 ```
-
+## Solution of Pr
