@@ -83,8 +83,7 @@
       }
     ],
     "direction": "horizontal",
-    "width": 414.85546875,
-    "collapsed": true
+    "width": 414.85546875
   },
   "right": {
     "id": "da37fefebc188a99",
@@ -184,8 +183,7 @@
       }
     ],
     "direction": "horizontal",
-    "width": 300,
-    "collapsed": true
+    "width": 300
   },
   "left-ribbon": {
     "hiddenItems": {
@@ -199,7 +197,7 @@
       "obsidian-git:Open Git source control": false
     }
   },
-  "active": "b5cdd9c32ad2cb95",
+  "active": "3b82857056536616",
   "lastOpenFiles": [
     "00-JAVA/01-CORE-JAVA/20-EXCEPTION-HANDLING/images/PricingService.png",
     "00-JAVA/01-CORE-JAVA/20-EXCEPTION-HANDLING/images/Unconfirmed 889500.crdownload",
