@@ -49,4 +49,8 @@ public class PricingService {
 ## Rules of `try`Block
 1. A `try` block **must be followed by at least one `catch` block or a `finally` block**. A `try` block cannot exist alone.
 2. A `try` block **cannot appear without braces (`{}`)**, even if it contains only a single statement.
-3. 
+3. A single `try` block **can be followed by multiple `catch` blocks**, each handling a different type of exception.
+4. A `try` block **can have only one `finally` block**.
+5. The code that **may throw an exception** should be placed inside the `try` block.
+6. If an exception occurs inside the `try` block, the JVM **immediately stops executing the remaining statements** in that `try` block and searches for a matching `catch` block.
+7. If no exception occurs, all statements inside the `try` block execute normally, and the associated `catch` blocks are skipped.
