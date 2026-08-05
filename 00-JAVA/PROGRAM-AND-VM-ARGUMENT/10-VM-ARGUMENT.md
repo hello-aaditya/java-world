@@ -78,7 +78,7 @@ public class HeapDiagnostics {
 -
 │
 ├── X   → Non-standard JVM option
-├── ms  → Initial Memory Size
+├── ms  → Initial Memory Size (ms - memory start)
 └── 4G  → 4 Gigabytes
 ```
 means:
@@ -104,7 +104,7 @@ The application starts with a large heap immediately available.
 -
 │
 ├── X   → Non-standard JVM option
-├── mx  → Maximum Memory Size
+├── mx  → Maximum Memory Size (mx - memory max)
 └── 4G  → 4 Gigabytes
 ```
 means:
