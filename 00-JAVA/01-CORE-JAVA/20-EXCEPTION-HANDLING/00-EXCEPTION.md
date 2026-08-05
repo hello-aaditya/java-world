@@ -19,18 +19,28 @@ package com.billing;
 public class PricingService {
 
     public static void main(String[] args) {
+
         int totalAmount = 5000;
         int quantity = 0;
-        calculateUnitPrice(totalAmount, quantity);
+        processOrder(totalAmount, quantity);
     }
 
-    static void calculateUnitPrice(int totalAmount, int quantity) {
-        int unitPrice = computeUnitPrice(totalAmount, quantity);
+    static void processOrder(int totalAmount, int quantity) {
+        int unitPrice = calculateUnitPrice(totalAmount, quantity);
         System.out.println("Unit Price = " + unitPrice);
     }
 
-    static int computeUnitPrice(int totalAmount, int quantity) {
-        return totalAmount / quantity; // ArithmeticException here
+    static int calculateUnitPrice(int totalAmount, int quantity) {
+        try {
+            return divide(totalAmount, quantity);
+        } catch (ArithmeticException e) {
+            System.out.println("Exception Handled in calculateUnitPrice()");
+            return 0;
+        }
+    }
+
+    static int divide(int dividend, int divisor) {
+        return dividend / divisor;      // Exception occurs here
     }
 }
 ```
