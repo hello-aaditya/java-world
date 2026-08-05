@@ -28,3 +28,12 @@ Starts the JVM with an initial heap of **512 MB**.
 -Xmx4G
 ```
 Allows the heap to grow up to a **maximum of 4 GB**.
+
+**Important**
+`-Xmx4G` **does not immediately allocate 4 GB of RAM.**
+
+It only tells the JVM:
+> "You are allowed to increase the heap up to 4 GB if the application requires it."
+
+The heap grows gradually as more objects are created.
+## How to Verify that the Heap Size Has Increased
