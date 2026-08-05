@@ -164,4 +164,16 @@ This means:
 - Maximum heap = 5 GB
 So the heap size never needs to expand during execution.
 ```text
+Startup
+
+5 GB
+
+↓
+
+Application runs
+
+↓
+
+Still 5 GB
 ```
+This avoids heap expansion, which can reduce resizing overhead in long-running applications. It's common for applications whose memory requirements are well understood.
