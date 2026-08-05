@@ -1,6 +1,6 @@
 <mxfile host="Electron">
   <diagram name="Page-1" id="6kt17fIPOKGPJ0QXElPF">
-    <mxGraphModel dx="1431" dy="888" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="1300" pageHeight="1800" math="0" shadow="0">
+    <mxGraphModel dx="1045" dy="649" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="1300" pageHeight="1800" math="0" shadow="0">
       <root>
         <mxCell id="0" />
         <mxCell id="1" parent="0" />
@@ -57,16 +57,16 @@
         <mxCell id="_jjYTGWvTq16lsIWnI0s-4" parent="1" style="rounded=0;whiteSpace=wrap;html=1;fontFamily=Georgia;fontSize=15;strokeWidth=2;" value="Error" vertex="1">
           <mxGeometry height="60" width="120" x="760" y="270" as="geometry" />
         </mxCell>
-        <mxCell id="_jjYTGWvTq16lsIWnI0s-5" parent="1" style="rounded=0;whiteSpace=wrap;html=1;fontFamily=Georgia;fontSize=15;strokeWidth=2;" value="Checked&lt;div&gt;Exception&lt;/div&gt;" vertex="1">
-          <mxGeometry height="60" width="120" x="372" y="608" as="geometry" />
+        <mxCell id="_jjYTGWvTq16lsIWnI0s-5" parent="1" style="rounded=0;whiteSpace=wrap;html=1;fontFamily=Georgia;fontSize=15;strokeWidth=2;" value="Checked&amp;nbsp;&lt;span style=&quot;background-color: transparent; color: light-dark(rgb(0, 0, 0), rgb(255, 255, 255));&quot;&gt;Exception&lt;/span&gt;&lt;div&gt;&lt;span style=&quot;background-color: transparent; color: light-dark(rgb(0, 0, 0), rgb(255, 255, 255));&quot;&gt;(Compile-Time Exception)&lt;/span&gt;&lt;/div&gt;" vertex="1">
+          <mxGeometry height="60" width="170" x="350" y="608" as="geometry" />
         </mxCell>
-        <mxCell id="_jjYTGWvTq16lsIWnI0s-6" parent="1" style="rounded=0;whiteSpace=wrap;html=1;fontFamily=Georgia;fontSize=15;strokeWidth=2;" value="Unchecked Exception" vertex="1">
-          <mxGeometry height="60" width="120" x="682" y="607" as="geometry" />
+        <mxCell id="_jjYTGWvTq16lsIWnI0s-6" parent="1" style="rounded=0;whiteSpace=wrap;html=1;fontFamily=Georgia;fontSize=15;strokeWidth=2;" value="Unchecked Exception&lt;div&gt;(Runtime Exception)&lt;/div&gt;" vertex="1">
+          <mxGeometry height="60" width="150" x="670" y="607" as="geometry" />
         </mxCell>
         <mxCell id="_jjYTGWvTq16lsIWnI0s-7" parent="1" style="rounded=0;whiteSpace=wrap;html=1;fontFamily=Georgia;fontSize=15;strokeWidth=2;" value="OutOfMemory&lt;div&gt;Error&lt;/div&gt;" vertex="1">
           <mxGeometry height="60" width="120" x="1010" y="330" as="geometry" />
         </mxCell>
-        <mxCell id="_jjYTGWvTq16lsIWnI0s-8" parent="1" style="rounded=0;whiteSpace=wrap;html=1;fontFamily=Georgia;fontSize=15;strokeWidth=2;" value="StackOverflow&lt;div&gt;Error&lt;/div&gt;" vertex="1">
+        <mxCell id="_jjYTGWvTq16lsIWnI0s-8" parent="1" style="rounded=0;whiteSpace=wrap;html=1;fontFamily=Georgia;fontSize=15;strokeWidth=2;" value="LinkageError" vertex="1">
           <mxGeometry height="60" width="120" x="1010" y="440" as="geometry" />
         </mxCell>
         <mxCell id="_jjYTGWvTq16lsIWnI0s-9" parent="1" style="rounded=0;whiteSpace=wrap;html=1;fontFamily=Georgia;fontSize=15;strokeWidth=2;" value="User-Defined Exception" vertex="1">
@@ -83,13 +83,13 @@
         <mxCell id="_jjYTGWvTq16lsIWnI0s-10" parent="1" style="rounded=0;whiteSpace=wrap;html=1;fontFamily=Georgia;fontSize=15;strokeWidth=2;" value="Built-in&lt;div&gt;Exception&lt;/div&gt;" vertex="1">
           <mxGeometry height="60" width="120" x="527" y="498" as="geometry" />
         </mxCell>
-        <mxCell id="_jjYTGWvTq16lsIWnI0s-14" parent="1" style="rounded=0;whiteSpace=wrap;html=1;fontFamily=Georgia;fontSize=15;strokeWidth=2;" value="VirtualMachine&lt;div&gt;Error&lt;/div&gt;" vertex="1">
+        <mxCell id="_jjYTGWvTq16lsIWnI0s-14" parent="1" style="rounded=0;whiteSpace=wrap;html=1;fontFamily=Georgia;fontSize=15;strokeWidth=2;" value="IOError" vertex="1">
           <mxGeometry height="60" width="120" x="1010" y="540" as="geometry" />
         </mxCell>
         <mxCell id="_jjYTGWvTq16lsIWnI0s-17" parent="1" style="text;html=1;whiteSpace=wrap;strokeColor=none;fillColor=none;align=left;verticalAlign=top;rounded=0;fontFamily=Georgia;fontSize=15;textDirection=ltr;strokeWidth=2;" value="&lt;ul&gt;&lt;li&gt;&lt;font&gt;ClassNotFoundException&lt;/font&gt;&lt;/li&gt;&lt;li&gt;&lt;font&gt;FileNotFoundException&lt;/font&gt;&lt;/li&gt;&lt;li&gt;&lt;font&gt;InstantiationException&lt;/font&gt;&lt;/li&gt;&lt;li&gt;&lt;font&gt;InterruptedException&lt;/font&gt;&lt;/li&gt;&lt;li&gt;&lt;font&gt;IOException&lt;/font&gt;&lt;/li&gt;&lt;li&gt;&lt;font&gt;SQLException&lt;/font&gt;&lt;/li&gt;&lt;/ul&gt;" vertex="1">
           <mxGeometry height="130" width="200" x="414" y="656" as="geometry" />
         </mxCell>
-        <mxCell id="_jjYTGWvTq16lsIWnI0s-18" edge="1" parent="1" style="endArrow=none;html=1;rounded=0;entryX=0.5;entryY=1;entryDx=0;entryDy=0;strokeWidth=2;" target="_jjYTGWvTq16lsIWnI0s-5" value="">
+        <mxCell id="_jjYTGWvTq16lsIWnI0s-18" edge="1" parent="1" source="_jjYTGWvTq16lsIWnI0s-17" style="endArrow=none;html=1;rounded=0;entryX=0.5;entryY=1;entryDx=0;entryDy=0;strokeWidth=2;exitX=0.105;exitY=1.108;exitDx=0;exitDy=0;exitPerimeter=0;" target="_jjYTGWvTq16lsIWnI0s-5" value="">
           <mxGeometry height="50" relative="1" width="50" as="geometry">
             <mxPoint x="432" y="798" as="sourcePoint" />
             <mxPoint x="680" y="468" as="targetPoint" />
