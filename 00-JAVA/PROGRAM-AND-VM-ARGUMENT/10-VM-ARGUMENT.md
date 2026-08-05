@@ -72,4 +72,5 @@ public class HeapDiagnostics {
 | VM Argument | Meaning           | Controls                                                                                                | Example  |
 | ----------- | ----------------- | ------------------------------------------------------------------------------------------------------- | -------- |
 | `-Xms`      | Initial Heap Size | The `-Xms` option specifies the **initial heap size** allocated to the JVM when the application starts. | `-Xms5G` |
-| `-Xmx`      | Maximum Heap Size | The maximum heap size the JVM is allowed to grow to                                                     |          |
+| `-Xmx`      | Maximum Heap Size | The `-Xmx` option specifies the **maximum heap size** the JVM is allowed to use.                        | `-Xmx5G` |
+### `-Xms5G` (Initial Heap Size)
