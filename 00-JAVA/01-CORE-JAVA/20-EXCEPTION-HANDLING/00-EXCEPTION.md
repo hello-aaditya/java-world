@@ -51,4 +51,4 @@ public class PricingService {
 `quantity` is zero, so `divide()` triggers `ArithmeticException`. the call stack is four frames deep: 
 `divide()` ← `calculateUnitPrice()` ← `processOrder()` ← `main()`
 
-[**P.T.O**](./10-HANDLE-EXCEPTION)
+[**P.T.O**](./10-HANDLE-EXCEPTION.md)
