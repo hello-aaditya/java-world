@@ -131,4 +131,37 @@ The heap grows only when necessary.
 Most applications specify both values.
 Example:
 ```java
+-Xms512M -Xmx5G
+```
+This means:
+- Start with **512 MB**.
+- Grow gradually up to **5 GB**.
+```text
+Startup
+
+512 MB
+
+↓
+
+Application creates objects
+
+↓
+
+1 GB
+
+↓
+
+2 GB
+
+↓
+
+5 GB (Maximum)
+```
+### What if both are the same?
+Example:
+This means:
+- Initial heap = 5 GB
+- Maximum heap = 5 GB
+So the heap size never needs to expand during execution.
+```text
 ```
