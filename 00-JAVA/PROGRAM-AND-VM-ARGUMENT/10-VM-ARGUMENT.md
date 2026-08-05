@@ -98,3 +98,37 @@ means:
 > "The heap may grow up to **5 GB**, but it doesn't have to start there."
 
 Initially, the heap might be much smaller.
+```text
+JVM Starts
+
+Heap
+┌───┐
+│   │ 256 MB (example)
+└───┘
+```
+As more objects are created:
+```text
+256 MB
+
+↓
+
+512 MB
+
+↓
+
+1 GB
+
+↓
+
+3 GB
+
+↓
+
+5 GB (Maximum)
+```
+The heap grows only when necessary.
+### Both Together
+Most applications specify both values.
+Example:
+```java
+```
