@@ -17,3 +17,14 @@ The heap is the runtime memory area where Java objects are allocated.
 By default, the JVM automatically determines the initial and maximum heap size based on the system configuration.
 
 If an application requires more memory, the heap size can be increased using VM arguments.
+
+### Initial Heap Size
+```java
+-Xms512M
+```
+Starts the JVM with an initial heap of **512 MB**.
+### Maximum Heap Size
+```java
+-Xmx4G
+```
+Allows the heap to grow up to a **maximum of 4 GB**.
