@@ -1,5 +1,3 @@
-![[Pasted image 20260808223908.png]]
-
 # Exception Handling Topics - Numbered List
 
 1. Introduction
