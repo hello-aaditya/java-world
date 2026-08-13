@@ -3,6 +3,7 @@ In our program if there is a possibility of rising checked-exception then compul
 **"unreported exception XXX; must be caught or declared to be thrown"**.
 Example-1:
 ![throws-introduction](./images/throws-introduction.drawio.svg)
+
 Example-2:
 ![throws-introduction2](./images/throws-introduction2.drawio.svg)
 
