@@ -45,7 +45,7 @@ public class Test {
 - `throws` keyword requires only to convence compiler and usage of `throws` keyword doesn't prevent abnormal termination of the program.
 	![compilation-error-methods](./images/compilation-error-methods.drawio.svg)
 
-	Solution:
+	**Solution:**
 	![compilation-error-methods-solution](./images/compilation-error-methods-solution.drawio.svg)
 
 - In the above program if we remove atleast one `throws` statement the code won't compile.
