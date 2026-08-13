@@ -13,6 +13,7 @@ The result of the following two program is exactly same.
 | ------------------------------------------------------------------------------------------- | ---------------------------------------------------------------------------------------------- |
 | ![](./images/without-throw-keyword.drawio.svg)                                              | ![with-throw-keyword](./images/with-throw-keyword.drawio.svg)                                  |
 | In this case, `main()` method is responsible to create exception object and handover to JVM | In this case, programmer is creating exception object explicitly and handover to JVM manually. |
+
 Best use of `throw` keyword is for user-defined exceptions or customized exceptions.
 
 **Case-1**: `throw e` if `e` refers null then we will get `NullPointerException`.
