@@ -14,7 +14,7 @@
               "type": "markdown",
               "state": {
                 "file": "00-JAVA/01-CORE-JAVA/20-EXCEPTION-HANDLING/08-THROW-AND-THROWS.md",
-                "mode": "preview",
+                "mode": "source",
                 "source": false
               },
               "icon": "lucide-file",
@@ -184,8 +184,7 @@
       }
     ],
     "direction": "horizontal",
-    "width": 300,
-    "collapsed": true
+    "width": 300
   },
   "left-ribbon": {
     "hiddenItems": {

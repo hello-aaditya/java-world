@@ -1,7 +1,10 @@
 # `throw` Keyword
 ![throw-keyword-visualization](./images/throw-keyword-visualization.drawio.svg)
+
 Sometimes we can create exception object explicitly. we can hand-over to JVM manually. for this we have to use **`throw`** keyword.
+
 ![throwing-expcetion-manually](./images/throwing-expcetion-manually.drawio.svg)
+
 Hence the main objective of `throw` keyword is to handover our created exception object to JVM manually.
 The result of the following two program is exactly same.
 
