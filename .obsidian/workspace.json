@@ -184,7 +184,8 @@
       }
     ],
     "direction": "horizontal",
-    "width": 300
+    "width": 300,
+    "collapsed": true
   },
   "left-ribbon": {
     "hiddenItems": {
@@ -198,7 +199,7 @@
       "obsidian-git:Open Git source control": false
     }
   },
-  "active": "3b82857056536616",
+  "active": "1dbe7697ba9805a7",
   "lastOpenFiles": [
     "00-JAVA/01-CORE-JAVA/20-EXCEPTION-HANDLING/08-THROW-AND-THROWS.md",
     "00-JAVA/01-CORE-JAVA/20-EXCEPTION-HANDLING/06-CUSTOMIZED-EXCEPTION-HANDLING.md",
