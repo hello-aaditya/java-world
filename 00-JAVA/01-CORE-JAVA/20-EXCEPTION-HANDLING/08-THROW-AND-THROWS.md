@@ -17,8 +17,9 @@ Best use of `throw` keyword is for user-defined exceptions or customized excepti
 
 **Case-1**: `throw e` if `e` refers null then we will get `NullPointerException`.
 ![exception-with-and-without-null](./images/exception-with-and-without-null.drawio.svg)
+
 **Case-2**: After `throw` statement we are not allowed to write any statement directly otherwise we will get compile-time error saying- "Unreachable statement".
-![with-unreachable-and-without-throw](./images/with-unreachable-and-without-throw.drawio.svg)
+![with-unreachable-and-without-throw](./images/with-unreachable-and-without-throw.drawio1.svg)
 **Case-3**: We can use `throw` keyword only for throwable types. if we are trying to use for normal java objects, we will get compile-time error saying- "Incompatible type".
 ![throw-class-object-vs-throwable-object](./images/throw-class-object-vs-throwable-object.drawio.svg)
 
