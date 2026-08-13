@@ -13,12 +13,12 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "00-JAVA/01-CORE-JAVA/20-EXCEPTION-HANDLING/06-CUSTOMIZED-EXCEPTION-HANDLING.md",
-                "mode": "source",
+                "file": "00-JAVA/01-CORE-JAVA/20-EXCEPTION-HANDLING/08-THROW-AND-THROWS.md",
+                "mode": "preview",
                 "source": false
               },
               "icon": "lucide-file",
-              "title": "06-CUSTOMIZED-EXCEPTION-HANDLING"
+              "title": "08-THROW-AND-THROWS"
             }
           }
         ]
@@ -184,7 +184,8 @@
       }
     ],
     "direction": "horizontal",
-    "width": 300
+    "width": 300,
+    "collapsed": true
   },
   "left-ribbon": {
     "hiddenItems": {
@@ -200,6 +201,7 @@
   },
   "active": "1dbe7697ba9805a7",
   "lastOpenFiles": [
+    "00-JAVA/01-CORE-JAVA/20-EXCEPTION-HANDLING/06-CUSTOMIZED-EXCEPTION-HANDLING.md",
     "00-JAVA/01-CORE-JAVA/20-EXCEPTION-HANDLING/05-CHECKED-AND-UNCHECKED-EXCEPTION.md",
     "00-JAVA/01-CORE-JAVA/20-EXCEPTION-HANDLING/04-EXCEPTION-HIERARCHY.md",
     "00-JAVA/01-CORE-JAVA/20-EXCEPTION-HANDLING/03-DEFAULT-EXCEPTION-HANDLING.md",
@@ -233,7 +235,6 @@
     "00-JAVA/01-CORE-JAVA/10-OBJECT-ORIENTED-PROGRAMMING/01-STATIC/20-RULES-STATIC-AND-NON-STATIC.md",
     "00-JAVA/01-CORE-JAVA/10-OBJECT-ORIENTED-PROGRAMMING/01-STATIC/10-STATIC-VARIABLE-BLOCK-METHOD.md",
     "00-JAVA/01-CORE-JAVA/10-OBJECT-ORIENTED-PROGRAMMING/00-INTRODUCTION-TO-OOP/20-JAVA-VARIABLES.md",
-    "00-JAVA/01-CORE-JAVA/10-OBJECT-ORIENTED-PROGRAMMING/00-INTRODUCTION-TO-OOP/10-OOP-AND-MEMORY-MANAGEMENT.md",
     "00-JAVA/01-CORE-JAVA/00-BASICS",
     "00-JAVA/03-ADVANCED-JAVA/02-FILE-HANDLING/images/byteStreams.drawio.svg",
     "00-JAVA/03-ADVANCED-JAVA/02-FILE-HANDLING/images/byteStreams.drawio",
