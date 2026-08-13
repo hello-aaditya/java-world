@@ -44,6 +44,7 @@ statement-5;
 | 1   | `printStackTrace()` | Name of Exception : Description<br>        Stack Trace |
 | 2   | `toString()`        | Name of Exception : Description                        |
 | 3   | `getMessage()`      | Description                                            |
+
 ![method-to-print-exception-information](./images/method-to-print-exception-information.drawio.svg)
 
 >[!NOTE]
