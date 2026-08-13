@@ -27,8 +27,10 @@ System-Admin or Server-Admin is responsible to increase heap memory.
 
 Q. Which class is root of Java Exception Hierarchy?
 -> `Throwable`
+
 Q. `Throwable` class contain how many child classes?
 -> Two: Exception & Error
+
 Q. What is the difference between Exception & Error?
 -> 
 ![Exception Hierarchy](./images/exception-hierarchy1.drawio.svg)
