@@ -1,0 +1,25 @@
+<mxfile host="Electron">
+  <diagram name="Page-1" id="dDKZ22g9ykGs8U_hOy3J">
+    <mxGraphModel dx="1359" dy="844" grid="1" gridSize="5" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="1300" pageHeight="1800" math="0" shadow="0">
+      <root>
+        <mxCell id="0" />
+        <mxCell id="1" parent="0" />
+        <mxCell id="VHkSWyRkvhY6YrIpGlfS-1" parent="1" style="text;html=1;whiteSpace=wrap;strokeColor=none;fillColor=none;align=center;verticalAlign=middle;rounded=0;" value="&lt;font style=&quot;font-size: 20px;&quot; face=&quot;JetBrains Mono&quot;&gt;throw new ArithmeticException(&quot;/ by zero&quot;);&lt;/font&gt;" vertex="1">
+          <mxGeometry height="30" width="570" x="240" y="170" as="geometry" />
+        </mxCell>
+        <mxCell id="VHkSWyRkvhY6YrIpGlfS-2" parent="1" style="shape=curlyBracket;whiteSpace=wrap;html=1;rounded=1;labelPosition=left;verticalLabelPosition=middle;align=right;verticalAlign=middle;rotation=-90;" value="" vertex="1">
+          <mxGeometry height="435" width="40" x="532.5" y="2.5" as="geometry" />
+        </mxCell>
+        <mxCell id="VHkSWyRkvhY6YrIpGlfS-3" parent="1" style="text;html=1;whiteSpace=wrap;strokeColor=none;fillColor=none;align=center;verticalAlign=middle;rounded=0;" value="&lt;font face=&quot;Georgia&quot; style=&quot;font-size: 15px;&quot;&gt;Creation of &lt;b&gt;ArithmeticException&lt;/b&gt; Object explicitly&lt;/font&gt;" vertex="1">
+          <mxGeometry height="70" width="179.5" x="462.75" y="240" as="geometry" />
+        </mxCell>
+        <mxCell id="VHkSWyRkvhY6YrIpGlfS-4" parent="1" style="shape=curlyBracket;whiteSpace=wrap;html=1;rounded=1;labelPosition=left;verticalLabelPosition=middle;align=right;verticalAlign=middle;rotation=-90;" value="" vertex="1">
+          <mxGeometry height="65" width="27.5" x="283.75" y="181.25" as="geometry" />
+        </mxCell>
+        <mxCell id="VHkSWyRkvhY6YrIpGlfS-5" parent="1" style="text;html=1;whiteSpace=wrap;strokeColor=none;fillColor=none;align=center;verticalAlign=middle;rounded=0;" value="&lt;font face=&quot;Georgia&quot; style=&quot;font-size: 15px;&quot;&gt;Handover our created &lt;b&gt;Exception Object&lt;/b&gt;&lt;/font&gt;&lt;div&gt;&lt;font face=&quot;Georgia&quot; style=&quot;font-size: 15px;&quot;&gt;to the JVM manually&lt;/font&gt;&lt;/div&gt;" vertex="1">
+          <mxGeometry height="95" width="144" x="225.5" y="215" as="geometry" />
+        </mxCell>
+      </root>
+    </mxGraphModel>
+  </diagram>
+</mxfile>

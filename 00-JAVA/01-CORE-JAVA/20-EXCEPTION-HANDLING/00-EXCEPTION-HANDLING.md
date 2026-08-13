@@ -1,4 +1,6 @@
-# Exception Handling Topics
+![[Pasted image 20260808223908.png]]
+
+# Exception Handling Topics - Numbered List
 
 1. Introduction
 2. Runtime stack mechanism
