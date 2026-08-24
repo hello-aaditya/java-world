@@ -44,7 +44,7 @@ public class Test {
 }
 ```
 
-- `Throws` keyword requires only for checked exceptions. and usage of `throws` keyword for uncheked exceptions, there is no use or impact.
+- `throws` keyword requires only for checked exceptions. and usage of `throws` keyword for uncheked exceptions, there is no use or impact.
 - `throws` keyword requires only to convence compiler and usage of `throws` keyword doesn't prevent abnormal termination of the program.
 	![compilation-error-methods](./images/compilation-error-methods.drawio.svg)
 
