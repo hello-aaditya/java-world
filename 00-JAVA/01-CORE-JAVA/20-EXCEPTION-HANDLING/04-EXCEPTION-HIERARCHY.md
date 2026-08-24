@@ -33,11 +33,12 @@ If `OutOfMemeoryError` occurs, being a programmer we can't do anything and the p
 System-Admin or Server-Admin is responsible to increase heap memory.
 
 Q. Which class is root of Java Exception Hierarchy?
--> `Throwable`
+→ `Throwable`
 
 Q. `Throwable` class contain how many child classes?
--> Two: Exception & Error
+→ Two: Exception & Error
 
 Q. What is the difference between Exception & Error?
--> 
+→
+
 ![Exception Hierarchy](./images/exception-hierarchy1.drawio.svg)
