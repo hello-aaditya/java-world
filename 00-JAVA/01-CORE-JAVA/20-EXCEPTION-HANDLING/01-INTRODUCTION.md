@@ -4,7 +4,7 @@
 
 Example: `FileNotFoundException`, `SQLException` etc.
 
-It is highly recommended to handle exceptions and the main objective of exception handling is- Graceful termination of the program.
+It is highly recommended to handle exceptions and the main objective of exception handling is- **Graceful termination of the program**.
 
 ## Exception Handling
 Exception Handling doesn't mean repairing an exception, we have to provide alternative way to continue rest of the program normally, is a concept of Exception Handling.
