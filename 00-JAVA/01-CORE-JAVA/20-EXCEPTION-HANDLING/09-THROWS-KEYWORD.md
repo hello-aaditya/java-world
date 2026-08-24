@@ -4,9 +4,7 @@ In our program if there is a possibility of raising checked-exception then compu
 
 Example-1:
 ![throws-introduction](./images/throws-introduction.drawio.svg)
-
 Example-2:
-
 ![throws-introduction2](./images/throws-introduction2.drawio.svg)
 
 We can handle this compile-time error by using the following two ways: 
