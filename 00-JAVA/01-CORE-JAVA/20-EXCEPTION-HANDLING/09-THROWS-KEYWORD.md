@@ -1,6 +1,7 @@
 # `throws` Keyword
-In our program if there is a possibility of rising checked-exception then compulsory we should handle that checked exception otherwise we will get compile-time error saying-
+In our program if there is a possibility of raising checked-exception then compulsory we should handle that checked exception otherwise we will get compile-time error saying-
 **"unreported exception XXX; must be caught or declared to be thrown"**.
+
 Example-1:
 ![throws-introduction](./images/throws-introduction.drawio.svg)
 
