@@ -183,8 +183,7 @@
       }
     ],
     "direction": "horizontal",
-    "width": 300,
-    "collapsed": true
+    "width": 300
   },
   "left-ribbon": {
     "hiddenItems": {
@@ -198,7 +197,7 @@
       "obsidian-git:Open Git source control": false
     }
   },
-  "active": "e0e1ffb4d2f7a936",
+  "active": "3b82857056536616",
   "lastOpenFiles": [
     "00-JAVA/01-CORE-JAVA/20-EXCEPTION-HANDLING/03-DEFAULT-EXCEPTION-HANDLING.md",
     "00-JAVA/01-CORE-JAVA/20-EXCEPTION-HANDLING/02-RUNTIME-STACK-MECHANISM.md",

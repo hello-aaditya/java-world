@@ -23,11 +23,13 @@ try {
 ```
 ### 2. Error
 Most of the times errors are not caused by our program and these are due to lack of system resources.
+
 Errors are non-recoverable.
 
 **Example:**
 
-If `OutOfMemeoryErroe` occurs, being a programmer we can't do anything and the program will be terminated abnormally.
+If `OutOfMemeoryError` occurs, being a programmer we can't do anything and the program will be terminated abnormally.
+
 System-Admin or Server-Admin is responsible to increase heap memory.
 
 Q. Which class is root of Java Exception Hierarchy?
