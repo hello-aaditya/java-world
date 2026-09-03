@@ -14,7 +14,7 @@
               "type": "markdown",
               "state": {
                 "file": "00-JAVA/01-CORE-JAVA/12-WAYS-TO-CREATE-OBJECTS/30-CLONE.md",
-                "mode": "source",
+                "mode": "preview",
                 "source": false
               },
               "icon": "lucide-file",
@@ -197,7 +197,8 @@
       }
     ],
     "direction": "horizontal",
-    "width": 300
+    "width": 300,
+    "collapsed": true
   },
   "left-ribbon": {
     "hiddenItems": {
@@ -211,7 +212,7 @@
       "obsidian-git:Open Git source control": false
     }
   },
-  "active": "8bf0306927ff6ed0",
+  "active": "e0e1ffb4d2f7a936",
   "lastOpenFiles": [
     "00-JAVA/01-CORE-JAVA/30-COLLECTION-FRAMEWORK/images/various-possible-combination-of-comparator.drawio.svg",
     "00-JAVA/01-CORE-JAVA/30-COLLECTION-FRAMEWORK/images/various-possible-combination-of-comparator.drawio",
