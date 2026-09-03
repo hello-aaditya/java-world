@@ -97,8 +97,7 @@
       }
     ],
     "direction": "horizontal",
-    "width": 325.3125,
-    "collapsed": true
+    "width": 325.3125
   },
   "right": {
     "id": "da37fefebc188a99",
@@ -198,7 +197,8 @@
       }
     ],
     "direction": "horizontal",
-    "width": 300
+    "width": 300,
+    "collapsed": true
   },
   "left-ribbon": {
     "hiddenItems": {
@@ -212,8 +212,17 @@
       "obsidian-git:Open Git source control": false
     }
   },
-  "active": "e0e1ffb4d2f7a936",
+  "active": "8bf0306927ff6ed0",
   "lastOpenFiles": [
+    "00-JAVA/01-CORE-JAVA/12-WAYS-TO-CREATE-OBJECTS/images/shallow-cloning.drawio.svg",
+    "00-JAVA/01-CORE-JAVA/12-WAYS-TO-CREATE-OBJECTS/images/shallow-cloning.drawio",
+    "00-JAVA/01-CORE-JAVA/12-WAYS-TO-CREATE-OBJECTS/images/Employee-Example-Shallow-Cloning.drawio.svg",
+    "00-JAVA/01-CORE-JAVA/12-WAYS-TO-CREATE-OBJECTS/images/Employee-Example-Shallow-Cloning.drawio",
+    "00-JAVA/01-CORE-JAVA/12-WAYS-TO-CREATE-OBJECTS/images/Employee-Example-Deep-Cloning.drawio.svg",
+    "00-JAVA/01-CORE-JAVA/12-WAYS-TO-CREATE-OBJECTS/images/Employee-Example-Deep-Cloning.drawio",
+    "00-JAVA/01-CORE-JAVA/12-WAYS-TO-CREATE-OBJECTS/images/deep-cloning.drawio.svg",
+    "00-JAVA/01-CORE-JAVA/12-WAYS-TO-CREATE-OBJECTS/images/deep-cloning.drawio",
+    "00-JAVA/01-CORE-JAVA/12-WAYS-TO-CREATE-OBJECTS/images",
     "00-JAVA/01-CORE-JAVA/12-WAYS-TO-CREATE-OBJECTS/20-SERIALIZATION-DESERIALIZATION.md",
     "00-JAVA/01-CORE-JAVA/12-WAYS-TO-CREATE-OBJECTS/00-INTRODUCTION.md",
     "00-JAVA/01-CORE-JAVA/12-WAYS-TO-CREATE-OBJECTS/30-CLONE.md",
@@ -248,17 +257,8 @@
     "00-JAVA/01-CORE-JAVA/20-EXCEPTION-HANDLING/10",
     "00-JAVA/01-CORE-JAVA/20-EXCEPTION-HANDLING/images/exception-process.drawio.svg",
     "00-JAVA/01-CORE-JAVA/20-EXCEPTION-HANDLING/02-EXCEPTION-FLOW-AND-TRY-CATCH.md",
-    "00-JAVA/01-CORE-JAVA/10-OBJECT-ORIENTED-PROGRAMMING/120-WRAP-UP/00-ENCAPSULATION-VS-ABSTRACTION.md",
-    "00-JAVA/01-CORE-JAVA/00-BASICS",
     "00-JAVA/03-ADVANCED-JAVA/02-FILE-HANDLING/images/byteStreams.drawio.svg",
-    "00-JAVA/03-ADVANCED-JAVA/02-FILE-HANDLING/images/byteStreams.drawio",
     "00-JAVA/03-ADVANCED-JAVA/02-FILE-HANDLING/images/CharacterStreams.drawio.svg",
-    "00-JAVA/03-ADVANCED-JAVA/02-FILE-HANDLING/images",
-    "00-JAVA/01-CORE-JAVA/20-EXCEPTION-HANDLING/images",
-    "00-JAVA/03-ADVANCED-JAVA/02-FILE-HANDLING",
-    "00-JAVA/01-CORE-JAVA/00-BASICS/images/jvm.png",
-    "00-JAVA/01-CORE-JAVA/00-BASICS/images/identifiers.drawio.svg",
-    "00-JAVA/01-CORE-JAVA/00-BASICS/images/jdk.drawio.svg",
-    "00-JAVA/01-CORE-JAVA/00-BASICS/images/memory.drawio.svg"
+    "00-JAVA/01-CORE-JAVA/00-BASICS/images/jvm.png"
   ]
 }
