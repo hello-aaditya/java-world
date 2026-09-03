@@ -2,7 +2,7 @@
  In Java, cloning is the process of creating a new object by copying the state of an existing object.
 - The **`clone()`** method is present inside Object class which is responsible for cloning.
 ---
-1. What is the condition of of using **`clone()`**?
+1. What is the condition of using **`clone()`**?
 	Object which is being cloned, its class must implement `Cloneable` otherwise calling **`clone()`** throws **`CloneNotSupportedException`**.
 	>[!NOTE]
 	>**`Cloneable`** is a **Marker Interface**.
