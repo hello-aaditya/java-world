@@ -214,6 +214,7 @@
   },
   "active": "8bf0306927ff6ed0",
   "lastOpenFiles": [
+    "00-JAVA/01-CORE-JAVA/Untitled",
     "00-JAVA/01-CORE-JAVA/12-WAYS-TO-CREATE-OBJECTS/images/shallow-cloning.drawio.svg",
     "00-JAVA/01-CORE-JAVA/12-WAYS-TO-CREATE-OBJECTS/images/shallow-cloning.drawio",
     "00-JAVA/01-CORE-JAVA/12-WAYS-TO-CREATE-OBJECTS/images/Employee-Example-Shallow-Cloning.drawio.svg",
@@ -258,7 +259,6 @@
     "00-JAVA/01-CORE-JAVA/20-EXCEPTION-HANDLING/images/exception-process.drawio.svg",
     "00-JAVA/01-CORE-JAVA/20-EXCEPTION-HANDLING/02-EXCEPTION-FLOW-AND-TRY-CATCH.md",
     "00-JAVA/03-ADVANCED-JAVA/02-FILE-HANDLING/images/byteStreams.drawio.svg",
-    "00-JAVA/03-ADVANCED-JAVA/02-FILE-HANDLING/images/CharacterStreams.drawio.svg",
-    "00-JAVA/01-CORE-JAVA/00-BASICS/images/jvm.png"
+    "00-JAVA/03-ADVANCED-JAVA/02-FILE-HANDLING/images/CharacterStreams.drawio.svg"
   ]
 }
