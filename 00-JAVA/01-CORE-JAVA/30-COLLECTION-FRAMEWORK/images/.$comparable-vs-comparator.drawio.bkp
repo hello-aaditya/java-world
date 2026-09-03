@@ -1,0 +1,75 @@
+<mxfile host="Electron">
+  <diagram name="Page-1" id="aTm81yFza32yLBaDKCHi">
+    <mxGraphModel dx="1431" dy="888" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="1300" pageHeight="1800" math="0" shadow="0">
+      <root>
+        <mxCell id="0" />
+        <mxCell id="1" parent="0" />
+        <mxCell id="FaUntG9pRO3GtJHE_mDp-9" edge="1" parent="1" source="FaUntG9pRO3GtJHE_mDp-10" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;entryX=0.5;entryY=0;entryDx=0;entryDy=0;" target="FaUntG9pRO3GtJHE_mDp-11">
+          <mxGeometry relative="1" as="geometry">
+            <mxPoint x="545" y="670" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="FaUntG9pRO3GtJHE_mDp-13" edge="1" parent="1" source="FaUntG9pRO3GtJHE_mDp-10" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;entryX=0.5;entryY=0;entryDx=0;entryDy=0;" target="FaUntG9pRO3GtJHE_mDp-12">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="FaUntG9pRO3GtJHE_mDp-23" connectable="0" parent="FaUntG9pRO3GtJHE_mDp-13" style="edgeLabel;html=1;align=center;verticalAlign=middle;resizable=0;points=[];" value="&lt;span style=&quot;white-space: normal; font-family: Georgia; font-size: 15px; background-color: rgb(236, 236, 236);&quot;&gt;Customized&amp;nbsp;&lt;/span&gt;&lt;div&gt;&lt;span style=&quot;font-family: Georgia; font-size: 15px; white-space: normal; background-color: rgb(236, 236, 236);&quot;&gt;Sorting&lt;/span&gt;&lt;/div&gt;&lt;div&gt;&lt;span style=&quot;font-family: Georgia; font-size: 15px; white-space: normal; background-color: rgb(236, 236, 236);&quot;&gt;order&lt;/span&gt;&lt;/div&gt;" vertex="1">
+          <mxGeometry relative="1" x="0.5048" as="geometry">
+            <mxPoint y="33" as="offset" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="FaUntG9pRO3GtJHE_mDp-10" parent="1" style="ellipse;whiteSpace=wrap;html=1;shadow=1;" value="&lt;font face=&quot;Georgia&quot;&gt;&lt;span style=&quot;font-size: 16px;&quot;&gt;Our Own Classes&lt;/span&gt;&lt;/font&gt;&lt;div&gt;&lt;font face=&quot;Georgia&quot;&gt;&lt;span style=&quot;font-size: 16px;&quot;&gt;(&lt;b&gt;Employee&lt;/b&gt;, &lt;b&gt;Student&lt;/b&gt;,&lt;b&gt; Product&lt;/b&gt; etc.)&lt;/span&gt;&lt;/font&gt;&lt;/div&gt;" vertex="1">
+          <mxGeometry height="110" width="290" x="400" y="430" as="geometry" />
+        </mxCell>
+        <mxCell id="FaUntG9pRO3GtJHE_mDp-11" parent="1" style="text;html=1;whiteSpace=wrap;strokeColor=none;fillColor=none;align=center;verticalAlign=middle;rounded=0;" value="&lt;font face=&quot;Georgia&quot; style=&quot;font-size: 18px;&quot;&gt;&lt;b&gt;Comparable&lt;/b&gt;&lt;/font&gt;" vertex="1">
+          <mxGeometry height="30" width="110" x="170" y="740" as="geometry" />
+        </mxCell>
+        <mxCell id="FaUntG9pRO3GtJHE_mDp-12" parent="1" style="text;html=1;whiteSpace=wrap;strokeColor=none;fillColor=none;align=center;verticalAlign=middle;rounded=0;" value="&lt;font face=&quot;Georgia&quot; style=&quot;font-size: 18px;&quot;&gt;&lt;b&gt;Comparator&lt;/b&gt;&lt;/font&gt;" vertex="1">
+          <mxGeometry height="30" width="110" x="810" y="730" as="geometry" />
+        </mxCell>
+        <mxCell id="FaUntG9pRO3GtJHE_mDp-14" parent="1" style="text;html=1;whiteSpace=wrap;strokeColor=none;fillColor=none;align=center;verticalAlign=middle;rounded=0;" value="&lt;font face=&quot;Georgia&quot; style=&quot;font-size: 18px;&quot;&gt;can implements &lt;b&gt;Comparable&lt;/b&gt;&lt;/font&gt;&lt;div&gt;&lt;font face=&quot;Georgia&quot; style=&quot;font-size: 18px;&quot;&gt;which auto. provides&amp;nbsp;&lt;/font&gt;&lt;/div&gt;&lt;div&gt;&lt;font face=&quot;Georgia&quot; style=&quot;font-size: 18px;&quot;&gt;&lt;i&gt;&lt;b&gt;Default Natural Sorting Order&lt;/b&gt;&lt;/i&gt;&lt;/font&gt;&lt;/div&gt;" vertex="1">
+          <mxGeometry height="110" width="170" x="220" y="490" as="geometry" />
+        </mxCell>
+        <mxCell id="FaUntG9pRO3GtJHE_mDp-16" parent="1" style="text;html=1;whiteSpace=wrap;strokeColor=none;fillColor=none;align=center;verticalAlign=middle;rounded=0;" value="&lt;font face=&quot;Georgia&quot;&gt;&lt;span style=&quot;font-size: 18px;&quot;&gt;The person who is&lt;/span&gt;&lt;/font&gt;&lt;div&gt;&lt;font face=&quot;Georgia&quot;&gt;&lt;span style=&quot;font-size: 18px;&quot;&gt;writing this class&lt;/span&gt;&lt;/font&gt;&lt;/div&gt;" vertex="1">
+          <mxGeometry height="40" width="150" x="230" y="440" as="geometry" />
+        </mxCell>
+        <mxCell id="FaUntG9pRO3GtJHE_mDp-19" parent="1" style="text;html=1;whiteSpace=wrap;strokeColor=none;fillColor=none;align=center;verticalAlign=middle;rounded=0;" value="&lt;font face=&quot;Georgia&quot;&gt;&lt;span style=&quot;font-size: 18px;&quot;&gt;The person who is&lt;/span&gt;&lt;/font&gt;&lt;div&gt;&lt;font face=&quot;Georgia&quot;&gt;&lt;span style=&quot;font-size: 18px;&quot;&gt;using this class&lt;/span&gt;&lt;/font&gt;&lt;/div&gt;" vertex="1">
+          <mxGeometry height="40" width="150" x="710" y="440" as="geometry" />
+        </mxCell>
+        <mxCell id="FaUntG9pRO3GtJHE_mDp-20" parent="1" style="text;html=1;whiteSpace=wrap;strokeColor=none;fillColor=none;align=center;verticalAlign=middle;rounded=0;" value="&lt;font face=&quot;Georgia&quot; style=&quot;font-size: 18px;&quot;&gt;is not satisfied with default natural sorting order&amp;nbsp;&lt;/font&gt;" vertex="1">
+          <mxGeometry height="60" width="170" x="697" y="490" as="geometry" />
+        </mxCell>
+        <mxCell id="FaUntG9pRO3GtJHE_mDp-24" parent="1" style="text;html=1;whiteSpace=wrap;strokeColor=default;fillColor=none;align=center;verticalAlign=middle;rounded=0;" value="&lt;font face=&quot;Georgia&quot;&gt;&lt;span style=&quot;font-size: 18px;&quot;&gt;The person who is&amp;nbsp;&lt;/span&gt;&lt;/font&gt;&lt;span style=&quot;font-size: 18px; font-family: Georgia; background-color: transparent; color: light-dark(rgb(0, 0, 0), rgb(255, 255, 255));&quot;&gt;writing this class has not implemented &lt;/span&gt;&lt;b style=&quot;font-size: 18px; font-family: Georgia; background-color: transparent; color: light-dark(rgb(0, 0, 0), rgb(255, 255, 255));&quot;&gt;Comparable&lt;/b&gt;&lt;div&gt;&lt;font face=&quot;Georgia&quot;&gt;&lt;span style=&quot;font-size: 18px;&quot;&gt;then&lt;/span&gt;&lt;/font&gt;&lt;/div&gt;&lt;div&gt;&lt;font face=&quot;Georgia&quot;&gt;&lt;span style=&quot;font-size: 18px;&quot;&gt;The person who is&amp;nbsp;&lt;/span&gt;&lt;/font&gt;&lt;span style=&quot;font-size: 18px; font-family: Georgia; background-color: transparent; color: light-dark(rgb(0, 0, 0), rgb(255, 255, 255));&quot;&gt;using this class has no options&amp;nbsp;&lt;/span&gt;&lt;span style=&quot;font-size: 18px; font-family: Georgia; background-color: transparent; color: light-dark(rgb(0, 0, 0), rgb(255, 255, 255));&quot;&gt;therefore he has to use &lt;/span&gt;&lt;b style=&quot;font-size: 18px; font-family: Georgia; background-color: transparent; color: light-dark(rgb(0, 0, 0), rgb(255, 255, 255));&quot;&gt;Comparator&lt;/b&gt;&lt;/div&gt;" vertex="1">
+          <mxGeometry height="96" width="720" x="190" y="774" as="geometry" />
+        </mxCell>
+        <mxCell id="FaUntG9pRO3GtJHE_mDp-1" edge="1" parent="1" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;entryX=0.5;entryY=0;entryDx=0;entryDy=0;" target="FaUntG9pRO3GtJHE_mDp-4">
+          <mxGeometry relative="1" as="geometry">
+            <mxPoint x="339" y="194" as="sourcePoint" />
+            <mxPoint x="384" y="324" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="FaUntG9pRO3GtJHE_mDp-3" connectable="0" parent="FaUntG9pRO3GtJHE_mDp-1" style="edgeLabel;html=1;align=center;verticalAlign=middle;resizable=0;points=[];" value="&lt;span style=&quot;font-family: Georgia; font-size: 15px; white-space: normal; background-color: rgb(236, 236, 236);&quot;&gt;Customized&amp;nbsp;&lt;/span&gt;&lt;div&gt;&lt;span style=&quot;font-family: Georgia; font-size: 15px; white-space: normal; background-color: rgb(236, 236, 236);&quot;&gt;Sorting order&lt;/span&gt;&lt;/div&gt;" vertex="1">
+          <mxGeometry relative="1" x="-0.25" as="geometry">
+            <mxPoint as="offset" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="l5C5dZCoHMuNZBFD9wXn-1" parent="1" style="ellipse;whiteSpace=wrap;html=1;shadow=1;" value="&lt;font style=&quot;font-size: 16px;&quot; face=&quot;Georgia&quot;&gt;Pre-Defined&lt;/font&gt;&lt;div&gt;&lt;font style=&quot;font-size: 16px;&quot; face=&quot;Georgia&quot;&gt;Comparable Classes&lt;/font&gt;&lt;/div&gt;&lt;div&gt;&lt;font style=&quot;font-size: 16px;&quot; face=&quot;Georgia&quot;&gt;&lt;b&gt;String&lt;/b&gt;,&amp;nbsp;&lt;b&gt;StringBuffer&lt;/b&gt;,&lt;/font&gt;&lt;/div&gt;&lt;div&gt;&lt;font style=&quot;font-size: 16px;&quot; face=&quot;Georgia&quot;&gt;&lt;b&gt;All primitive wrapper classes (such as- Byte, Short, Integer, Long, Float)&lt;/b&gt; etc.&lt;/font&gt;&lt;/div&gt;" vertex="1">
+          <mxGeometry height="160" width="380" x="150" y="34" as="geometry" />
+        </mxCell>
+        <mxCell id="FaUntG9pRO3GtJHE_mDp-4" parent="1" style="text;html=1;whiteSpace=wrap;strokeColor=none;fillColor=none;align=center;verticalAlign=middle;rounded=0;" value="&lt;font face=&quot;Georgia&quot; style=&quot;font-size: 18px;&quot;&gt;&lt;b&gt;Comparator&lt;/b&gt;&lt;/font&gt;" vertex="1">
+          <mxGeometry height="30" width="110" x="285" y="324" as="geometry" />
+        </mxCell>
+        <mxCell id="FaUntG9pRO3GtJHE_mDp-5" edge="1" parent="1" source="FaUntG9pRO3GtJHE_mDp-7" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;entryX=0.5;entryY=0;entryDx=0;entryDy=0;" target="FaUntG9pRO3GtJHE_mDp-8">
+          <mxGeometry relative="1" as="geometry">
+            <mxPoint x="705" y="324" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="FaUntG9pRO3GtJHE_mDp-7" parent="1" style="ellipse;whiteSpace=wrap;html=1;shadow=1;" value="&lt;font style=&quot;font-size: 16px;&quot; face=&quot;Georgia&quot;&gt;Pre-Defined&lt;/font&gt;&lt;div&gt;&lt;font style=&quot;font-size: 16px;&quot; face=&quot;Georgia&quot;&gt;Non-Comparable Classes&lt;/font&gt;&lt;/div&gt;&lt;div&gt;&lt;font style=&quot;font-size: 16px;&quot; face=&quot;Georgia&quot;&gt;&lt;b&gt;Random&lt;/b&gt;,&amp;nbsp;&lt;b&gt;Thread&lt;/b&gt; etc.&lt;/font&gt;&lt;/div&gt;" vertex="1">
+          <mxGeometry height="160" width="380" x="540" y="34" as="geometry" />
+        </mxCell>
+        <mxCell id="FaUntG9pRO3GtJHE_mDp-8" parent="1" style="text;html=1;whiteSpace=wrap;strokeColor=none;fillColor=none;align=center;verticalAlign=middle;rounded=0;" value="&lt;font face=&quot;Georgia&quot; style=&quot;font-size: 18px;&quot;&gt;&lt;b&gt;Comparator&lt;/b&gt;&lt;/font&gt;" vertex="1">
+          <mxGeometry height="30" width="110" x="675" y="324" as="geometry" />
+        </mxCell>
+      </root>
+    </mxGraphModel>
+  </diagram>
+</mxfile>

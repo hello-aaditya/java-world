@@ -1,0 +1,40 @@
+<mxfile host="Electron">
+  <diagram name="Page-1" id="hN_MRC4oXrbNnJrhA6UL">
+    <mxGraphModel dx="1359" dy="844" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="1300" pageHeight="1800" math="0" shadow="0">
+      <root>
+        <mxCell id="0" />
+        <mxCell id="1" parent="0" />
+        <mxCell id="w-8OKGlrIcmhq2xKP3Ll-3" parent="1" style="rounded=0;whiteSpace=wrap;html=1;fontFamily=Georgia;fontSize=17;" value="&lt;b&gt;sno&lt;/b&gt;" vertex="1">
+          <mxGeometry height="60" width="120" x="370" y="320" as="geometry" />
+        </mxCell>
+        <mxCell id="w-8OKGlrIcmhq2xKP3Ll-4" parent="1" style="rounded=0;whiteSpace=wrap;html=1;fontFamily=Georgia;fontSize=17;" value="&lt;b&gt;name&lt;/b&gt;" vertex="1">
+          <mxGeometry height="60" width="120" x="490" y="320" as="geometry" />
+        </mxCell>
+        <mxCell id="w-8OKGlrIcmhq2xKP3Ll-5" parent="1" style="rounded=0;whiteSpace=wrap;html=1;fontFamily=Georgia;fontSize=17;" value="101" vertex="1">
+          <mxGeometry height="60" width="120" x="370" y="380" as="geometry" />
+        </mxCell>
+        <mxCell id="w-8OKGlrIcmhq2xKP3Ll-6" parent="1" style="rounded=0;whiteSpace=wrap;html=1;fontFamily=Georgia;fontSize=17;" value="Alpha" vertex="1">
+          <mxGeometry height="60" width="120" x="490" y="380" as="geometry" />
+        </mxCell>
+        <mxCell id="w-8OKGlrIcmhq2xKP3Ll-7" parent="1" style="rounded=0;whiteSpace=wrap;html=1;fontFamily=Georgia;fontSize=17;" value="102" vertex="1">
+          <mxGeometry height="60" width="120" x="370" y="440" as="geometry" />
+        </mxCell>
+        <mxCell id="w-8OKGlrIcmhq2xKP3Ll-8" parent="1" style="rounded=0;whiteSpace=wrap;html=1;fontFamily=Georgia;fontSize=17;" value="Beta" vertex="1">
+          <mxGeometry height="60" width="120" x="490" y="440" as="geometry" />
+        </mxCell>
+        <mxCell id="w-8OKGlrIcmhq2xKP3Ll-9" parent="1" style="rounded=0;whiteSpace=wrap;html=1;fontFamily=Georgia;fontSize=17;" value="103" vertex="1">
+          <mxGeometry height="60" width="120" x="370" y="500" as="geometry" />
+        </mxCell>
+        <mxCell id="w-8OKGlrIcmhq2xKP3Ll-10" parent="1" style="rounded=0;whiteSpace=wrap;html=1;fontFamily=Georgia;fontSize=17;" value="Charlie" vertex="1">
+          <mxGeometry height="60" width="120" x="490" y="500" as="geometry" />
+        </mxCell>
+        <mxCell id="w-8OKGlrIcmhq2xKP3Ll-11" parent="1" style="text;html=1;whiteSpace=wrap;strokeColor=none;fillColor=none;align=center;verticalAlign=middle;rounded=0;fontFamily=Georgia;fontColor=#FF3333;" value="&lt;b style=&quot;font-size: 17px;&quot;&gt;Key&lt;/b&gt;" vertex="1">
+          <mxGeometry height="30" width="60" x="400" y="260" as="geometry" />
+        </mxCell>
+        <mxCell id="w-8OKGlrIcmhq2xKP3Ll-12" parent="1" style="text;html=1;whiteSpace=wrap;strokeColor=none;fillColor=none;align=center;verticalAlign=middle;rounded=0;fontFamily=Georgia;fontColor=#FF3333;" value="&lt;b style=&quot;font-size: 17px;&quot;&gt;Value&lt;/b&gt;" vertex="1">
+          <mxGeometry height="30" width="60" x="520" y="260" as="geometry" />
+        </mxCell>
+      </root>
+    </mxGraphModel>
+  </diagram>
+</mxfile>

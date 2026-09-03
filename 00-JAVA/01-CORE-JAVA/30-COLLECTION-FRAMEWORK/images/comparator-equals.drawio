@@ -1,0 +1,13 @@
+<mxfile host="Electron">
+  <diagram name="Page-1" id="xcGXXy4aJQNSaytg5qOO">
+    <mxGraphModel dx="638" dy="844" grid="1" gridSize="4" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="1300" pageHeight="1800" math="0" shadow="0">
+      <root>
+        <mxCell id="0" />
+        <mxCell id="1" parent="0" />
+        <mxCell id="hzTSP1dpZA73hWpK1CHQ-1" parent="1" style="rounded=0;whiteSpace=wrap;html=1;" value="&lt;font face=&quot;JetBrains Mono&quot; style=&quot;font-size: 17px;&quot;&gt;public boolean equals(Object obj)&lt;/font&gt;" vertex="1">
+          <mxGeometry height="60" width="462" x="270" y="70" as="geometry" />
+        </mxCell>
+      </root>
+    </mxGraphModel>
+  </diagram>
+</mxfile>

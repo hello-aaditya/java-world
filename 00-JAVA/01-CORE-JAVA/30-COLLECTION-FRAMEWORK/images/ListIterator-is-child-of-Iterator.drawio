@@ -1,0 +1,19 @@
+<mxfile host="Electron">
+  <diagram name="Page-1" id="hN_MRC4oXrbNnJrhA6UL">
+    <mxGraphModel dx="1182" dy="734" grid="1" gridSize="1" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="1300" pageHeight="1800" math="0" shadow="0">
+      <root>
+        <mxCell id="0" />
+        <mxCell id="1" parent="0" />
+        <mxCell id="w-8OKGlrIcmhq2xKP3Ll-58" parent="1" style="text;html=1;whiteSpace=wrap;strokeColor=none;fillColor=none;align=center;verticalAlign=middle;rounded=0;fontFamily=JetBrains Mono;fontSize=15;" value="Iterator (I)" vertex="1">
+          <mxGeometry height="30" width="117" x="437" y="378" as="geometry" />
+        </mxCell>
+        <mxCell id="w-8OKGlrIcmhq2xKP3Ll-60" edge="1" parent="1" source="w-8OKGlrIcmhq2xKP3Ll-59" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;" target="w-8OKGlrIcmhq2xKP3Ll-58" value="">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="w-8OKGlrIcmhq2xKP3Ll-59" parent="1" style="text;html=1;whiteSpace=wrap;strokeColor=none;fillColor=none;align=center;verticalAlign=middle;rounded=0;fontFamily=JetBrains Mono;fontSize=15;" value="ListIterator (I)" vertex="1">
+          <mxGeometry height="30" width="152" x="419.5" y="490" as="geometry" />
+        </mxCell>
+      </root>
+    </mxGraphModel>
+  </diagram>
+</mxfile>
