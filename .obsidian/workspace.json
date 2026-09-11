@@ -13,12 +13,12 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "00-JAVA/01-CORE-JAVA/12-WAYS-TO-CREATE-OBJECTS/30-CLONE.md",
+                "file": "00-JAVA/PROGRAM-AND-VM-ARGUMENT/10-VM-ARGUMENT.md",
                 "mode": "preview",
                 "source": false
               },
               "icon": "lucide-file",
-              "title": "30-CLONE"
+              "title": "10-VM-ARGUMENT"
             }
           },
           {
@@ -214,6 +214,8 @@
   },
   "active": "e0e1ffb4d2f7a936",
   "lastOpenFiles": [
+    "00-JAVA/PROGRAM-AND-VM-ARGUMENT/00-PROGRAM-ARGUMENT.md",
+    "00-JAVA/01-CORE-JAVA/12-WAYS-TO-CREATE-OBJECTS/30-CLONE.md",
     "00-JAVA/01-CORE-JAVA/30-COLLECTION-FRAMEWORK/images/various-possible-combination-of-comparator.drawio.svg",
     "00-JAVA/01-CORE-JAVA/30-COLLECTION-FRAMEWORK/images/various-possible-combination-of-comparator.drawio",
     "00-JAVA/01-CORE-JAVA/30-COLLECTION-FRAMEWORK/images/unresolved-compilation-error-program.png",
@@ -231,7 +233,6 @@
     "00-JAVA/01-CORE-JAVA/30-COLLECTION-FRAMEWORK/images/sorted-set.drawio",
     "00-JAVA/01-CORE-JAVA/30-COLLECTION-FRAMEWORK/images/set.drawio.svg",
     "00-JAVA/01-CORE-JAVA/30-COLLECTION-FRAMEWORK/images/set.drawio",
-    "00-JAVA/01-CORE-JAVA/30-COLLECTION-FRAMEWORK/images/set-hierarchy.drawio.svg",
     "00-JAVA/01-CORE-JAVA/30-COLLECTION-FRAMEWORK/images/set-hierarchy.drawio",
     "00-JAVA/01-CORE-JAVA/30-COLLECTION-FRAMEWORK/images/queue.drawio",
     "00-JAVA/01-CORE-JAVA/30-COLLECTION-FRAMEWORK/images/queue-java-1.5-enhancements.drawio",
@@ -258,7 +259,6 @@
     "00-JAVA/01-CORE-JAVA/30-COLLECTION-FRAMEWORK/20-COLLECTION.md",
     "00-JAVA/01-CORE-JAVA/30-COLLECTION-FRAMEWORK/190-HASHMAP.md",
     "00-JAVA/01-CORE-JAVA/30-COLLECTION-FRAMEWORK/180-MAP.md",
-    "00-JAVA/01-CORE-JAVA/30-COLLECTION-FRAMEWORK/170-COMPARISON-OF-SET-IMPLEMENTED-CLASSES.md",
-    "00-JAVA/01-CORE-JAVA/30-COLLECTION-FRAMEWORK/160-COMPARABLE-VS-COMPARATOR.md"
+    "00-JAVA/01-CORE-JAVA/30-COLLECTION-FRAMEWORK/170-COMPARISON-OF-SET-IMPLEMENTED-CLASSES.md"
   ]
 }
