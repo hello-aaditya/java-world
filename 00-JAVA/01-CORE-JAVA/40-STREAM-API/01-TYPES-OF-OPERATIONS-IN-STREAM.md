@@ -16,9 +16,6 @@ Operation which is taking stream as an input, process them and return another st
 	6. `limit()`
 	7. `skip()`
 		etc.
-- In Intermediate Operations:
-	- if input = n
-	- then output <= n
 ## 2. Terminal Operation
 - Operation which takes stream as an input, process them and return output in form either number, Optional or Collection is called **Terminal Operation**.
 - Terminal Operations are responsible for triggering the execution of all Intermediate Operations, perform the written Terminal Operation and end the stream processing.
