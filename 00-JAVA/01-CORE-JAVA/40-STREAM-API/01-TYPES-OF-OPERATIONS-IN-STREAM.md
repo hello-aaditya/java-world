@@ -18,5 +18,5 @@ Operation which is taking stream as an input, process them and return another st
 	- if input = n
 	- then output <= n
 ## 2. Terminal Operation
-- Operation which takes stream as an input, process them and return output in form either number, Optional or Collection is called Terminal Operation
-- 
+- Operation which takes stream as an input, process them and return output in form either number, Optional or Collection is called **Terminal Operation**.
+- Terminal Operations are responsible for triggering the executi
