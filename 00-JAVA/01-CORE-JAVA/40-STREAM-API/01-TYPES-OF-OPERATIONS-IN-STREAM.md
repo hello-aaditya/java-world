@@ -13,6 +13,8 @@ Operation which is taking stream as an input, process them and return another st
 	3. `sorted()`
 	4. `distinct()`
 	5. `flatMap()`
+	6. `limit()`
+	7. `skip()`
 		etc.
 - In Intermediate Operations:
 	- if input = n
