@@ -68,8 +68,37 @@ public static void main(String[] args) {
 ```
 ### 5 Add 10 to Every Number
 ### Solution
+```java
+public static void main(String[] args) {
+		
+	List<Integer> numbers = Arrays.asList(
+		10, 20, 30, 40, 50
+	);
+	
+	numbers.stream()
+			.map(n -> n+10)
+			.forEach(i -> {
+				System.out.print(i + " ");
+			});
+
+}
+```
 ### 6 Convert Celsius to Fahrenheit
 ### Solution
+```java
+public static void main(String[] args) {
+		
+	List<Double> temperatures = Arrays.asList(
+		0.0, 10.0, 20.0, 30.0, 40.0);
+	
+	temperatures.stream()
+			.map(c -> (c * 9/5) + 32)
+			.forEach(t -> {
+				System.out.print(t + " ");
+			});
+
+}
+```
 ### 7 Add Prefix to Names
 ### Solution
 ### 8 Employee → Employee Name
