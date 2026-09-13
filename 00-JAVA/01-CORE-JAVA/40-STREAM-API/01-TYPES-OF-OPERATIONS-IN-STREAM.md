@@ -22,4 +22,8 @@ Operation which is taking stream as an input, process them and return another st
 - Terminal Operations are responsible for triggering the execution of all Intermediate Operations, perform the written Terminal Operation and end the stream processing.
 - Terminal Operation calls only once per stream because it terminates stream.
   (Stream 1 -> filter() -> Stream 2 -> collect() -> int/long/Optional/Collection)
-- 
+- Some of the important Intermediate Operations are:
+	1. `collect()`
+	2. `forEach()`
+	3. `count()`
+	4. 
