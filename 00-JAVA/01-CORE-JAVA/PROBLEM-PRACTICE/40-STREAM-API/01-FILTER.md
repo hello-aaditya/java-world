@@ -46,20 +46,17 @@ Print all **even numbers**.
 
 ### Solution
 ```java
-
-
-	public static void main(String[] args) {
-		
-		List<Integer> numbers = Arrays.asList(11, 20, 33, 42, 55, 68, 71, 84);
-		
-		numbers.stream()
-				.filter(i -> i % 2 == 0)
-				.forEach(i -> {
-					System.out.print(i + " ");
-				});
-
-	}
-
+public static void main(String[] args) {
+	
+	List<Integer> numbers = Arrays.asList(
+		11, 20, 33, 42, 55, 68, 71, 84);
+	
+	numbers.stream()
+			.filter(i -> i % 2 == 0)
+			.forEach(i -> {
+				System.out.print(i + " ");
+			});
+}
 ```
 
 ### 3. Strings starting with "A"
@@ -80,25 +77,17 @@ Alpha Austin Alice
 
 ### Solution
 ```java
-package streamApi.filter;
-
-import java.util.Arrays;
-import java.util.List;
-
-public class NamesStartingWithA {
-
-	public static void main(String[] args) {
+public static void main(String[] args) {
 		
-		List<String> names = Arrays.asList("Alpha", "Bravo", "Austin", "Delta", "Alice", "Finny");
-		
-		names.stream()
-				.filter(i -> i.startsWith("A"))
-				.forEach(i -> {
-					System.out.print(i + " ");
-				});
-
-	}
-
+	List<String> names = Arrays.asList(
+		"Alpha", "Bravo", "Austin", "Delta", "Alice", "Finny"
+	);
+	
+	names.stream()
+			.filter(i -> i.startsWith("A"))
+			.forEach(i -> {
+				System.out.print(i + " ");
+			});
 }
 ```
 
