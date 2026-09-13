@@ -97,7 +97,8 @@
       }
     ],
     "direction": "horizontal",
-    "width": 325.3125
+    "width": 325.3125,
+    "collapsed": true
   },
   "right": {
     "id": "da37fefebc188a99",
@@ -212,8 +213,14 @@
       "obsidian-git:Open Git source control": false
     }
   },
-  "active": "8bf0306927ff6ed0",
+  "active": "e0e1ffb4d2f7a936",
   "lastOpenFiles": [
+    "00-JAVA/01-CORE-JAVA/40-STREAM-API/images/introduction.png",
+    "00-JAVA/01-CORE-JAVA/40-STREAM-API/images/ConvertToUpperCase.png",
+    "00-JAVA/01-CORE-JAVA/40-STREAM-API/images/collection-to-stream-example-2.drawio.svg",
+    "00-JAVA/01-CORE-JAVA/40-STREAM-API/images/collection-to-stream-example-2.drawio",
+    "00-JAVA/01-CORE-JAVA/40-STREAM-API/images/collection-to-stream.drawio.svg",
+    "00-JAVA/01-CORE-JAVA/40-STREAM-API/images/collection-to-stream.drawio",
     "00-JAVA/01-CORE-JAVA/40-STREAM-API/images",
     "00-JAVA/01-CORE-JAVA/20-EXCEPTION-HANDLING/06-CUSTOMIZED-EXCEPTION-HANDLING.md",
     "00-JAVA/01-CORE-JAVA/40-STREAM-API/00-INTRODUCTION.md",
@@ -252,13 +259,7 @@
     "00-JAVA/01-CORE-JAVA/30-COLLECTION-FRAMEWORK/images/synchronized-vs-non-synchronized.drawio",
     "00-JAVA/01-CORE-JAVA/30-COLLECTION-FRAMEWORK/images/synchronized-vs-non-synchronized-hashMap.drawio.svg",
     "00-JAVA/01-CORE-JAVA/30-COLLECTION-FRAMEWORK/images/synchronized-vs-non-synchronized-hashMap.drawio",
-    "00-JAVA/01-CORE-JAVA/30-COLLECTION-FRAMEWORK/images/stack-search-method.drawio.svg",
     "00-JAVA/01-CORE-JAVA/30-COLLECTION-FRAMEWORK/images/stack-search-method.drawio",
-    "00-JAVA/01-CORE-JAVA/30-COLLECTION-FRAMEWORK/images/sorted-set.drawio.svg",
-    "00-JAVA/01-CORE-JAVA/30-COLLECTION-FRAMEWORK/images/sorted-set.drawio",
-    "00-JAVA/01-CORE-JAVA/30-COLLECTION-FRAMEWORK/images/set.drawio.svg",
-    "00-JAVA/01-CORE-JAVA/30-COLLECTION-FRAMEWORK/images/set.drawio",
-    "00-JAVA/01-CORE-JAVA/30-COLLECTION-FRAMEWORK/images/set-hierarchy.drawio",
-    "00-JAVA/01-CORE-JAVA/30-COLLECTION-FRAMEWORK/images/queue.drawio"
+    "00-JAVA/01-CORE-JAVA/30-COLLECTION-FRAMEWORK/images/sorted-set.drawio"
   ]
 }

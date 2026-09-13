@@ -25,4 +25,47 @@ Stream<String> inputStream = cities.stream();
 Stream is an interface present in `java.util.stream`.
 Once we got the stream, by using that we can process objects of that collection.
 Example:
+![collection-to-stream](./images/collection-to-stream.drawio.svg)
 
+Code:
+```java
+package streamApi;
+
+import java.util.Arrays;
+import java.util.List;
+import java.util.stream.Collectors;
+import java.util.stream.Stream;
+
+public class Driver {
+
+	public static void main(String[] args) {
+		
+		// store 1M data inside list
+		List<String> cities = Arrays.asList(
+			"Agra", "Bengalore", "Chennai", "Hyderabad", "Ahemdabad", "Ajmer"
+		);
+		
+		// Processing --> Task : Find the city name starting with "A"
+		
+		// 1. Convert the Collection to Stream object
+		Stream<String> inputStream = cities.stream();
+		
+		// 2. find the name starting with 'A' --> use .filter()
+		Stream<String> filteredStream = inputStream.filter(city -> city.startsWith("A"));
+		
+		// 3. Collect or print the city name
+		List<String>cityStartsWithA = filteredStream.collect(Collectors.toList());
+		
+		System.out.println(cityStartsWithA);
+		
+		
+		// in one line, we can write
+		/*
+		List<String> cityStartsWithA = cities.stream().filter(city -> city.startsWith("A")).collect(Collectors.toList());
+		
+		System.out.println(cityStartsWithA);
+		*/
+	}
+
+}
+```
