@@ -83,8 +83,7 @@
       }
     ],
     "direction": "horizontal",
-    "width": 383.66796875,
-    "collapsed": true
+    "width": 383.66796875
   },
   "right": {
     "id": "da37fefebc188a99",
@@ -199,8 +198,10 @@
       "obsidian-git:Open Git source control": false
     }
   },
-  "active": "e0e1ffb4d2f7a936",
+  "active": "8bf0306927ff6ed0",
   "lastOpenFiles": [
+    "00-JAVA/01-CORE-JAVA/QUESTIONS/40-STREAM-API",
+    "00-JAVA/01-CORE-JAVA/QUESTIONS",
     "00-JAVA/01-CORE-JAVA/40-STREAM-API/20-QUESTIONS.md",
     "00-JAVA/01-CORE-JAVA/25-SINGLETON-CLASS/00-SINGLETON-CLASS.md",
     "00-JAVA/01-CORE-JAVA/25-SINGLETON-CLASS",
@@ -241,9 +242,7 @@
     "00-JAVA/01-CORE-JAVA/00-BASICS/60-print-VS-println.md",
     "00-JAVA/01-CORE-JAVA/00-BASICS/50-DIFFERENT-MAIN-METHOD-SYNTAX.md",
     "00-JAVA/01-CORE-JAVA/00-BASICS/40-IDENTIFIERS-RESERVED-KEYWORDS.md",
-    "00-JAVA/01-CORE-JAVA/00-BASICS/30-FEATURES-OF-JAVA.md",
     "00-JAVA/01-CORE-JAVA/30-COLLECTION-FRAMEWORK/images/various-possible-combination-of-comparator.drawio.svg",
-    "00-JAVA/01-CORE-JAVA/30-COLLECTION-FRAMEWORK/images/various-possible-combination-of-comparator.drawio",
     "00-JAVA/01-CORE-JAVA/30-COLLECTION-FRAMEWORK/images/unresolved-compilation-error-program.png",
     "00-JAVA/01-CORE-JAVA/30-COLLECTION-FRAMEWORK/images/unresolved-compilation-error-program-output.png",
     "00-JAVA/01-CORE-JAVA/30-COLLECTION-FRAMEWORK/images/test.drawio.svg"
