@@ -206,6 +206,31 @@ public class HighSalaryEmployees {
 ### 8 Multiple conditions on objects
 ### Solution
 ```java
+package streamApi.filter;
+
+import java.util.Arrays;
+import java.util.List;
+
+public class EligibleEmployees {
+
+	public static void main(String[] args) {
+		
+		List<Employee> employees = Arrays.asList(
+				new Employee(101, "Alpha", 45000),
+			    new Employee(102, "Victor", 65000),
+			    new Employee(103, "Tango", 55000),
+			    new Employee(104, "Gamma", 80000),
+			    new Employee(105, "Pascal", 40000)
+			);
+		
+		employees.stream()
+				.filter(e -> (e.getSalary() >= 50_000.0) && ((e.getId() & 1) == 0))
+				.forEach(e -> {
+					System.out.print(e.getName() + " ");
+				});
+	}
+
+}
 ```
 ### 9 Null + filtering
 ### Solution
