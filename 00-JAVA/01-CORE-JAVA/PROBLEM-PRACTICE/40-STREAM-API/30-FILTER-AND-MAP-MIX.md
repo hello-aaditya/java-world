@@ -3,31 +3,31 @@
 ### Solution
 ```java
 ```
-### 2
+### 2 Names Starting with A → Uppercase
 ### Solution
 ```java
 ```
-### 3
+### 3 Numbers Greater Than 20 → Double
 ### Solution
 ```java
 ```
-### 4
+### 4 Names Longer Than 5 → Uppercase
 ### Solution
 ```java
 ```
-### 5
+### 5 Even Numbers in Range → Square
 ### Solution
 ```java
 ```
-### 6
+### 6 Employee Salary → Employee Names
 ### Solution
 ```java
 ```
-### 7
+### 7 Employee → Increased Salary
 ### Solution
 ```java
 ```
-### 8
+### 8 Employee → Formatted Name + Salary
 ### Solution
 ```java
 ```
