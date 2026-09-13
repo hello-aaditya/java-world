@@ -89,7 +89,8 @@ public static void main(String[] args) {
 public static void main(String[] args) {
 		
 	List<Double> temperatures = Arrays.asList(
-		0.0, 10.0, 20.0, 30.0, 40.0);
+		0.0, 10.0, 20.0, 30.0, 40.0
+	);
 	
 	temperatures.stream()
 			.map(c -> (c * 9/5) + 32)
@@ -101,8 +102,39 @@ public static void main(String[] args) {
 ```
 ### 7 Add Prefix to Names
 ### Solution
+```java
+public static void main(String[] args) {
+		
+	List<String> names = Arrays.asList(
+		"Alpha", "Bravo", "Charlie", "Delta"
+	);
+	
+	names.stream()
+			.map(n -> "Employee-".concat(n))
+			.forEach(n -> {
+				System.out.print(n + " ");
+			});
+
+}
+```
 ### 8 Employee → Employee Name
 ### Solution
+```java
+public static void main(String[] args) {
+		
+		List<Employee> names = Arrays.asList(
+			new Employee(101, "Alpha", 50000),
+	        new Employee(102, "Bravo", 60000),
+	        new Employee(103, "Charlie", 55000),
+	        new Employee(104, "Delta", 75000)	
+		);
+		
+		names.stream()
+				.map(n -> n.getName())
+				.forEach(n -> System.out.print(n + " "));
+
+	}
+	```
 ### 9 Employee → Salary After 10% Increment
 ### Solution
 ### 10 Employee → Formatted Employee Details
