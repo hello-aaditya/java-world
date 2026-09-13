@@ -17,24 +17,15 @@ Print all numbers **greater than 50**.
 
 ### Solution
 ```java
-package streamApi.filter;
-
-import java.util.Arrays;
-import java.util.List;
-
-public class GreaterThan50 {
-
-	public static void main(String[] args) {
-		
-		List<Integer> numbers = Arrays.asList(10, 25, 50, 65, 80, 35, 90);
-		
-		numbers.stream()
-				.filter(i -> i > 50)
-				.forEach(i -> {
-					System.out.print(i + " ");
-				});
-	}
-
+public static void main(String[] args) {
+	
+	List<Integer> numbers = Arrays.asList(10, 25, 50, 65, 80, 35, 90);
+	
+	numbers.stream()
+			.filter(i -> i > 50)
+			.forEach(i -> {
+				System.out.print(i + " ");
+			});
 }
 ```
 ### 2. Even numbers
@@ -55,12 +46,7 @@ Print all **even numbers**.
 
 ### Solution
 ```java
-package streamApi.filter;
 
-import java.util.Arrays;
-import java.util.List;
-
-public class EvenNumbers {
 
 	public static void main(String[] args) {
 		
@@ -73,7 +59,7 @@ public class EvenNumbers {
 				});
 
 	}
-}
+
 ```
 
 ### 3. Strings starting with "A"
