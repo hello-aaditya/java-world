@@ -315,31 +315,23 @@ Pascal -> 105, 40000  x salary too low
 
 ### Solution
 ```java
-package streamApi.filter;
-
-import java.util.Arrays;
-import java.util.List;
-
-public class EligibleEmployees {
-
-	public static void main(String[] args) {
-		
-		List<Employee> employees = Arrays.asList(
-				new Employee(101, "Alpha", 45000),
-			    new Employee(102, "Victor", 65000),
-			    new Employee(103, "Tango", 55000),
-			    new Employee(104, "Gamma", 80000),
-			    new Employee(105, "Pascal", 40000)
-			);
-		
-		employees.stream()
-				.filter(e -> (e.getSalary() >= 50_000.0) && ((e.getId() & 1) == 0))
-				.forEach(e -> {
-					System.out.print(e.getName() + " ");
-				});
-	}
-
+public static void main(String[] args) {
+	
+	List<Employee> employees = Arrays.asList(
+			new Employee(101, "Alpha", 45000),
+			new Employee(102, "Victor", 65000),
+			new Employee(103, "Tango", 55000),
+			new Employee(104, "Gamma", 80000),
+			new Employee(105, "Pascal", 40000)
+		);
+	
+	employees.stream()
+			.filter(e -> (e.getSalary() >= 50_000.0) && ((e.getId() & 1) == 0))
+			.forEach(e -> {
+				System.out.print(e.getName() + " ");
+			});
 }
+
 ```
 
 ---
@@ -370,25 +362,15 @@ Alpha Alexander Gamma Finny Tango
 
 ### Solution
 ```java
-package streamApi.filter;
-
-import java.util.List;
-import java.util.Arrays;
-
-public class ValidNames {
-
-	public static void main(String[] args) {
-		
-		List<String> names = Arrays.asList("Alpha", null, "Alexander", "", "Gamma", null, "Finny", "Tango");
-		
-		names.stream()
-				.filter(n -> n != null && !n.isBlank() && n.length()>=5)
-				.forEach(n -> {
-					System.out.print(n + " ");
-				});
-
-	}
-
+public static void main(String[] args) {
+	
+	List<String> names = Arrays.asList("Alpha", null, "Alexander", "", "Gamma", null, "Finny", "Tango");
+	
+	names.stream()
+			.filter(n -> n != null && !n.isBlank() && n.length()>=5)
+			.forEach(n -> {
+				System.out.print(n + " ");
+			});
 }
 ```
 
