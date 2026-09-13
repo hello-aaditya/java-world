@@ -96,6 +96,26 @@ public class NumbersInRange {
 ### 5 String length
 ### Solution
 ```java
+package streamApi.filter;
+
+import java.util.List;
+import java.util.Arrays;
+
+public class ValidNames {
+
+	public static void main(String[] args) {
+		
+		List<String> names = Arrays.asList("Alpha", null, "Alexander", "", "Gamma", null, "Finny", "Tango");
+		
+		names.stream()
+				.filter(n -> n != null && !n.isBlank() && n.length()>=5)
+				.forEach(n -> {
+					System.out.print(n + " ");
+				});
+
+	}
+
+}
 ```
 ### 6 Remove duplicates manually through filtering logic
 ### Solution
