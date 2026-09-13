@@ -120,9 +120,61 @@ public class ValidNames {
 ### 6 Remove duplicates manually through filtering logic
 ### Solution
 ```java
+package streamApi.filter;
+
+import java.util.List;
+import java.util.Arrays;
+
+public class EvenNumbersGreaterThan15 {
+
+	public static void main(String[] args) {
+		
+		List<Integer> numbers = Arrays.asList(10, 15, 10, 20, 25, 15, 30, 20, 35);
+		
+		numbers.stream()
+				.filter(n -> (n > 15) && ((n & 1) == 0))
+				.forEach(n -> {
+					System.out.print(n + " ");
+				});
+
+	}
+
+}
 ```
 ### 7 Employee salary filtering
 ### Solution
+```java
+package streamApi.filter;
+
+public class Employee {
+	private int id;
+	private String name;
+	private double salary;
+	
+	public Employee(
+		int id,
+		String name,
+		double salary
+	) {
+		this.id = id;
+		this.name = name;
+		this.salary = salary;
+	}
+	
+	public int getId() {
+		return id;
+	}
+	
+	public String getName() {
+		return name;
+	}
+	
+	public double getSalary() {
+		return salary;
+	}
+}
+```
+
 ```java
 ```
 ### 8 Multiple conditions on objects
