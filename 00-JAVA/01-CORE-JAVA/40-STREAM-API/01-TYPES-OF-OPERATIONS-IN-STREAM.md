@@ -14,5 +14,8 @@ Operation which is taking stream as an input, process them and return another st
 	4. `distinct()`
 	5. `flatMap()`
 		etc.
-- In Intermediate Operations 
+- In Intermediate Operations:
+	- if input = n
+	- then output <= n
 ## 2. Terminal Operation
+- Operation which takes stream as an input and gives output in form either number, **`Optional`** or Collection.
