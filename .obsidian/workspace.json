@@ -97,8 +97,7 @@
       }
     ],
     "direction": "horizontal",
-    "width": 325.3125,
-    "collapsed": true
+    "width": 325.3125
   },
   "right": {
     "id": "da37fefebc188a99",
@@ -213,8 +212,9 @@
       "obsidian-git:Open Git source control": false
     }
   },
-  "active": "e0e1ffb4d2f7a936",
+  "active": "8bf0306927ff6ed0",
   "lastOpenFiles": [
+    "00-JAVA/01-CORE-JAVA/40-STREAM-API/images",
     "00-JAVA/01-CORE-JAVA/20-EXCEPTION-HANDLING/06-CUSTOMIZED-EXCEPTION-HANDLING.md",
     "00-JAVA/01-CORE-JAVA/40-STREAM-API/00-INTRODUCTION.md",
     "00-JAVA/01-CORE-JAVA/40-STREAM-API",
@@ -259,7 +259,6 @@
     "00-JAVA/01-CORE-JAVA/30-COLLECTION-FRAMEWORK/images/set.drawio.svg",
     "00-JAVA/01-CORE-JAVA/30-COLLECTION-FRAMEWORK/images/set.drawio",
     "00-JAVA/01-CORE-JAVA/30-COLLECTION-FRAMEWORK/images/set-hierarchy.drawio",
-    "00-JAVA/01-CORE-JAVA/30-COLLECTION-FRAMEWORK/images/queue.drawio",
-    "00-JAVA/01-CORE-JAVA/30-COLLECTION-FRAMEWORK/90-SET.md"
+    "00-JAVA/01-CORE-JAVA/30-COLLECTION-FRAMEWORK/images/queue.drawio"
   ]
 }

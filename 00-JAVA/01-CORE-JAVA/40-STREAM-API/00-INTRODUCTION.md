@@ -23,4 +23,6 @@ List<String> cities = Arrays.asList(
 Stream<String> inputStream = cities.stream();
 ```
 Stream is an interface present in `java.util.stream`.
-Once we got the stream ,by using that we can process objects of that collection.
+Once we got the stream, by using that we can process objects of that collection.
+Example:
+
