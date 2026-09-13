@@ -26,4 +26,6 @@ Operation which is taking stream as an input, process them and return another st
 	1. `collect()`
 	2. `forEach()`
 	3. `count()`
-	4. 
+	4. `max()`
+	5. `min()`
+		etc.
