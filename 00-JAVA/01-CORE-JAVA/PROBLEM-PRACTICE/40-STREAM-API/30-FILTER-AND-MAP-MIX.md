@@ -2,6 +2,19 @@
 ### 1 Even Numbers → Square
 ### Solution
 ```java
+public static void main(String[] args) {
+		
+	List<Integer> numbers = Arrays.asList(
+		10, 15, 20, 25, 30, 35, 40
+	);
+	
+	numbers.stream()
+			.filter(n -> (n&1) == 0)
+			.map(n -> n*n)
+			.forEach(n -> {
+				System.out.print(n + " ");
+			});
+}
 ```
 ### 2 Names Starting with A → Uppercase
 ### Solution
