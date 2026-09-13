@@ -73,4 +73,32 @@ List<String> cityStartsWithA =
 Example 2:
 ![collection-to-stream-example-2](./images/collection-to-stream-example-2.drawio.svg)
 
-Code
+Code:
+```java
+package streamApi;
+
+import java.util.Arrays;
+import java.util.List;
+import java.util.stream.Collectors;
+
+public class ConvertToUpperCase {
+
+	public static void main(String[] args) {
+		
+		List<String> cities = Arrays.asList(
+			"Pune", "Nashik", "Nagpur", "Thane", 
+			"Bengaluru Urban", "Mysuru", "Belagavi", "Mangaluru",
+			"Jaipur", "Jodhpur", "Udaipur", "Kota"
+		);
+		
+		List<String> outputStream = 
+				cities.stream()
+					.filter(city -> city.startsWith("A"))
+					.map(city -> city.toUpperCase())
+					.collect(Collectors.toList());
+
+		System.out.println(outputStream);
+	}
+
+}
+```
