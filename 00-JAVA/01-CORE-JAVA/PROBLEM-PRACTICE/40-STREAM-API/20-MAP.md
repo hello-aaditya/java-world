@@ -238,7 +238,31 @@ public static void main(String[] args) {
 }
 ```
 
-### Employee class
+
+### 8. Employee -> Employee Name
+
+Given:
+
+```java
+List<Employee> employees = Arrays.asList(
+    new Employee(101, "Alpha", 50000),
+    new Employee(102, "Bravo", 60000),
+    new Employee(103, "Charlie", 55000),
+    new Employee(104, "Delta", 75000)
+);
+```
+
+Using `map()`, convert every `Employee` object into its **name**.
+
+**Transformation:** `Employee -> String`
+
+**Expected output:**
+
+```
+Alpha Bravo Charlie Delta
+```
+
+### Solution
 
 ```java
 public class Employee {
@@ -270,30 +294,6 @@ public class Employee {
 }
 ```
 
-### 8. Employee -> Employee Name
-
-Given:
-
-```java
-List<Employee> employees = Arrays.asList(
-    new Employee(101, "Alpha", 50000),
-    new Employee(102, "Bravo", 60000),
-    new Employee(103, "Charlie", 55000),
-    new Employee(104, "Delta", 75000)
-);
-```
-
-Using `map()`, convert every `Employee` object into its **name**.
-
-**Transformation:** `Employee -> String`
-
-**Expected output:**
-
-```
-Alpha Bravo Charlie Delta
-```
-
-### Solution
 ```java
 public static void main(String[] args) {
 	
@@ -377,18 +377,3 @@ public static void main(String[] args) {
 			});
 }
 ```
-
-### Progression
-
-| #  | Difficulty | Transformation      |
-| -- | ---------- | ------------------- |
-| 1  | Easy       | `Integer -> Integer` |
-| 2  | Easy       | `Integer -> Integer` |
-| 3  | Easy       | `String -> String`   |
-| 4  | Easy       | `String -> Integer`  |
-| 5  | Medium     | `Integer -> Integer` |
-| 6  | Medium     | `Double -> Double`   |
-| 7  | Medium     | `String -> String`   |
-| 8  | Hard       | `Employee -> String` |
-| 9  | Hard       | `Employee -> Double` |
-| 10 | Hard       | `Employee -> String` |
