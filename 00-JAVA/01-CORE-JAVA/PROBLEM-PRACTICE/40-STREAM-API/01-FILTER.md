@@ -454,51 +454,23 @@ public class Transaction {
 ```
 
 ```java
-package streamApi.filter;
-
-import java.util.Arrays;
-import java.util.List;
-
-public class SuccessfulPayments {
-
-	public static void main(String[] args) {
-		
-		List<Transaction> transactions = Arrays.asList(
-			    new Transaction(101, "PAYMENT", 1500, true),
-			    new Transaction(102, "REFUND", 800, true),
-			    new Transaction(103, "PAYMENT", 5000, false),
-			    new Transaction(104, "PAYMENT", 2500, true),
-			    new Transaction(105, "REFUND", 1200, false),
-			    new Transaction(106, "PAYMENT", 7500, true)
-			);
-		
-		transactions.stream()
-					.filter(t -> t.getType().equals("PAYMENT")
-							&& t.getSuccessful() == true
-							&& t.getAmount() > 2_000)
-					.forEach(t -> {
-						System.out.print(t.getId() + " ");
-					});
-					
-
-	}
-
+public static void main(String[] args) {
+	
+	List<Transaction> transactions = Arrays.asList(
+			new Transaction(101, "PAYMENT", 1500, true),
+			new Transaction(102, "REFUND", 800, true),
+			new Transaction(103, "PAYMENT", 5000, false),
+			new Transaction(104, "PAYMENT", 2500, true),
+			new Transaction(105, "REFUND", 1200, false),
+			new Transaction(106, "PAYMENT", 7500, true)
+		);
+	
+	transactions.stream()
+				.filter(t -> t.getType().equals("PAYMENT")
+						&& t.getSuccessful() == true
+						&& t.getAmount() > 2_000)
+				.forEach(t -> {
+					System.out.print(t.getId() + " ");
+				});
 }
 ```
-
----
-
-### Progression
-
-| #  | Difficulty | Main `filter()` concept              |
-| -- | ---------- | ------------------------------------ |
-| 1  | Easy       | Basic comparison                     |
-| 2  | Easy       | Numeric condition                    |
-| 3  | Easy       | String condition                     |
-| 4  | Medium     | Range                                |
-| 5  | Medium     | String property                      |
-| 6  | Medium     | Multiple conditions                  |
-| 7  | Medium     | Filtering objects                    |
-| 8  | Hard       | Multiple object conditions           |
-| 9  | Hard       | Null-safe filtering                  |
-| 10 | Hard       | Real-world multi-condition filtering |
