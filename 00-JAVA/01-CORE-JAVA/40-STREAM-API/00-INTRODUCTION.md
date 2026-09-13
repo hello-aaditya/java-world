@@ -51,21 +51,16 @@ public class Driver {
 		Stream<String> inputStream = cities.stream();
 		
 		// 2. find the name starting with 'A' --> use .filter()
-		Stream<String> filteredStream = inputStream.filter(city -> city.startsWith("A"));
+		Stream<String> filteredStream = 
+			inputStream.filter(city -> city.startsWith("A"));
 		
 		// 3. Collect or print the city name
-		List<String>cityStartsWithA = filteredStream.collect(Collectors.toList());
+		List<String>cityStartsWithA =
+			filteredStream.collect(Collectors.toList());
 		
 		System.out.println(cityStartsWithA);
-		
-		
-		// in one line, we can write
-		/*
-		List<String> cityStartsWithA = cities.stream().filter(city -> city.startsWith("A")).collect(Collectors.toList());
-		
-		System.out.println(cityStartsWithA);
-		*/
 	}
 
 }
 ```
+The above code which h
