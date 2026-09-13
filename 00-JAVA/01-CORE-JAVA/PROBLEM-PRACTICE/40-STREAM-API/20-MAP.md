@@ -4,7 +4,9 @@
 ```java
 public static void main(String[] args) {
 		
-	List<Integer> numbers = Arrays.asList(10, 20, 30, 40, 50);
+	List<Integer> numbers = Arrays.asList(
+		10, 20, 30, 40, 50
+	);
 	
 	numbers.stream()
 			.map(i -> i*i)
@@ -19,7 +21,9 @@ public static void main(String[] args) {
 ```java
 public static void main(String[] args) {
 		
-	List<Integer> numbers = Arrays.asList(5, 10, 15, 20, 25);
+	List<Integer> numbers = Arrays.asList(
+		5, 10, 15, 20, 25
+	);
 	
 	numbers.stream()
 			.map(i -> i * 2)
@@ -30,6 +34,20 @@ public static void main(String[] args) {
 ```
 ### 3 Convert Names to Uppercase
 ### Solution
+```java
+public static void main(String[] args) {
+		
+	List<String> names = Arrays.asList(
+		"Alpha", "Bravo", "Austin", "Charlie", "Alice", "Delta", "Echo");
+	
+	names.stream()
+			.filter(n -> n.startsWith("A"))
+			.map(n -> n.toUpperCase())
+			.forEach(n -> {
+				System.out.print(n + " ");
+			});
+}
+```
 ### 4 Convert Names to Their Length
 ### Solution
 ### 5 Add 10 to Every Number
