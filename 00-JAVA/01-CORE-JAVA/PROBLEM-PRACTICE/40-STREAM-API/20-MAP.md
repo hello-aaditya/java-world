@@ -122,20 +122,58 @@ public static void main(String[] args) {
 ```java
 public static void main(String[] args) {
 		
-		List<Employee> names = Arrays.asList(
-			new Employee(101, "Alpha", 50000),
-	        new Employee(102, "Bravo", 60000),
-	        new Employee(103, "Charlie", 55000),
-	        new Employee(104, "Delta", 75000)	
-		);
-		
-		names.stream()
-				.map(n -> n.getName())
-				.forEach(n -> System.out.print(n + " "));
+	List<Employee> names = Arrays.asList(
+		new Employee(101, "Alpha", 50000),
+		new Employee(102, "Bravo", 60000),
+		new Employee(103, "Charlie", 55000),
+		new Employee(104, "Delta", 75000)	
+	);
+	
+	names.stream()
+			.map(n -> n.getName())
+			.forEach(n -> System.out.print(n + " "));
 
-	}
-	```
+}
+```
 ### 9 Employee → Salary After 10% Increment
 ### Solution
+```java
+public static void main(String[] args) {
+		
+	List<Employee> names = Arrays.asList(
+		new Employee(101, "Alpha", 50000),
+		new Employee(102, "Bravo", 60000),
+		new Employee(103, "Charlie", 55000),
+		new Employee(104, "Delta", 75000)	
+	);
+	
+	names.stream()
+			.map(e -> e.getSalary() + (e.getSalary() * 0.1))
+			.forEach(e -> {
+				System.out.print(e + " ");
+			});
+
+}
+```
 ### 10 Employee → Formatted Employee Details
 ### Solution
+```java
+public static void main(String[] args) {
+	
+	List<Employee> names = Arrays.asList(
+		new Employee(101, "Alpha", 50000),
+		new Employee(102, "Bravo", 60000),
+		new Employee(103, "Charlie", 55000),
+		new Employee(104, "Delta", 75000)	
+	);
+
+	names.stream()
+			.map(e -> "ID: " + e.getId() +
+					", Name: " + e.getName() +
+					", Salary: " + e.getSalary()
+				)
+			.forEach(e -> {
+				System.out.println(e);
+			});
+}
+```
