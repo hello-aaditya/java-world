@@ -38,7 +38,8 @@ public static void main(String[] args) {
 public static void main(String[] args) {
 		
 	List<String> names = Arrays.asList(
-		"Alpha", "Bravo", "Austin", "Charlie", "Alice", "Delta", "Echo");
+		"Alpha", "Bravo", "Austin", "Charlie", "Alice", "Delta", "Echo"
+	);
 	
 	names.stream()
 			.filter(n -> n.startsWith("A"))
@@ -50,6 +51,21 @@ public static void main(String[] args) {
 ```
 ### 4 Convert Names to Their Length
 ### Solution
+```java
+public static void main(String[] args) {
+		
+	List<String> names = Arrays.asList(
+		"Alpha", "Bravo", "Charlie", "Delta", "Echo"
+	);
+	
+	names.stream()
+			.map(n -> n.length())
+			.forEach(i -> {
+				System.out.print(i + " ");
+			});
+
+}
+```
 ### 5 Add 10 to Every Number
 ### Solution
 ### 6 Convert Celsius to Fahrenheit
