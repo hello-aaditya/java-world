@@ -5,4 +5,4 @@
 - A Stream closely work with **`Collection`**.
 - A Stream **does not store data**.
 - A Stream **does not modify the original collection** by itself.
-- 
+- We can create as **`Stream`** object to the collection by using **`stream()`** method of Collection inte
