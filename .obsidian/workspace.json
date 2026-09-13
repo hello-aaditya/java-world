@@ -201,6 +201,8 @@
   },
   "active": "e0e1ffb4d2f7a936",
   "lastOpenFiles": [
+    "00-JAVA/01-CORE-JAVA/40-STREAM-API/images/sedVUvknQ",
+    "00-JAVA/01-CORE-JAVA/40-STREAM-API/images/chain-of-operations.drawio.svg",
     "00-JAVA/01-CORE-JAVA/40-STREAM-API/images/chain-of-operations.drawio",
     "00-JAVA/01-CORE-JAVA/40-STREAM-API/images/sedvZTkuT",
     "00-JAVA/01-CORE-JAVA/40-STREAM-API/images/types-of-operations.drawio.svg",
@@ -244,8 +246,6 @@
     "00-JAVA/01-CORE-JAVA/30-COLLECTION-FRAMEWORK/images/unresolved-compilation-error-program-output.png",
     "00-JAVA/01-CORE-JAVA/30-COLLECTION-FRAMEWORK/images/test.drawio.svg",
     "00-JAVA/01-CORE-JAVA/30-COLLECTION-FRAMEWORK/images/test.drawio",
-    "00-JAVA/01-CORE-JAVA/30-COLLECTION-FRAMEWORK/images/synchronized-vs-non-synchronized.png",
-    "00-JAVA/01-CORE-JAVA/30-COLLECTION-FRAMEWORK/images/synchronized-vs-non-synchronized.drawio",
-    "00-JAVA/01-CORE-JAVA/30-COLLECTION-FRAMEWORK/images/synchronized-vs-non-synchronized-hashMap.drawio"
+    "00-JAVA/01-CORE-JAVA/30-COLLECTION-FRAMEWORK/images/synchronized-vs-non-synchronized.drawio"
   ]
 }
