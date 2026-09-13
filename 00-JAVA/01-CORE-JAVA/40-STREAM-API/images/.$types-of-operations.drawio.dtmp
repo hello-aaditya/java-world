@@ -10,25 +10,25 @@
         <mxCell id="3hnJve2ek_WgXWXPZQZi-3" edge="1" parent="1" source="3hnJve2ek_WgXWXPZQZi-1" style="edgeStyle=none;html=1;fontFamily=Georgia;fontSize=15;" target="3hnJve2ek_WgXWXPZQZi-2" value="">
           <mxGeometry relative="1" as="geometry" />
         </mxCell>
-        <mxCell id="3hnJve2ek_WgXWXPZQZi-1" parent="1" style="rounded=0;whiteSpace=wrap;html=1;fontFamily=Georgia;fontSize=15;fillColor=#000000;strokeColor=#d6b656;" value="&lt;span style=&quot;color: rgb(255, 221, 89);&quot;&gt;Input&lt;/span&gt;" vertex="1">
+        <mxCell id="3hnJve2ek_WgXWXPZQZi-1" parent="1" style="rounded=0;whiteSpace=wrap;html=1;fontFamily=Georgia;fontSize=18;fillColor=#000000;strokeColor=#d6b656;" value="&lt;span style=&quot;color: rgb(255, 221, 89);&quot;&gt;Input&lt;/span&gt;" vertex="1">
           <mxGeometry height="60" width="120" x="240" y="160" as="geometry" />
         </mxCell>
         <mxCell id="3hnJve2ek_WgXWXPZQZi-5" edge="1" parent="1" source="3hnJve2ek_WgXWXPZQZi-2" style="edgeStyle=none;html=1;fontFamily=Georgia;fontSize=15;" target="3hnJve2ek_WgXWXPZQZi-4" value="">
           <mxGeometry relative="1" as="geometry" />
         </mxCell>
-        <mxCell id="3hnJve2ek_WgXWXPZQZi-2" parent="1" style="rounded=0;whiteSpace=wrap;html=1;fontFamily=Georgia;fontSize=15;" value="Operation 1" vertex="1">
+        <mxCell id="3hnJve2ek_WgXWXPZQZi-2" parent="1" style="rounded=0;whiteSpace=wrap;html=1;fontFamily=Georgia;fontSize=15;fillColor=#ffe6cc;strokeColor=#d79b00;" value="Operation 1" vertex="1">
           <mxGeometry height="60" width="120" x="440" y="160" as="geometry" />
         </mxCell>
         <mxCell id="3hnJve2ek_WgXWXPZQZi-7" edge="1" parent="1" source="3hnJve2ek_WgXWXPZQZi-9" style="edgeStyle=none;html=1;fontFamily=Georgia;fontSize=15;" target="3hnJve2ek_WgXWXPZQZi-6" value="">
           <mxGeometry relative="1" as="geometry" />
         </mxCell>
-        <mxCell id="3hnJve2ek_WgXWXPZQZi-4" parent="1" style="rounded=0;whiteSpace=wrap;html=1;fontFamily=Georgia;fontSize=15;" value="Operation 2" vertex="1">
+        <mxCell id="3hnJve2ek_WgXWXPZQZi-4" parent="1" style="rounded=0;whiteSpace=wrap;html=1;fontFamily=Georgia;fontSize=15;fillColor=#ffe6cc;strokeColor=#d79b00;" value="Operation 2" vertex="1">
           <mxGeometry height="60" width="120" x="640" y="160" as="geometry" />
         </mxCell>
         <mxCell id="3hnJve2ek_WgXWXPZQZi-14" edge="1" parent="1" source="3hnJve2ek_WgXWXPZQZi-6" style="edgeStyle=none;html=1;fontFamily=Georgia;fontSize=15;" target="3hnJve2ek_WgXWXPZQZi-13" value="">
           <mxGeometry relative="1" as="geometry" />
         </mxCell>
-        <mxCell id="3hnJve2ek_WgXWXPZQZi-6" parent="1" style="rounded=0;whiteSpace=wrap;html=1;fontFamily=Georgia;fontSize=15;" value="Operation n" vertex="1">
+        <mxCell id="3hnJve2ek_WgXWXPZQZi-6" parent="1" style="rounded=0;whiteSpace=wrap;html=1;fontFamily=Georgia;fontSize=15;fillColor=#ffe6cc;strokeColor=#d79b00;" value="Operation n" vertex="1">
           <mxGeometry height="60" width="120" x="890" y="160" as="geometry" />
         </mxCell>
         <mxCell id="3hnJve2ek_WgXWXPZQZi-10" edge="1" parent="1" source="3hnJve2ek_WgXWXPZQZi-4" style="edgeStyle=none;html=1;fontFamily=Georgia;fontSize=15;endArrow=none;endFill=0;" target="3hnJve2ek_WgXWXPZQZi-9" value="">
@@ -49,7 +49,7 @@
         <mxCell id="3hnJve2ek_WgXWXPZQZi-13" parent="1" style="rounded=0;whiteSpace=wrap;html=1;fontFamily=Georgia;fontSize=15;fontStyle=1" value="Terminal Operation" vertex="1">
           <mxGeometry height="60" width="220" x="840" y="335" as="geometry" />
         </mxCell>
-        <mxCell id="3hnJve2ek_WgXWXPZQZi-15" parent="1" style="rounded=0;whiteSpace=wrap;html=1;fontFamily=Georgia;fontSize=15;fillColor=#000000;strokeColor=#d6b656;" value="&lt;span style=&quot;color: rgb(255, 221, 89);&quot;&gt;Output&lt;/span&gt;" vertex="1">
+        <mxCell id="3hnJve2ek_WgXWXPZQZi-15" parent="1" style="rounded=0;whiteSpace=wrap;html=1;fontFamily=Georgia;fontSize=18;fillColor=#000000;strokeColor=#d6b656;" value="&lt;span style=&quot;color: rgb(255, 221, 89);&quot;&gt;Output&lt;/span&gt;" vertex="1">
           <mxGeometry height="60" width="120" x="640" y="335" as="geometry" />
         </mxCell>
       </root>
