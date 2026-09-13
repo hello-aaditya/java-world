@@ -1,8 +1,33 @@
 # `map()` Based Questions
 ### 1 Square Numbers
 ### Solution
+```java
+public static void main(String[] args) {
+		
+	List<Integer> numbers = Arrays.asList(10, 20, 30, 40, 50);
+	
+	numbers.stream()
+			.map(i -> i*i)
+			.forEach(i -> {
+				System.out.print(i + " ");
+			});
+
+}
+```
 ### 2 Double Numbers
 ### Solution
+```java
+public static void main(String[] args) {
+		
+	List<Integer> numbers = Arrays.asList(5, 10, 15, 20, 25);
+	
+	numbers.stream()
+			.map(i -> i * 2)
+			.forEach(n -> {
+				System.out.print(n + " ");
+			});
+}
+```
 ### 3 Convert Names to Uppercase
 ### Solution
 ### 4 Convert Names to Their Length
