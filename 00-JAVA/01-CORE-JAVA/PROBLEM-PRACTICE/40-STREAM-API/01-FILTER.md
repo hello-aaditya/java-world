@@ -239,4 +239,73 @@ public class EligibleEmployees {
 ### 10 Real-world transaction filtering
 ### Solution
 ```java
+package streamApi.filter;
+
+public class Transaction {
+	private int id;
+	private String type;
+	private double amount;
+	private boolean successful;
+	
+	public Transaction (
+		int id,
+		String type,
+		double amount,
+		boolean successful
+	) {
+		this.id = id;
+		this.type = type;
+		this.amount = amount;
+		this.successful = successful;
+	}
+	
+	public int getId() {
+		return id;
+	}
+	
+	public String getType() {
+		return type;
+	}
+	
+	public double getAmount() {
+		return amount;
+	}
+	
+	public boolean getSuccessful() {
+		return successful;
+	}
+}
+```
+
+```java
+package streamApi.filter;
+
+import java.util.Arrays;
+import java.util.List;
+
+public class SuccessfulPayments {
+
+	public static void main(String[] args) {
+		
+		List<Transaction> transactions = Arrays.asList(
+			    new Transaction(101, "PAYMENT", 1500, true),
+			    new Transaction(102, "REFUND", 800, true),
+			    new Transaction(103, "PAYMENT", 5000, false),
+			    new Transaction(104, "PAYMENT", 2500, true),
+			    new Transaction(105, "REFUND", 1200, false),
+			    new Transaction(106, "PAYMENT", 7500, true)
+			);
+		
+		transactions.stream()
+					.filter(t -> t.getType().equals("PAYMENT")
+							&& t.getSuccessful() == true
+							&& t.getAmount() > 2_000)
+					.forEach(t -> {
+						System.out.print(t.getId() + " ");
+					});
+							
+
+	}
+
+}
 ```
