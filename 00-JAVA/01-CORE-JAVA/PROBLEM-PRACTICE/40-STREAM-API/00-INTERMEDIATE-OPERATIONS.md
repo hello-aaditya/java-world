@@ -1,2 +1,3 @@
-1. [filter()](01-FILTER.md)
-2. map()
+1. [`filter()`](./10-FILTER.md)
+2. [`map()`](./20-MAP.md)
+3. 
