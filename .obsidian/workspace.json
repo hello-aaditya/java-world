@@ -4,11 +4,11 @@
     "type": "split",
     "children": [
       {
-        "id": "43546ade21e3a4d1",
+        "id": "f2720260f67ee942",
         "type": "tabs",
         "children": [
           {
-            "id": "6825b9080dc0bce1",
+            "id": "ad0231e0e3fa8b7a",
             "type": "leaf",
             "state": {
               "type": "markdown",
@@ -199,7 +199,7 @@
       "obsidian-git:Open Git source control": false
     }
   },
-  "active": "6825b9080dc0bce1",
+  "active": "ad0231e0e3fa8b7a",
   "lastOpenFiles": [
     "00-JAVA/01-CORE-JAVA/PROBLEM-PRACTICE/40-STREAM-API/01-FILTER.md",
     "00-JAVA/01-CORE-JAVA/PROBLEM-PRACTICE/40-STREAM-API/00-INTERMEDIATE-OPERATIONS.md",

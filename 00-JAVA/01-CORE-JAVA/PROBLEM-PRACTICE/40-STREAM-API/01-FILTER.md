@@ -1,7 +1,4 @@
 # `filter()` Based Questions
-
----
-
 ### 1. Greater than 50
 
 Given:
@@ -40,9 +37,6 @@ public class GreaterThan50 {
 
 }
 ```
-
----
-
 ### 2. Even numbers
 
 Given:
@@ -81,8 +75,6 @@ public class EvenNumbers {
 	}
 }
 ```
-
----
 
 ### 3. Strings starting with "A"
 
