@@ -28,3 +28,17 @@ Operation which is taking stream as an input, process them and return another st
 	4. `max()`
 	5. `min()`
 		etc.
+```text
+Java Stream Operations — Input/Output Summary
+
+Intermediate Operation:
+    Input  : n-element Stream
+    Output : 1 Stream, but its element count can be:
+        - <= n   (filter, distinct, limit, skip)
+        - == n   (map, sorted, peek — same count, just transformed/reordered)
+        - >= n   (flatMap — can explode into more elements than it started with)
+
+Terminal Operation:
+    Input  : n-element Stream
+    Output : 1 result (Primitive, Wrapper Class, Optional, Collection, Object)
+    ```
