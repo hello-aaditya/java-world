@@ -24,7 +24,7 @@ Stream<String> inputStream = cities.stream();
 ```
 Stream is an interface present in `java.util.stream`.
 Once we got the stream, by using that we can process objects of that collection.
-Example:
+Example 1:
 ![collection-to-stream](./images/collection-to-stream.drawio.svg)
 
 Code:
@@ -63,4 +63,14 @@ public class Driver {
 
 }
 ```
-The above code which h
+The above code which helps in processing data can be written in one line also-
+```java
+List<String> cityStartsWithA = 
+		cities.stream()
+		.filter(city -> city.startsWith("A"))
+		.collect(Collectors.toList());
+```
+Example 2:
+![collection-to-stream-example-2](./images/collection-to-stream-example-2.drawio.svg)
+
+Code
