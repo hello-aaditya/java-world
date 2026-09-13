@@ -118,7 +118,9 @@ Print numbers that are **between 20 and 50, inclusive**.
 ```java
 public static void main(String[] args) {
 	
-	List<Integer> numbers = Arrays.asList(5, 12, 18, 25, 50, 31, 40, 47, 55, 63);
+	List<Integer> numbers = Arrays.asList(
+		5, 12, 18, 25, 50, 31, 40, 47, 55, 63
+	);
 	
 	numbers.stream()
 			.filter(i -> i >= 20 && i<= 50)
@@ -149,25 +151,17 @@ Alpha Alexander Gamma Finny Tango
 
 ### Solution
 ```java
-package streamApi.filter;
-
-import java.util.List;
-import java.util.Arrays;
-
-public class ValidNames {
-
-	public static void main(String[] args) {
-		
-		List<String> names = Arrays.asList("Alpha", null, "Alexander", "", "Gamma", null, "Finny", "Tango");
-		
-		names.stream()
-				.filter(n -> n != null && !n.isBlank() && n.length()>=5)
-				.forEach(n -> {
-					System.out.print(n + " ");
-				});
-
-	}
-
+public static void main(String[] args) {
+	
+	List<String> names = Arrays.asList(
+		"Alpha", null, "Alexander", "", "Gamma", null, "Finny", "Tango"
+	);
+	
+	names.stream()
+			.filter(n -> n != null && !n.isBlank() && n.length()>=5)
+			.forEach(n -> {
+				System.out.print(n + " ");
+			});
 }
 ```
 
@@ -193,13 +187,6 @@ Print only numbers that are **greater than 15 and even**.
 
 ### Solution
 ```java
-package streamApi.filter;
-
-import java.util.List;
-import java.util.Arrays;
-
-public class EvenNumbersGreaterThan15 {
-
 	public static void main(String[] args) {
 		
 		List<Integer> numbers = Arrays.asList(10, 15, 10, 20, 25, 15, 30, 20, 35);
@@ -211,8 +198,6 @@ public class EvenNumbersGreaterThan15 {
 				});
 
 	}
-
-}
 ```
 
 ---
