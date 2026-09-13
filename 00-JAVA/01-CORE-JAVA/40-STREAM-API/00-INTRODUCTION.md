@@ -13,4 +13,14 @@
 
 Example:
 `Stream s = c.stream();`
-Stream is an interface present in `java.util.stream`
+
+```java
+// consider there are 1 Million data stored inside List
+List<String> cities = Arrays.asList(
+"Agra", "Bengalore", "Chennai", "Hyderabad", "Ahemdabad", "Ajmer");
+
+// 1. convert the collection to stream object
+Stream<String> inputStream = cities.stream();
+```
+Stream is an interface present in `java.util.stream`.
+Once we got the stream ,by using that we can process objects of that collection.
