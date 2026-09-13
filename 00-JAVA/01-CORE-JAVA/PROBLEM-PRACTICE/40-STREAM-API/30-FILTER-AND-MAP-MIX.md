@@ -31,11 +31,11 @@
 ### Solution
 ```java
 ```
-### 9
+### 9 Successful Payment → Transaction Amount
 ### Solution
 ```java
 ```
-### 10
+### 10 Complex Employee Processing
 ### Solution
 ```java
 ```
