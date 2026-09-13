@@ -48,10 +48,50 @@ public class EvenNumbers {
 ### 3 Strings starting with "A"
 ### Solution
 ```java
+package streamApi.filter;
+
+import java.util.Arrays;
+import java.util.List;
+
+public class NamesStartingWithA {
+
+	public static void main(String[] args) {
+		
+		List<String> names = Arrays.asList("Alpha", "Bravo", "Austin", "Delta", "Alice", "Finny");
+		
+		names.stream()
+				.filter(i -> i.startsWith("A"))
+				.forEach(i -> {
+					System.out.print(i + " ");
+				});
+
+	}
+
+}
 ```
 ### 4 Range filtering
 ### Solution
 ```java
+package streamApi.filter;
+
+import java.util.Arrays;
+import java.util.List;
+
+public class NumbersInRange {
+
+	public static void main(String[] args) {
+		
+		List<Integer> numbers = Arrays.asList(5, 12, 18, 25, 50, 31, 40, 47, 55, 63);
+		
+		numbers.stream()
+				.filter(i -> i >= 20 && i<= 50)
+				.forEach(i -> {
+					System.out.print(i + " ");
+				});
+
+	}
+
+}
 ```
 ### 5 String length
 ### Solution
