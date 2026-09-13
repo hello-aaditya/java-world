@@ -1,5 +1,23 @@
 # `filter()` Based Questions
-### 1 Greater than 50
+
+---
+
+### 1. Greater than 50
+
+Given:
+
+```java
+List<Integer> numbers = Arrays.asList(10, 25, 50, 65, 80, 35, 90);
+```
+
+Print all numbers **greater than 50**.
+
+**Expected output:**
+
+```
+65 80 90
+```
+
 ### Solution
 ```java
 package streamApi.filter;
@@ -22,7 +40,25 @@ public class GreaterThan50 {
 
 }
 ```
-### 2 Even numbers
+
+---
+
+### 2. Even numbers
+
+Given:
+
+```java
+List<Integer> numbers = Arrays.asList(11, 20, 33, 42, 55, 68, 71, 84);
+```
+
+Print all **even numbers**.
+
+**Expected output:**
+
+```
+20 42 68 84
+```
+
 ### Solution
 ```java
 package streamApi.filter;
@@ -45,7 +81,25 @@ public class EvenNumbers {
 	}
 }
 ```
-### 3 Strings starting with "A"
+
+---
+
+### 3. Strings starting with "A"
+
+Given:
+
+```java
+List<String> names = Arrays.asList("Amit", "Rahul", "Ankit", "Priya", "Arjun", "Neha");
+```
+
+Print only the names that **start with `"A"`**.
+
+**Expected output:**
+
+```
+Amit Ankit Arjun
+```
+
 ### Solution
 ```java
 package streamApi.filter;
@@ -69,7 +123,27 @@ public class NamesStartingWithA {
 
 }
 ```
-### 4 Range filtering
+
+---
+
+### 4. Range filtering
+
+Given:
+
+```java
+List<Integer> numbers = Arrays.asList(5, 12, 18, 25, 31, 40, 47, 55, 63);
+```
+
+Print numbers that are **between 20 and 50, inclusive**.
+
+**Condition:** `20 <= number <= 50`
+
+**Expected output:**
+
+```
+25 31 40 47
+```
+
 ### Solution
 ```java
 package streamApi.filter;
@@ -93,7 +167,25 @@ public class NumbersInRange {
 
 }
 ```
-### 5 String length
+
+---
+
+### 5. String length
+
+Given:
+
+```java
+List<String> names = Arrays.asList("Amit", "Raj", "Alexander", "John", "Christopher", "Sam");
+```
+
+Print names whose length is **greater than 5 characters**.
+
+**Expected output:**
+
+```
+Alexander Christopher
+```
+
 ### Solution
 ```java
 package streamApi.filter;
@@ -117,7 +209,27 @@ public class ValidNames {
 
 }
 ```
-### 6 Remove duplicates manually through filtering logic
+
+---
+
+### 6. Remove duplicates manually through filtering logic
+
+Given:
+
+```java
+List<Integer> numbers = Arrays.asList(10, 15, 10, 20, 25, 15, 30, 20, 35);
+```
+
+Print only numbers that are **greater than 15 and even**.
+
+**Expected output:**
+
+```
+20 30 20
+```
+
+**Requirement:** Use **one `filter()` condition** containing both conditions.
+
 ### Solution
 ```java
 package streamApi.filter;
@@ -141,7 +253,40 @@ public class EvenNumbersGreaterThan15 {
 
 }
 ```
-### 7 Employee salary filtering
+
+---
+
+### 7. Employee salary filtering
+
+Given:
+
+```java
+class Employee {
+    private int id;
+    private String name;
+    private double salary;
+    // constructor + getters
+}
+```
+
+```java
+List<Employee> employees = Arrays.asList(
+    new Employee(101, "Amit", 45000),
+    new Employee(102, "Rahul", 65000),
+    new Employee(103, "Priya", 55000),
+    new Employee(104, "Neha", 80000),
+    new Employee(105, "Arjun", 40000)
+);
+```
+
+Using `filter()`, print employees whose salary is **greater than Rs.50,000**. Do not create a separate salary list.
+
+**Expected output:**
+
+```
+Rahul Priya Neha
+```
+
 ### Solution
 ```java
 package streamApi.filter;
@@ -203,7 +348,32 @@ public class HighSalaryEmployees {
 
 }
 ```
-### 8 Multiple conditions on objects
+
+---
+
+### 8. Multiple conditions on objects
+
+Using the same `Employee` class, print employees who satisfy **both**:
+
+- salary `>=` 50,000
+- employee ID is **even**
+
+**Expected output:**
+
+```
+Victor Gamma
+```
+
+Because:
+
+```
+Alpha  -> 101, 45000  x salary too low
+Victor -> 102, 65000  ok
+Tango  -> 103, 55000  x ID is odd
+Gamma  -> 104, 80000  ok
+Pascal -> 105, 40000  x salary too low
+```
+
 ### Solution
 ```java
 package streamApi.filter;
@@ -232,7 +402,33 @@ public class EligibleEmployees {
 
 }
 ```
-### 9 Null + filtering
+
+---
+
+### 9. Null + filtering
+
+Given:
+
+```java
+List<String> names = Arrays.asList(
+    "Amit", null, "Alexander", "", "Rahul", null, "Priya", "Ankit"
+);
+```
+
+Print names that satisfy **all three conditions**:
+
+1. Name is not `null`
+2. Name is not empty
+3. Name contains at least **5 characters**
+
+**Expected output:**
+
+```
+Amit Alexander Rahul Priya Ankit
+```
+
+> **Important:** Your filter must not throw `NullPointerException`.
+
 ### Solution
 ```java
 package streamApi.filter;
@@ -256,7 +452,46 @@ public class ValidNames {
 
 }
 ```
-### 10 Real-world transaction filtering
+
+---
+
+### 10. Real-world transaction filtering
+
+Given:
+
+```java
+class Transaction {
+    private int id;
+    private String type;
+    private double amount;
+    private boolean successful;
+    // constructor + getters
+}
+```
+
+```java
+List<Transaction> transactions = Arrays.asList(
+    new Transaction(101, "PAYMENT", 1500, true),
+    new Transaction(102, "REFUND",  800,  true),
+    new Transaction(103, "PAYMENT", 5000, false),
+    new Transaction(104, "PAYMENT", 2500, true),
+    new Transaction(105, "REFUND",  1200, false),
+    new Transaction(106, "PAYMENT", 7500, true)
+);
+```
+
+Print only **successful PAYMENT transactions** where:
+
+- `type` is `"PAYMENT"`
+- `successful` is `true`
+- `amount` is **greater than Rs.2,000**
+
+**Expected transaction IDs:**
+
+```
+104 106
+```
+
 ### Solution
 ```java
 package streamApi.filter;
@@ -323,9 +558,26 @@ public class SuccessfulPayments {
 					.forEach(t -> {
 						System.out.print(t.getId() + " ");
 					});
-							
+					
 
 	}
 
 }
 ```
+
+---
+
+### Progression
+
+| #  | Difficulty | Main `filter()` concept              |
+| -- | ---------- | ------------------------------------ |
+| 1  | Easy       | Basic comparison                     |
+| 2  | Easy       | Numeric condition                    |
+| 3  | Easy       | String condition                     |
+| 4  | Medium     | Range                                |
+| 5  | Medium     | String property                      |
+| 6  | Medium     | Multiple conditions                  |
+| 7  | Medium     | Filtering objects                    |
+| 8  | Hard       | Multiple object conditions           |
+| 9  | Hard       | Null-safe filtering                  |
+| 10 | Hard       | Real-world multi-condition filtering |
