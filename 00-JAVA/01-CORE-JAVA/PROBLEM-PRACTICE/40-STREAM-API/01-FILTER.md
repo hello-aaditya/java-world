@@ -81,7 +81,7 @@ public class EvenNumbers {
 Given:
 
 ```java
-List<String> names = Arrays.asList("Amit", "Rahul", "Ankit", "Priya", "Arjun", "Neha");
+List<String> names = Arrays.asList("Alpha", "Bravo", "Austin", "Delta", "Alice", "Finny");
 ```
 
 Print only the names that **start with `"A"`**.
@@ -89,7 +89,7 @@ Print only the names that **start with `"A"`**.
 **Expected output:**
 
 ```
-Amit Ankit Arjun
+Alpha Austin Alice
 ```
 
 ### Solution
@@ -123,7 +123,7 @@ public class NamesStartingWithA {
 Given:
 
 ```java
-List<Integer> numbers = Arrays.asList(5, 12, 18, 25, 31, 40, 47, 55, 63);
+List<Integer> numbers = Arrays.asList(5, 12, 18, 25, 50, 31, 40, 47, 55, 63);
 ```
 
 Print numbers that are **between 20 and 50, inclusive**.
@@ -133,7 +133,7 @@ Print numbers that are **between 20 and 50, inclusive**.
 **Expected output:**
 
 ```
-25 31 40 47
+25 50 31 40 47
 ```
 
 ### Solution
@@ -167,15 +167,15 @@ public class NumbersInRange {
 Given:
 
 ```java
-List<String> names = Arrays.asList("Amit", "Raj", "Alexander", "John", "Christopher", "Sam");
+List<String> names = Arrays.asList("Alpha", null, "Alexander", "", "Gamma", null, "Finny", "Tango");
 ```
 
-Print names whose length is **greater than 5 characters**.
+Print names whose length is **greater than or equal to 5 characters** (ignoring nulls and blanks).
 
 **Expected output:**
 
 ```
-Alexander Christopher
+Alpha Alexander Gamma Finny Tango
 ```
 
 ### Solution
@@ -263,11 +263,11 @@ class Employee {
 
 ```java
 List<Employee> employees = Arrays.asList(
-    new Employee(101, "Amit", 45000),
-    new Employee(102, "Rahul", 65000),
-    new Employee(103, "Priya", 55000),
-    new Employee(104, "Neha", 80000),
-    new Employee(105, "Arjun", 40000)
+    new Employee(101, "Alpha", 45000),
+    new Employee(102, "Victor", 65000),
+    new Employee(103, "Tango", 55000),
+    new Employee(104, "Gamma", 80000),
+    new Employee(105, "Pascal", 40000)
 );
 ```
 
@@ -276,7 +276,7 @@ Using `filter()`, print employees whose salary is **greater than Rs.50,000**. Do
 **Expected output:**
 
 ```
-Rahul Priya Neha
+Victor Tango Gamma
 ```
 
 ### Solution
@@ -403,7 +403,7 @@ Given:
 
 ```java
 List<String> names = Arrays.asList(
-    "Amit", null, "Alexander", "", "Rahul", null, "Priya", "Ankit"
+    "Alpha", null, "Alexander", "", "Gamma", null, "Finny", "Tango"
 );
 ```
 
@@ -416,7 +416,7 @@ Print names that satisfy **all three conditions**:
 **Expected output:**
 
 ```
-Amit Alexander Rahul Priya Ankit
+Alpha Alexander Gamma Finny Tango
 ```
 
 > **Important:** Your filter must not throw `NullPointerException`.
