@@ -4,11 +4,11 @@
     "type": "split",
     "children": [
       {
-        "id": "55eb7b796dd117e4",
+        "id": "3ad8ee9df7c4e40e",
         "type": "tabs",
         "children": [
           {
-            "id": "b14dba36993b47e5",
+            "id": "0dec172d835f2263",
             "type": "leaf",
             "state": {
               "type": "markdown",
@@ -184,8 +184,7 @@
       }
     ],
     "direction": "horizontal",
-    "width": 300,
-    "collapsed": true
+    "width": 300
   },
   "left-ribbon": {
     "hiddenItems": {
@@ -199,7 +198,7 @@
       "obsidian-git:Open Git source control": false
     }
   },
-  "active": "b14dba36993b47e5",
+  "active": "0dec172d835f2263",
   "lastOpenFiles": [
     "00-JAVA/01-CORE-JAVA/PROBLEM-PRACTICE/40-STREAM-API/01-FILTER.md",
     "00-JAVA/01-CORE-JAVA/PROBLEM-PRACTICE/40-STREAM-API/00-INTERMEDIATE-OPERATIONS.md",

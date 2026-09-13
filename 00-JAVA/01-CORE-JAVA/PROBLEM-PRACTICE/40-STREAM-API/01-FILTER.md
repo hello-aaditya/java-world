@@ -94,7 +94,6 @@ public static void main(String[] args) {
 }
 ```
 
----
 
 ### 4. Range filtering
 
@@ -131,7 +130,6 @@ public static void main(String[] args) {
 }
 ```
 
----
 
 ### 5. String length
 
@@ -165,7 +163,6 @@ public static void main(String[] args) {
 }
 ```
 
----
 
 ### 6. Remove duplicates manually through filtering logic
 
@@ -202,7 +199,6 @@ public static void main(String[] args) {
 }
 ```
 
----
 
 ### 7. Employee salary filtering
 
@@ -288,7 +284,6 @@ public static void main(String[] args) {
 }
 ```
 
----
 
 ### 8. Multiple conditions on objects
 
@@ -334,7 +329,6 @@ public static void main(String[] args) {
 
 ```
 
----
 
 ### 9. Null + filtering
 
@@ -374,7 +368,6 @@ public static void main(String[] args) {
 }
 ```
 
----
 
 ### 10. Real-world transaction filtering
 
