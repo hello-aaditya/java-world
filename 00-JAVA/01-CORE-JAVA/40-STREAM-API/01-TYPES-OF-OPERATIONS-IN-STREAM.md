@@ -7,5 +7,5 @@ There are two types of operations in Stream:
 Operation which is taking stream as an input, process them and return another stream is called Intermediate operation.
 - Intermediate Operations generate chains of operations means it can be called multiple times. (Stream 1 -> filter -> Stream 2 -> map -> Stream 3)
 - Intermediate Operations are lazy in nature means they cannot be executed until a terminal operation is called.
-- Some of the 
+- Some of the important ### Intermediate Operations
 	
