@@ -1,15 +1,11 @@
 # what is singleton class?
 for any Java class, if we are allowed to create only one object, such type of class is called Singleton class.
 Example- Runtime, BusinessDelegate, ServiceLocator etc.
-
-
 ## Advantage of Singleton Class
 if several classes have same requirement then it is not recommended to create separate object for every requirement.
-we have to create only one obejct and we can re-use the same object for every similar requirement so that performance & memory utilization will be improved.
+we have to create only one object and we can re-use the same object for every similar requirement so that performance & memory utilization will be improved.
 
 This is the central idea of singleton classes.
-
-
 ## Example
 Runtime r1 = Runtime.getRuntime();
 Runtime r2 = Runtime.getRuntime();
