@@ -187,17 +187,19 @@ Print only numbers that are **greater than 15 and even**.
 
 ### Solution
 ```java
-	public static void main(String[] args) {
-		
-		List<Integer> numbers = Arrays.asList(10, 15, 10, 20, 25, 15, 30, 20, 35);
-		
-		numbers.stream()
-				.filter(n -> (n > 15) && ((n & 1) == 0))
-				.forEach(n -> {
-					System.out.print(n + " ");
-				});
+public static void main(String[] args) {
+	
+	List<Integer> numbers = Arrays.asList(
+		10, 15, 10, 20, 25, 15, 30, 20, 35
+	);
+	
+	numbers.stream()
+			.filter(n -> (n > 15) && ((n & 1) == 0))
+			.forEach(n -> {
+				System.out.print(n + " ");
+			});
 
-	}
+}
 ```
 
 ---
@@ -267,30 +269,21 @@ public class Employee {
 ```
 
 ```java
-package streamApi.filter;
-
-import java.util.Arrays;
-import java.util.List;
-
-public class HighSalaryEmployees {
-
-	public static void main(String[] args) {
-		
-		List<Employee> employees = Arrays.asList(
-			new Employee(101, "Alpha", 45000),
-		    new Employee(102, "Victor", 65000),
-		    new Employee(103, "Tango", 55000),
-		    new Employee(104, "Gamma", 80000),
-		    new Employee(105, "Pascal", 40000)
-		);
-		
-		employees.stream()
-				.filter(e -> e.getSalary() > 50_000.0)
-				.forEach(e -> {
-					System.out.print(e.getName() + " ");
-				});
-
-	}
+public static void main(String[] args) {
+	
+	List<Employee> employees = Arrays.asList(
+		new Employee(101, "Alpha", 45000),
+		new Employee(102, "Victor", 65000),
+		new Employee(103, "Tango", 55000),
+		new Employee(104, "Gamma", 80000),
+		new Employee(105, "Pascal", 40000)
+	);
+	
+	employees.stream()
+			.filter(e -> e.getSalary() > 50_000.0)
+			.forEach(e -> {
+				System.out.print(e.getName() + " ");
+			});
 
 }
 ```
