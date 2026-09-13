@@ -28,6 +28,7 @@ Operation which is taking stream as an input, process them and return another st
 	4. `max()`
 	5. `min()`
 		etc.
+
 ```text
 Java Stream Operations — Input/Output Summary
 
@@ -41,4 +42,4 @@ Intermediate Operation:
 Terminal Operation:
     Input  : n-element Stream
     Output : 1 result (Primitive, Wrapper Class, Optional, Collection, Object)
-    ```
+```
