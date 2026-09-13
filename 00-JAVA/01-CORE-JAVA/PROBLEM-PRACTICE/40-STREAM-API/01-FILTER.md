@@ -19,7 +19,9 @@ Print all numbers **greater than 50**.
 ```java
 public static void main(String[] args) {
 	
-	List<Integer> numbers = Arrays.asList(10, 25, 50, 65, 80, 35, 90);
+	List<Integer> numbers = Arrays.asList(
+		10, 25, 50, 65, 80, 35, 90
+	);
 	
 	numbers.stream()
 			.filter(i -> i > 50)
@@ -49,7 +51,8 @@ Print all **even numbers**.
 public static void main(String[] args) {
 	
 	List<Integer> numbers = Arrays.asList(
-		11, 20, 33, 42, 55, 68, 71, 84);
+		11, 20, 33, 42, 55, 68, 71, 84
+	);
 	
 	numbers.stream()
 			.filter(i -> i % 2 == 0)
@@ -113,24 +116,15 @@ Print numbers that are **between 20 and 50, inclusive**.
 
 ### Solution
 ```java
-package streamApi.filter;
-
-import java.util.Arrays;
-import java.util.List;
-
-public class NumbersInRange {
-
-	public static void main(String[] args) {
-		
-		List<Integer> numbers = Arrays.asList(5, 12, 18, 25, 50, 31, 40, 47, 55, 63);
-		
-		numbers.stream()
-				.filter(i -> i >= 20 && i<= 50)
-				.forEach(i -> {
-					System.out.print(i + " ");
-				});
-
-	}
+public static void main(String[] args) {
+	
+	List<Integer> numbers = Arrays.asList(5, 12, 18, 25, 50, 31, 40, 47, 55, 63);
+	
+	numbers.stream()
+			.filter(i -> i >= 20 && i<= 50)
+			.forEach(i -> {
+				System.out.print(i + " ");
+			});
 
 }
 ```
