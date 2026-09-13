@@ -11,3 +11,6 @@
 | if we want to represent a group of individual objects as a single entity then we should go for **Collection**. | if we want to process a group of objects from the collection then we should go for **Streams**. |
 | -------------------------------------------------------------------------------------------------------------- | ----------------------------------------------------------------------------------------------- |
 
+Example:
+`Stream s = c.stream();`
+Stream is an interface present in `java.util.stream`
