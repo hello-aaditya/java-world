@@ -54,6 +54,20 @@ public static void main(String[] args) {
 ### 4 Names Longer Than 5 → Uppercase
 ### Solution
 ```java
+public static void main(String[] args) {
+		
+	List<String> names = Arrays.asList(
+		"Alpha", "Bravo", "Charlie", "Delta",
+		"November", "Oscar", "Christopher"
+	);
+	
+	names.stream()
+			.filter(n -> n.length() > 5)
+			.map(n -> n.toUpperCase())
+			.forEach(n -> {
+				System.out.print(n + " ");
+			});
+}
 ```
 ### 5 Even Numbers in Range → Square
 ### Solution
