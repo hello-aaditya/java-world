@@ -7,31 +7,31 @@
 ### Solution
 ```java
 ```
-### 3 
+### 3 Maximum Number Greater Than 50
 ### Solution
 ```java
 ```
-### 4 
+### 4 Maximum Unique Number
 ### Solution
 ```java
 ```
-### 5 
+### 5 Lexicographically Maximum String
 ### Solution
 ```java
 ```
-### 6 
+### 6 Longest String
 ### Solution
 ```java
 ```
-### 7 
+### 7 Longest String With Tie-Breaking
 ### Solution
 ```java
 ```
-### 8 
+### 8 Maximum Number by Absolute Value
 ### Solution
 ```java
 ```
-### 9 
+### 9 Maximum Even Number Greater Than 50
 ### Solution
 ```java
 ```
