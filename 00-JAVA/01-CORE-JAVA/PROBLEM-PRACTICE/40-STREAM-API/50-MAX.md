@@ -418,51 +418,81 @@ public static void main(String[] args) {
 ### 9 Highest-Paid Employee Per Department After Deduplication
 ### Solution
 ```java
-	public static void main(String[] args) {
+public static void main(String[] args) {
 
-		List<Employee> employees = Arrays.asList(
+	List<Employee> employees = Arrays.asList(
 
-		    new Employee(9011, "Alpha",   "DEV",  1000000),
-		    new Employee(9011, "Alpha",   "DEV",  1000000), // duplicate ID
+		new Employee(9011, "Alpha",   "DEV",  1000000),
+		new Employee(9011, "Alpha",   "DEV",  1000000), // duplicate ID
 
-		    new Employee(9012, "Bravo",   "DEV",  1500000),
-		    new Employee(9013, "Charlie", "DEV",  1500000),
+		new Employee(9012, "Bravo",   "DEV",  1500000),
+		new Employee(9013, "Charlie", "DEV",  1500000),
 
-		    new Employee(9014, "Delta",   "QA",   900000),
-		    new Employee(9014, "Delta",   "QA",   900000),  // duplicate ID
+		new Employee(9014, "Delta",   "QA",   900000),
+		new Employee(9014, "Delta",   "QA",   900000),  // duplicate ID
 
-		    new Employee(9015, "Echo",    "QA",   1300000),
-		    new Employee(9016, "Foxtrot", "QA",   1300000),
+		new Employee(9015, "Echo",    "QA",   1300000),
+		new Employee(9016, "Foxtrot", "QA",   1300000),
 
-		    new Employee(9017, "Golf",    "PROD", 1400000),
-		    new Employee(9018, "Hotel",   "PROD", 1250000),
-		    new Employee(9019, "India",   "PROD", 1350000),
+		new Employee(9017, "Golf",    "PROD", 1400000),
+		new Employee(9018, "Hotel",   "PROD", 1250000),
+		new Employee(9019, "India",   "PROD", 1350000),
 
-		    new Employee(9020, "Juliett", "UI",   950000),
-		    new Employee(9021, "Kilo",    "UI",   1100000),
-		    new Employee(9021, "Kilo",    "UI",   1100000)  // duplicate ID
-		);
-		
-		Map<String, Optional<Employee>> result = 
-			employees.stream()
-					.distinct()
-					.collect(
-						Collectors.groupingBy(
-							Employee::getDepartment,
-							Collectors.maxBy(
-								Comparator.comparing(Employee::getSalary)
-									.thenComparing(Employee::getId)
-							)
+		new Employee(9020, "Juliett", "UI",   950000),
+		new Employee(9021, "Kilo",    "UI",   1100000),
+		new Employee(9021, "Kilo",    "UI",   1100000)  // duplicate ID
+	);
+	
+	Map<String, Optional<Employee>> result = 
+		employees.stream()
+				.distinct()
+				.collect(
+					Collectors.groupingBy(
+						Employee::getDepartment,
+						Collectors.maxBy(
+							Comparator.comparing(Employee::getSalary)
+								.thenComparing(Employee::getId)
 						)
-					);
-		
-		result.forEach((dept, emp) -> {
-			System.out.println("\"" + dept + "\"" + " -> " + emp.get().getName());
-		});
-				
-	}
+					)
+				);
+	
+	result.forEach((dept, emp) -> {
+		System.out.println("\"" + dept + "\"" + " -> " + emp.get().getName());
+	});
+			
+}
 ```
 ### 10 Highest Salary Employee Using Composite Business Rules
 ### Solution
 ```java
+public static void main(String[] args) {
+
+	List<Employee> employees = Arrays.asList(
+
+		new Employee(10001, "Alpha",   "QA",   1700000),
+		new Employee(10002, "Bravo",   "PROD", 1800000),
+
+		new Employee(10003, "Charlie", "QA",   2000000),
+		new Employee(10004, "Delta",   "PROD", 2000000),
+
+		new Employee(10005, "Echo",    "DEV",  2000000),
+		new Employee(10006, "Foxtrot", "DEV",  2000000),
+		new Employee(10007, "Golf",    "DEV",  2000000),
+
+		new Employee(10008, "Hotel",   "QA",   1950000),
+		new Employee(10009, "India",   "DEV",  1900000),
+		new Employee(10010, "Juliett", "PROD", 1750000)
+	);
+	
+	Optional<Employee> result =  
+		employees.stream()
+				.max(
+					Comparator.comparing(Employee::getSalary)
+						.thenComparing(e -> e.getDepartment().equals("DEV"))
+						.thenComparing(Employee::getId)
+				);
+	
+	result.ifPresent(System.out::println);
+
+}
 ```
