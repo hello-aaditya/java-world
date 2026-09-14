@@ -207,7 +207,7 @@ public static void main(String[] args) {
 ### Solution
 ```java
 ```
-### 10 
+### 10 Highest Salary Employee Using Composite Business Rules
 ### Solution
 ```java
 ```
