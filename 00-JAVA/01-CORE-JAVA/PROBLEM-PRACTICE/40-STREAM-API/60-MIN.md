@@ -74,10 +74,36 @@ public static void main(String[] args) {
 ### 5 Lexicographically Minimum String
 ### Solution
 ```java
+public static void main(String[] args) {
+		
+	List<String> names = Arrays.asList(
+		"Delta", "Charlie", "Alpha", "Echo", "Bravo", "Foxtrot"
+	);
+
+	String result = 
+		names.stream()
+				.min(String::compareTo)
+				.get();
+	
+	System.out.println(result);
+}
 ```
 ### 6 Shortest String
 ### Solution
 ```java
+public static void main(String[] args) {
+		List<String> words = Arrays.asList(
+			"Programming", "Java", "Collection", "Stream", "Lambda",
+			"Code", "Database", "API", "SQL", "Kubernetes"
+		);
+
+	String result = 
+		words.stream()
+				.min(Comparator.comparing(String::length))
+				.get();
+	
+	System.out.println(result);
+}
 ```
 ### 7 Shortest String With Tie-Breaking
 ### Solution
