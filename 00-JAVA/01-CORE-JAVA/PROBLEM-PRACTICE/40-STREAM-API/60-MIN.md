@@ -19,6 +19,20 @@ public static void main(String[] args) {
 ### 2 Minimum Odd Number
 ### Solution
 ```java
+public static void main(String[] args) {
+
+	List<Integer> numbers = Arrays.asList(
+		84, 37, 92, 15, 63, 48, 29, 72, 56, 41
+	);
+
+	int miniOddNumber = 
+		numbers.stream()
+				.filter(n -> (n & 1) == 1)
+				.min(Integer::compareTo)
+				.get();
+	
+	System.out.println(miniOddNumber);
+}
 ```
 ### 3 Minimum Number Greater Than 30
 ### Solution
