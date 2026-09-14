@@ -136,8 +136,37 @@ public static void main(String[] args) {
 ### 9 Maximum Even Number Greater Than 50
 ### Solution
 ```java
+public static void main(String[] args) {
+	
+	List<Integer> numbers = Arrays.asList(
+		15, 42, 87, 64, 93, 28, 76, 51, 99, 36
+	);
+	
+	int result = numbers.stream()
+			.filter(n -> (n > 50) && ((n&1) == 0)) 
+			.max(Comparator.naturalOrder())
+			.get();
+	
+	System.out.println(result);
+}
 ```
 ### 10 Maximum String Using Composite Rules
 ### Solution
 ```java
+public static void main(String[] args) {
+
+	List<String> words = Arrays.asList(
+		"Java", "Spring", "Docker", "Lambda", "Kubernetes", 
+		"Stream", "Database", "Microservices", "Orchestration"
+	);
+	
+	String result = words.stream()
+			.max(
+				Comparator.comparing(String::length)
+				.thenComparing(Comparator.naturalOrder())
+			).get();
+	
+	System.out.println(result);
+
+}
 ```
