@@ -37,10 +37,39 @@ public static void main(String[] args) {
 ### 3 Minimum Number Greater Than 30
 ### Solution
 ```java
+public static void main(String[] args) {
+
+	List<Integer> numbers = Arrays.asList(
+		12, 67, 30, 34, 89, 45, 21, 31, 56, 29
+	);
+	
+	int miniGreaterThan30 = 
+		numbers.stream()
+			.filter(n -> n > 30)
+			.min(Integer::compareTo)
+			.get();
+
+	System.out.println(miniGreaterThan30);
+}
 ```
 ### 4 Minimum Unique Number
 ### Solution
 ```java
+public static void main(String[] args) {
+		
+	List<Integer> numbers = Arrays.asList(
+		45, 23, 78, 12, 34, 23, 67, 12, 89, 45, 18, 18
+	);
+
+	int result = 
+		numbers.stream()
+				.distinct()
+				.min(Integer::compareTo)
+				.get();
+	
+	System.out.println(result);
+			
+}
 ```
 ### 5 Lexicographically Minimum String
 ### Solution
