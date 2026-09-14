@@ -89,8 +89,6 @@ public static void main(String[] args) {
 ### 6 Employee Salary → Employee Names
 ### Solution
 ```java
-package streamApi.filterAndMap;
-
 public class Employee {
 	private int id;
 	private String name;
@@ -185,6 +183,66 @@ public static void main(String[] args) {
 ### 9 Successful Payment → Transaction Amount
 ### Solution
 ```java
+package streamApi.filterAndMap;
+
+public class Transaction {
+	private int id;
+	private String type;
+	private double amount;
+	private boolean successful;
+	
+	public Transaction (
+		int id,
+		String type,
+		double amount,
+		boolean successful
+	) {
+		this.id = id;
+		this.type = type;
+		this.amount = amount;
+		this.successful = successful;
+	}
+	
+	public int getId() {
+		return id;
+	}
+	
+	public String getType() {
+		return type;
+	}
+	
+	public double getAmount() {
+		return amount;
+	}
+	
+	public boolean getSuccessful() {
+		return successful;
+	}
+}
+```
+
+```java
+public static void main(String[] args) {
+		
+	List<Transaction> transactions = Arrays.asList(
+		new Transaction(101, "PAYMENT", 1500, true),
+		new Transaction(102, "REFUND", 800, true),
+		new Transaction(103, "PAYMENT", 5000, false),
+		new Transaction(104, "PAYMENT", 2500, true),
+		new Transaction(105, "REFUND", 1200, false),
+		new Transaction(106, "PAYMENT", 7500, true)
+	);
+	
+	transactions.stream()
+			.filter(t -> t.getType().equals("PAYMENT") && 
+						t.getSuccessful() && t.getAmount() > 2_000)
+			.map(t -> t.getAmount())
+			.forEach(amt -> {
+				System.out.print(amt + " ");
+			});
+
+	
+}
 ```
 ### 10 Complex Employee Processing
 ### Solution
