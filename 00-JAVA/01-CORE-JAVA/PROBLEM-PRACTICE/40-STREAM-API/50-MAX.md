@@ -175,35 +175,35 @@ public static void main(String[] args) {
 ### Solution
 ```java
 ```
-### 2 
+### 2 Highest Employee ID
 ### Solution
 ```java
 ```
-### 3 
+### 3 Highest Salary Among DEV Employees
 ### Solution
 ```java
 ```
-### 4 
+### 4 Highest Paid Employee in Each Department
 ### Solution
 ```java
 ```
-### 5 
+### 5 Highest Salary After Removing Duplicate Employees
 ### Solution
 ```java
 ```
-### 6 
+### 6 Highest Salary With ID Tie-Breaking
 ### Solution
 ```java
 ```
-### 7 
+### 7 Highest-Paid Employee Above Department Average
 ### Solution
 ```java
 ```
-### 8 
+### 8 Maximum Salary Difference Between Two Employees
 ### Solution
 ```java
 ```
-### 9 
+### 9 Highest-Paid Employee Per Department After Deduplication
 ### Solution
 ```java
 ```
