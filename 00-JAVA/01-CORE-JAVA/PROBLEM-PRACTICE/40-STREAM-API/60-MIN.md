@@ -146,8 +146,39 @@ public static void main(String[] args) {
 ### 9 Minimum Positive Even Number
 ### Solution
 ```java
+public static void main(String[] args) {
+
+	List<Integer> numbers = Arrays.asList(
+		-20, 15, 8, 42, -6, 3, 14, 0, 26, -12, 10, 7
+	);
+
+	int result =
+		numbers.stream()
+				.filter(n -> (n > 0) && (n & 1) == 0)
+				.min(Integer::compareTo)
+				.get();
+	
+	System.out.println(result);
+}
 ```
 ### 10 Minimum String Using Composite Rules
 ### Solution
 ```java
+public static void main(String[] args) {
+	
+	List<String> words = Arrays.asList(
+		"Framework", "XML", "Spring", "SQL", "Database",
+		"JSON", "HTML", "API", "Code", "Lambda",
+		"Java", "Kotlin"
+	);
+	
+	String result = 
+		words.stream()
+				.min(Comparator.comparingInt(String::length)
+					.thenComparing(String::compareTo)
+				)
+				.get();
+	
+	System.out.println(result);
+}
 ```
