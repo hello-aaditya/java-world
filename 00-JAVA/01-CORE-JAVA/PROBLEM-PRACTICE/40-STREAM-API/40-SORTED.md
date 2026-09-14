@@ -462,9 +462,6 @@ Echo
 Salary: 1500000
 ```
 
-### Solution
-
-
 ### 2. Highest Employee ID
 
 Find the employee having the **maximum employee ID**.
@@ -476,9 +473,6 @@ Hotel
 ID: 1017
 ```
 
-### Solution
-
-
 ### 3. Highest Salary Among DEV Employees
 
 Filter only `DEV` department employees, then find the one with the **highest salary**.
@@ -489,9 +483,6 @@ Filter only `DEV` department employees, then find the one with the **highest sal
 Echo
 Salary: 1500000
 ```
-
-### Solution
-
 
 ### 4. Highest Paid Employee in Each Department
 
@@ -506,15 +497,9 @@ QA   -> Foxtrot
 UI   -> Hotel
 ```
 
-### Solution
-
-
 ### 5. Highest Salary After Removing Duplicate Employees
 
 The list contains duplicate employees. Remove duplicates using `distinct()`, then find the **highest-paid unique employee**.
-
-### Solution
-
 
 ### 6. Highest Salary With ID Tie-Breaking
 
@@ -529,9 +514,6 @@ Employee B -> salary = 1500000, ID = 1012
 
 Employee A wins because `1007 < 1012`.
 
-### Solution
-
-
 ### 7. Highest-Paid Employee Above Department Average
 
 For each department:
@@ -540,9 +522,6 @@ For each department:
 3. From those, find the one with the **maximum salary**.
 
 Result is a `Map<String, Optional<Employee>>`.
-
-### Solution
-
 
 ### 8. Maximum Salary Difference Between Two Employees
 
@@ -558,9 +537,6 @@ Highest salary - Lowest salary = Maximum difference
 700000
 ```
 
-### Solution
-
-
 ### 9. Highest-Paid Unique Employee Per Department
 
 Employees with the **same ID** are considered duplicates. For each department:
@@ -569,9 +545,6 @@ Employees with the **same ID** are considered duplicates. For each department:
 3. If two have the same salary, pick the one with the **higher ID**.
 
 Result is a `Map<String, Employee>`.
-
-### Solution
-
 
 ### 10. Best Employee by Business Rules
 
