@@ -425,3 +425,163 @@ public static void main(String[] args) {
 
 }
 ```
+
+# `max()` Based Custom Class Questions
+
+The `Employee` class used here has an additional `department` field:
+
+```java
+public class Employee {
+	private int id;
+	private String name;
+	private double salary;
+	private String department;
+
+	public Employee(int id, String name, double salary, String department) {
+		this.id = id;
+		this.name = name;
+		this.salary = salary;
+		this.department = department;
+	}
+
+	public int getId() { return id; }
+	public String getName() { return name; }
+	public double getSalary() { return salary; }
+	public String getDepartment() { return department; }
+}
+```
+
+### 1. Highest Salary
+
+Find the employee who has the **highest salary**.
+
+**Expected output:**
+
+```
+Echo
+Salary: 1500000
+```
+
+### Solution
+
+
+### 2. Highest Employee ID
+
+Find the employee having the **maximum employee ID**.
+
+**Expected output:**
+
+```
+Hotel
+ID: 1017
+```
+
+### Solution
+
+
+### 3. Highest Salary Among DEV Employees
+
+Filter only `DEV` department employees, then find the one with the **highest salary**.
+
+**Expected output:**
+
+```
+Echo
+Salary: 1500000
+```
+
+### Solution
+
+
+### 4. Highest Paid Employee in Each Department
+
+For each department, find the employee with the **highest salary**. Result is a `Map<String, Employee>`.
+
+**Expected output:**
+
+```
+DEV  -> Echo
+PROD -> Beta
+QA   -> Foxtrot
+UI   -> Hotel
+```
+
+### Solution
+
+
+### 5. Highest Salary After Removing Duplicate Employees
+
+The list contains duplicate employees. Remove duplicates using `distinct()`, then find the **highest-paid unique employee**.
+
+### Solution
+
+
+### 6. Highest Salary With ID Tie-Breaking
+
+Find the employee with the **highest salary**. If multiple employees share the same highest salary, pick the one with the **smaller ID**.
+
+**Example:**
+
+```
+Employee A -> salary = 1500000, ID = 1007
+Employee B -> salary = 1500000, ID = 1012
+```
+
+Employee A wins because `1007 < 1012`.
+
+### Solution
+
+
+### 7. Highest-Paid Employee Above Department Average
+
+For each department:
+1. Calculate the average salary.
+2. Keep only employees whose salary is **above that average**.
+3. From those, find the one with the **maximum salary**.
+
+Result is a `Map<String, Optional<Employee>>`.
+
+### Solution
+
+
+### 8. Maximum Salary Difference Between Two Employees
+
+Find the **maximum possible salary difference** between any two employees.
+
+```
+Highest salary - Lowest salary = Maximum difference
+```
+
+**Expected output:**
+
+```
+700000
+```
+
+### Solution
+
+
+### 9. Highest-Paid Unique Employee Per Department
+
+Employees with the **same ID** are considered duplicates. For each department:
+1. Remove duplicate employee IDs.
+2. Find the employee with the highest salary.
+3. If two have the same salary, pick the one with the **higher ID**.
+
+Result is a `Map<String, Employee>`.
+
+### Solution
+
+
+### 10. Best Employee by Business Rules
+
+Find the best employee using these priority rules in order:
+
+1. **Highest salary** wins.
+2. If tied on salary, **DEV department** wins over others.
+3. If still tied, **higher employee ID** wins.
+
+Return the complete `Employee` object.
+
+### Solution
+
