@@ -8,17 +8,13 @@
         "type": "tabs",
         "children": [
           {
-            "id": "1940da926e5bac06",
+            "id": "34e77bc0be743a91",
             "type": "leaf",
             "state": {
-              "type": "markdown",
-              "state": {
-                "file": "00-JAVA/01-CORE-JAVA/PROBLEM-PRACTICE/40-STREAM-API/50-MAX.md",
-                "mode": "source",
-                "source": false
-              },
+              "type": "empty",
+              "state": {},
               "icon": "lucide-file",
-              "title": "50-MAX"
+              "title": "New tab"
             }
           }
         ]
@@ -199,10 +195,10 @@
       "obsidian-git:Open Git source control": false
     }
   },
-  "active": "1940da926e5bac06",
+  "active": "34e77bc0be743a91",
   "lastOpenFiles": [
-    "00-JAVA/01-CORE-JAVA/PROBLEM-PRACTICE/40-STREAM-API/00-INTERMEDIATE-OPERATIONS.md",
     "00-JAVA/01-CORE-JAVA/PROBLEM-PRACTICE/40-STREAM-API/50-MAX.md",
+    "00-JAVA/01-CORE-JAVA/PROBLEM-PRACTICE/40-STREAM-API/00-INTERMEDIATE-OPERATIONS.md",
     "00-JAVA/01-CORE-JAVA/PROBLEM-PRACTICE/40-STREAM-API/40-SORTED.md",
     "00-JAVA/01-CORE-JAVA/PROBLEM-PRACTICE/40-STREAM-API/30-FILTER-AND-MAP-MIX.md",
     "00-JAVA/01-CORE-JAVA/PROBLEM-PRACTICE/40-STREAM-API/20-MAP.md",
