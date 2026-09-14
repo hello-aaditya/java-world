@@ -1,9 +1,25 @@
 # `max()` Based Questions
-### 1 Maximum Number
+
+### 1. Maximum Number
+
+Given:
+
+```java
+List<Integer> numbers = Arrays.asList(45, 12, 89, 34, 67, 23, 91, 56);
+```
+
+Find the **maximum number** using `max()`. Do not use `sorted()`.
+
+**Expected output:**
+
+```
+91
+```
+
 ### Solution
 ```java
 public static void main(String[] args) {
-		
+	
 	List<Integer> numbers = Arrays.asList(
 		45, 12, 89, 34, 67, 23, 91, 56
 	);
@@ -14,11 +30,27 @@ public static void main(String[] args) {
 	System.out.println(maxNumber);
 }
 ```
-### 2 Maximum Even Number
+
+### 2. Maximum Even Number
+
+Given:
+
+```java
+List<Integer> numbers = Arrays.asList(17, 42, 83, 64, 91, 28, 76, 55);
+```
+
+Find the **maximum even number**. Only even numbers should participate. Do not use `sorted()`.
+
+**Expected output:**
+
+```
+76
+```
+
 ### Solution
 ```java
 public static void main(String[] args) {
-		
+	
 	List<Integer> numbers = Arrays.asList(
 		17, 42, 83, 64, 91, 28, 76, 55
 	);
@@ -31,11 +63,27 @@ public static void main(String[] args) {
 	System.out.println(maxEvenNumber);
 }
 ```
-### 3 Maximum Number Greater Than 50
+
+### 3. Maximum Number Greater Than 50
+
+Given:
+
+```java
+List<Integer> numbers = Arrays.asList(15, 42, 87, 64, 93, 28, 76, 51, 99, 36);
+```
+
+Find the **maximum even number greater than 50**. Do not use `sorted()`.
+
+**Expected output:**
+
+```
+76
+```
+
 ### Solution
 ```java
 public static void main(String[] args) {
-	
+
 	List<Integer> numbers = Arrays.asList(
 		15, 42, 87, 64, 93, 28, 76, 51, 99, 36
 	);
@@ -48,11 +96,27 @@ public static void main(String[] args) {
 	System.out.println(result);
 }
 ```
-### 4 Maximum Unique Number
+
+### 4. Maximum Unique Number
+
+Given:
+
+```java
+List<Integer> numbers = Arrays.asList(45, 78, 23, 78, 91, 45, 67, 91, 34, 89);
+```
+
+Remove duplicates, then find the **maximum number**. Do not use `sorted()`.
+
+**Expected output:**
+
+```
+91
+```
+
 ### Solution
 ```java
 public static void main(String[] args) {
-	
+
 	List<Integer> numbers = Arrays.asList(
 		45, 78, 23, 78, 91, 45, 67, 91, 34, 89
 	);
@@ -64,11 +128,27 @@ public static void main(String[] args) {
 	System.out.println(result);
 }
 ```
-### 5 Lexicographically Maximum String
+
+### 5. Lexicographically Maximum String
+
+Given:
+
+```java
+List<String> names = Arrays.asList("Alpha", "Charlie", "Bravo", "Delta", "Echo", "Frankie");
+```
+
+Find the **lexicographically maximum** string. Do not compare strings manually and do not use `sorted()`.
+
+**Expected output:**
+
+```
+Frankie
+```
+
 ### Solution
 ```java
 public static void main(String[] args) {
-	
+
 	List<String> names = Arrays.asList(
 		"Alpha", "Charlie", "Bravo", "Delta", "Echo", "Frankie"
 	);
@@ -79,11 +159,29 @@ public static void main(String[] args) {
 	System.out.println(result);
 }
 ```
-### 6 Longest String
+
+### 6. Longest String
+
+Given:
+
+```java
+List<String> keywords = Arrays.asList(
+    "Java", "Stream", "Collection", "Lambda", "Programming", "API"
+);
+```
+
+Find the **longest string** by length using `max()`. Do not use `sorted()`.
+
+**Expected output:**
+
+```
+Programming
+```
+
 ### Solution
 ```java
 public static void main(String[] args) {
-	
+
 	List<String> keywords = Arrays.asList(
 		"Java", "Stream", "Collection", "Lambda", "Programming", "API"
 	);
@@ -95,11 +193,27 @@ public static void main(String[] args) {
 
 }
 ```
-### 7 Longest String With Tie-Breaking
+
+### 7. Longest String With Tie-Breaking
+
+Given:
+
+```java
+List<String> words = Arrays.asList("Java", "Spring", "Docker", "Python", "Lambda", "Oracle");
+```
+
+Find the **longest string**. If multiple strings have the same length, pick the **lexicographically greater** one. Do not use `sorted()`.
+
+**Expected output:**
+
+```
+Spring
+```
+
 ### Solution
 ```java
 public static void main(String[] args) {
-	
+
 	List<String> words = Arrays.asList(
 		"Java", "Spring", "Docker", "Python", "Lambda", "Oracle"
 	);
@@ -114,11 +228,29 @@ public static void main(String[] args) {
 	System.out.println(result);
 }
 ```
-### 8 Maximum Number by Absolute Value
+
+### 8. Maximum Number by Absolute Value
+
+Given:
+
+```java
+List<Integer> numbers = Arrays.asList(-45, 12, -89, 34, 67, -23, 56, -91);
+```
+
+Find the number with the **maximum absolute value**. Comparison must be based on `Math.abs()`. Do not use `sorted()` or modify the original list.
+
+> `-91` has absolute value `91` → so `-91` should be selected.
+
+**Expected output:**
+
+```
+-91
+```
+
 ### Solution
 ```java
 public static void main(String[] args) {
-	
+
 	List<Integer> numbers = Arrays.asList(
 		-45, 12, -89, 34, 67, -23, 56, -91
 	);
@@ -133,11 +265,27 @@ public static void main(String[] args) {
 	System.out.println(result);
 }
 ```
-### 9 Maximum Even Number Greater Than 50
+
+### 9. Maximum Even Number Greater Than 50
+
+Given:
+
+```java
+List<Integer> numbers = Arrays.asList(15, 42, 87, 64, 93, 28, 76, 51, 99, 36);
+```
+
+Find the maximum number that is **even** and **greater than 50**. Do not use `sorted()`.
+
+**Expected output:**
+
+```
+76
+```
+
 ### Solution
 ```java
 public static void main(String[] args) {
-	
+
 	List<Integer> numbers = Arrays.asList(
 		15, 42, 87, 64, 93, 28, 76, 51, 99, 36
 	);
@@ -150,7 +298,26 @@ public static void main(String[] args) {
 	System.out.println(result);
 }
 ```
-### 10 Maximum String Using Composite Rules
+
+### 10. Maximum String Using Composite Rules
+
+Given:
+
+```java
+List<String> words = Arrays.asList(
+    "Java", "Spring", "Docker", "Lambda", "Kubernetes",
+    "Stream", "Database", "Microservices", "Orchestration"
+);
+```
+
+Find the maximum string by these rules — **greatest length wins**; if lengths are equal, **lexicographically greater** wins. Use a `Comparator`. Do not use `sorted()`.
+
+**Expected output:**
+
+```
+Orchestration
+```
+
 ### Solution
 ```java
 public static void main(String[] args) {
@@ -170,8 +337,11 @@ public static void main(String[] args) {
 
 }
 ```
+
 # `max()` Based Custom Class Questions
-### Employee Class
+
+### Employee class
+
 ```java
 import java.util.Objects;
 
@@ -243,11 +413,35 @@ public class Employee {
 	}
 }
 ```
-### 1 Highest Salary
+
+### 1. Highest Salary
+
+Given:
+
+```java
+List<Employee> employees = Arrays.asList(
+    new Employee(1011, "Alpha",   "DEV",   850000),
+    new Employee(1012, "Bravo",   "QA",    920000),
+    new Employee(1013, "Charlie", "PROD",  780000),
+    new Employee(1014, "Delta",   "DEV",  1250000),
+    new Employee(1015, "Echo",    "UI",   1050000),
+    new Employee(1016, "Foxtrot", "QA",    980000),
+    new Employee(1017, "Golf",    "PROD", 1150000)
+);
+```
+
+Find the employee with the **highest salary** using `max()`.
+
+**Expected output:**
+
+```
+Delta -> 1250000.0
+```
+
 ### Solution
 ```java
 public static void main(String[] args) {
-		
+	
 	List<Employee> employees = Arrays.asList(
 		new Employee(1011, "Alpha",   "DEV",  850000),
 		new Employee(1012, "Bravo",   "QA",  920000),
@@ -266,11 +460,35 @@ public static void main(String[] args) {
 
 }
 ```
-### 2 Highest Employee ID
+
+### 2. Highest Employee ID
+
+Given:
+
+```java
+List<Employee> employees = Arrays.asList(
+    new Employee(2031, "Alpha",   "DEV",  1100000),
+    new Employee(2017, "Bravo",   "QA",   1350000),
+    new Employee(2045, "Charlie", "PROD",  900000),
+    new Employee(2022, "Delta",   "UI",   1200000),
+    new Employee(2051, "Echo",    "DEV",  1050000),
+    new Employee(2038, "Foxtrot", "QA",    980000),
+    new Employee(2042, "Golf",    "PROD", 1250000)
+);
+```
+
+Find the employee with the **maximum employee ID**. Return the complete `Employee` object.
+
+**Expected output:**
+
+```
+ID: 2051 -> Echo
+```
+
 ### Solution
 ```java
 public static void main(String[] args) {
-		
+	
 	List<Employee> employees = Arrays.asList(
 		new Employee(2031, "Alpha",   "DEV",  1100000),
 		new Employee(2017, "Bravo",   "QA",   1350000),
@@ -289,11 +507,36 @@ public static void main(String[] args) {
 
 }
 ```
-### 3 Highest Salary Among DEV Employees
+
+### 3. Highest Salary Among DEV Employees
+
+Given:
+
+```java
+List<Employee> employees = Arrays.asList(
+    new Employee(3011, "Alpha",   "QA",    1400000),
+    new Employee(3012, "Bravo",   "DEV",    950000),
+    new Employee(3013, "Charlie", "PROD",  1250000),
+    new Employee(3014, "Delta",   "DEV",   1450000),
+    new Employee(3015, "Echo",    "UI",    1600000),
+    new Employee(3016, "Foxtrot", "DEV",   1350000),
+    new Employee(3017, "Golf",    "QA",    1100000),
+    new Employee(3018, "Hotel",   "DEV",   1280000)
+);
+```
+
+Filter only `DEV` employees, then find the one with the **highest salary**. Handle the case where no DEV employees exist.
+
+**Expected output:**
+
+```
+Delta -> 1450000.0
+```
+
 ### Solution
 ```java
 public static void main(String[] args) {
-		
+	
 	List<Employee> employees = Arrays.asList(
 		new Employee(3011, "Alpha",   "QA",   1400000),
 		new Employee(3012, "Bravo",   "DEV",   950000),
@@ -314,7 +557,42 @@ public static void main(String[] args) {
 	System.out.println(emp.getName() + " -> " + emp.getSalary());
 }
 ```
-### 4 Highest Paid Employee in Each Department
+
+### 4. Highest Paid Employee in Each Department
+
+Given:
+
+```java
+List<Employee> employees = Arrays.asList(
+    new Employee(4011, "Alpha",   "DEV",  1000000),
+    new Employee(4012, "Bravo",   "DEV",  1450000),
+    new Employee(4013, "Charlie", "DEV",  1250000),
+
+    new Employee(4014, "Delta",   "QA",    900000),
+    new Employee(4015, "Echo",    "QA",   1350000),
+    new Employee(4016, "Foxtrot", "QA",   1150000),
+
+    new Employee(4017, "Golf",    "PROD", 1500000),
+    new Employee(4018, "Hotel",   "PROD", 1300000),
+    new Employee(4019, "India",   "PROD", 1420000),
+
+    new Employee(4020, "Juliett", "UI",    850000),
+    new Employee(4021, "Kilo",    "UI",   1050000),
+    new Employee(4022, "Lima",    "UI",    980000)
+);
+```
+
+For each department, find the employee with the **highest salary**. Result is a `Map<String, Optional<Employee>>`.
+
+**Expected output:**
+
+```
+DEV  -> Bravo
+QA   -> Echo
+PROD -> Golf
+UI   -> Kilo
+```
+
 ### Solution
 ```java
 	public static void main(String[] args) {
@@ -355,7 +633,33 @@ public static void main(String[] args) {
 
 }
 ```
-### 5 Highest Salary After Removing Duplicate Employees
+
+### 5. Highest Salary After Removing Duplicate Employees
+
+Given:
+
+```java
+List<Employee> employees = Arrays.asList(
+    new Employee(5011, "Alpha",   "DEV",   950000),
+    new Employee(5012, "Bravo",   "QA",   1100000),
+    new Employee(5013, "Charlie", "PROD", 1250000),
+    new Employee(5012, "Bravo",   "QA",   1100000),  // duplicate
+    new Employee(5014, "Delta",   "DEV",  1450000),
+    new Employee(5015, "Echo",    "UI",   1350000),
+    new Employee(5013, "Charlie", "PROD", 1250000),  // duplicate
+    new Employee(5016, "Foxtrot", "QA",   1050000),
+    new Employee(5017, "Golf",    "PROD", 1400000)
+);
+```
+
+Remove duplicates using `distinct()`, then find the **highest-paid unique employee**. Do not use `sorted()`.
+
+**Expected output:**
+
+```
+Delta -> 1450000.0
+```
+
 ### Solution
 ```java
 public static void main(String[] args) {
@@ -376,14 +680,38 @@ public static void main(String[] args) {
 			employees.stream()
 			.distinct()
 			.max(Comparator.comparing(Employee::getSalary));
-			
+		
 	output.ifPresent(e -> {
 		System.out.println(e.getName() + " -> " + e.getSalary());
 	});
 
 }
 ```
-### 6 Highest Salary With ID Tie-Breaking
+
+### 6. Highest Salary With ID Tie-Breaking
+
+Given:
+
+```java
+List<Employee> employees = Arrays.asList(
+    new Employee(6015, "Alpha",   "DEV",  1200000),
+    new Employee(6008, "Bravo",   "QA",   1450000),
+    new Employee(6012, "Charlie", "PROD", 1600000),
+    new Employee(6005, "Delta",   "DEV",  1600000),
+    new Employee(6018, "Echo",    "UI",   1600000),
+    new Employee(6009, "Foxtrot", "QA",   1350000),
+    new Employee(6021, "Golf",    "PROD", 1500000)
+);
+```
+
+Find the employee with the **highest salary**. If multiple share the same salary, pick the one with the **smaller ID**. Do not use `sorted()`.
+
+**Expected output:**
+
+```
+ID: 6005 | Name: Delta | Department: DEV | Salary: 1600000.0
+```
+
 ### Solution
 ```java
 public static void main(String[] args) {
@@ -413,7 +741,36 @@ public static void main(String[] args) {
 	
 }
 ```
-### 7 Highest-Paid Employee Above Department Average
+
+### 7. Highest-Paid Employee Above Department Average
+
+Given:
+
+```java
+List<Employee> employees = Arrays.asList(
+    new Employee(7011, "Alpha",   "DEV",   800000),
+    new Employee(7012, "Bravo",   "DEV",  1200000),
+    new Employee(7013, "Charlie", "DEV",  1600000),
+    new Employee(7014, "Delta",   "DEV",  1000000),
+
+    new Employee(7015, "Echo",    "QA",    700000),
+    new Employee(7016, "Foxtrot", "QA",   1100000),
+    new Employee(7017, "Golf",    "QA",    900000),
+
+    new Employee(7018, "Hotel",   "PROD", 1300000),
+    new Employee(7019, "India",   "PROD", 1700000),
+    new Employee(7020, "Juliett", "PROD", 1500000),
+
+    new Employee(7021, "Kilo",    "UI",    600000),
+    new Employee(7022, "Lima",    "UI",    800000),
+    new Employee(7023, "Mike",    "UI",   1000000)
+);
+```
+
+For each department, calculate the average salary. Keep only employees **above their department's average**, then find the one with the **highest salary** per department.
+
+Result: `Map<String, Optional<Employee>>`
+
 ### Solution
 ```java
 public static void main(String[] args) {
@@ -455,11 +812,36 @@ public static void main(String[] args) {
 	
 }
 ```
-### 8 Maximum Salary Difference Between Two Employees
+
+### 8. Maximum Salary Difference Between Two Employees
+
+Given:
+
+```java
+List<Employee> employees = Arrays.asList(
+    new Employee(8011, "Alpha",   "DEV",   850000),
+    new Employee(8012, "Bravo",   "QA",   1250000),
+    new Employee(8013, "Charlie", "PROD",  700000),
+    new Employee(8014, "Delta",   "DEV",  1600000),
+    new Employee(8015, "Echo",    "UI",   1050000),
+    new Employee(8016, "Foxtrot", "QA",   1350000),
+    new Employee(8017, "Golf",    "PROD",  950000),
+    new Employee(8018, "Hotel",   "UI",    800000)
+);
+```
+
+Find the **maximum salary difference** between any two employees (`max salary - min salary`). Do not use `sorted()`.
+
+**Expected output:**
+
+```
+900000.0
+```
+
 ### Solution
 ```java
 public static void main(String[] args) {
-	
+
 	List<Employee> employees = Arrays.asList(
 		new Employee(8011, "Alpha",   "DEV",   850000),
 		new Employee(8012, "Bravo",   "QA",   1250000),
@@ -487,7 +869,37 @@ public static void main(String[] args) {
 	System.out.println(salaryDifference);
 }
 ```
-### 9 Highest-Paid Employee Per Department After Deduplication
+
+### 9. Highest-Paid Employee Per Department After Deduplication
+
+Employees with the **same ID** are considered duplicates. Given:
+
+```java
+List<Employee> employees = Arrays.asList(
+    new Employee(9011, "Alpha",   "DEV",  1000000),
+    new Employee(9011, "Alpha",   "DEV",  1000000), // duplicate ID
+
+    new Employee(9012, "Bravo",   "DEV",  1500000),
+    new Employee(9013, "Charlie", "DEV",  1500000),
+
+    new Employee(9014, "Delta",   "QA",    900000),
+    new Employee(9014, "Delta",   "QA",    900000),  // duplicate ID
+
+    new Employee(9015, "Echo",    "QA",   1300000),
+    new Employee(9016, "Foxtrot", "QA",   1300000),
+
+    new Employee(9017, "Golf",    "PROD", 1400000),
+    new Employee(9018, "Hotel",   "PROD", 1250000),
+    new Employee(9019, "India",   "PROD", 1350000),
+
+    new Employee(9020, "Juliett", "UI",    950000),
+    new Employee(9021, "Kilo",    "UI",   1100000),
+    new Employee(9021, "Kilo",    "UI",   1100000)  // duplicate ID
+);
+```
+
+For each department: remove duplicate IDs, then find the highest-paid employee. If two share the same salary, pick the one with the **higher ID**. Result: `Map<String, Employee>`.
+
 ### Solution
 ```java
 public static void main(String[] args) {
@@ -531,10 +943,39 @@ public static void main(String[] args) {
 	result.forEach((dept, emp) -> {
 		System.out.println("\"" + dept + "\"" + " -> " + emp.get().getName());
 	});
-			
+		
 }
 ```
-### 10 Highest Salary Employee Using Composite Business Rules
+
+### 10. Highest Salary Employee Using Composite Business Rules
+
+Given:
+
+```java
+List<Employee> employees = Arrays.asList(
+    new Employee(10001, "Alpha",   "QA",   1700000),
+    new Employee(10002, "Bravo",   "PROD", 1800000),
+
+    new Employee(10003, "Charlie", "QA",   2000000),
+    new Employee(10004, "Delta",   "PROD", 2000000),
+
+    new Employee(10005, "Echo",    "DEV",  2000000),
+    new Employee(10006, "Foxtrot", "DEV",  2000000),
+    new Employee(10007, "Golf",    "DEV",  2000000),
+
+    new Employee(10008, "Hotel",   "QA",   1950000),
+    new Employee(10009, "India",   "DEV",  1900000),
+    new Employee(10010, "Juliett", "PROD", 1750000)
+);
+```
+
+Find the best employee using these priority rules in order:
+1. **Highest salary** wins.
+2. If tied, **DEV department** wins over others.
+3. If still tied, **higher employee ID** wins.
+
+Return the complete `Employee` object. Do not use `sorted()`.
+
 ### Solution
 ```java
 public static void main(String[] args) {
