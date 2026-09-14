@@ -171,6 +171,78 @@ public static void main(String[] args) {
 }
 ```
 # `max()` Based Custom Class Questions
+### Employee Class
+```java
+import java.util.Objects;
+
+public class Employee {
+	
+	private long id;
+	private String name;
+	private String department;
+	private double salary;
+	
+	public Employee (
+		long id,
+		String name,
+		String department,
+		double salary
+	) {
+		this.id = id;
+		this.name = name;
+		this.department = department;
+		this.salary = salary;
+	}
+	
+	public long getId() {
+		return id;
+	}
+	
+	public String getName() {
+		return name;
+	}
+	
+	public String getDepartment() {
+		return department;
+	}
+	
+	public double getSalary() {
+		return salary;
+	}
+	
+	@Override
+	public String toString() {
+		return "ID: " + id +
+				" | Name: " + name +
+				" | Department: " + department +
+				" | Salary: " + salary;
+	}
+	
+	@Override
+	public boolean equals(Object obj) {
+		
+		if (this == obj) {
+			return true;
+		}
+		
+		if (!(obj instanceof Employee)) {
+			return false;
+		}
+		
+		Employee e = (Employee)obj;
+		
+		return id == e.id &&
+				name.equals(e.name) &&
+				department.equals(e.department) &&
+				salary == e.salary;
+	}
+	
+	@Override
+	public int hashCode() {
+		return Objects.hash(id, name, department, salary);
+	}
+}
+```
 ### 1 Highest Salary
 ### Solution
 ```java
