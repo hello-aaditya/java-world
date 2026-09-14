@@ -174,10 +174,48 @@ public static void main(String[] args) {
 ### 1 Highest Salary
 ### Solution
 ```java
+public static void main(String[] args) {
+		
+	List<Employee> employees = Arrays.asList(
+		new Employee(1011, "Alpha",   "DEV",  850000),
+		new Employee(1012, "Bravo",   "QA",  920000),
+		new Employee(1013, "Charlie", "PROD", 780000),
+		new Employee(1014, "Delta",   "DEV", 1250000),
+		new Employee(1015, "Echo",    "UI",  1050000),
+		new Employee(1016, "Foxtrot", "QA",  980000),
+		new Employee(1017, "Golf",    "PROD", 1150000)
+	);
+	
+	Employee e = employees.stream()
+			.max(Comparator.comparing(Employee::getSalary))
+			.get();
+	
+	System.out.println(e.getName() + " -> " + e.getSalary());
+
+}
 ```
 ### 2 Highest Employee ID
 ### Solution
 ```java
+public static void main(String[] args) {
+		
+		List<Employee> employees = Arrays.asList(
+		    new Employee(2031, "Alpha",   "DEV",  1100000),
+		    new Employee(2017, "Bravo",   "QA",   1350000),
+		    new Employee(2045, "Charlie", "PROD",  900000),
+		    new Employee(2022, "Delta",   "UI",   1200000),
+		    new Employee(2051, "Echo",    "DEV",  1050000),
+		    new Employee(2038, "Foxtrot", "QA",   980000),
+		    new Employee(2042, "Golf",    "PROD", 1250000)
+		);
+		
+		Employee emp = employees.stream()
+				.max(Comparator.comparing(Employee::getId))
+				.get();
+		
+		System.out.println("ID: " + emp.getId() + " -> " + emp.getName());
+
+	}
 ```
 ### 3 Highest Salary Among DEV Employees
 ### Solution
