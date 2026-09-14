@@ -143,10 +143,44 @@ public static void main(String[] args) {
 ### 7 Employee → Increased Salary
 ### Solution
 ```java
+public static void main(String[] args) {
+		
+	List<Employee> employees = Arrays.asList(
+		new Employee(101, "Alpha", 45000),
+		new Employee(102, "Bravo", 65000),
+		new Employee(103, "Charlie", 55000),
+		new Employee(104, "Delta", 80000),
+		new Employee(105, "Echo", 40000)
+	);
+	
+	employees.stream()
+			.filter(e -> e.getSalary() > 50_000)
+			.map(e -> e.getSalary() + (e.getSalary() * 0.1))
+			.forEach(salary -> {
+				System.out.print(salary + " ");
+			});
+}
 ```
 ### 8 Employee → Formatted Name + Salary
 ### Solution
 ```java
+public static void main(String[] args) {
+		
+	List<Employee> employees = Arrays.asList(
+		new Employee(101, "Alpha", 45000),
+		new Employee(102, "Bravo", 65000),
+		new Employee(103, "Charlie", 55000),
+		new Employee(104, "Delta", 80000),
+		new Employee(105, "Echo", 40000)
+	);
+	
+	employees.stream()
+			.filter(e -> e.getSalary() > 50_000.0)
+			.map(e -> e.getName() + " - " + e.getSalary())
+			.forEach(e -> {
+				System.out.println(e);
+			});
+}
 ```
 ### 9 Successful Payment → Transaction Amount
 ### Solution
