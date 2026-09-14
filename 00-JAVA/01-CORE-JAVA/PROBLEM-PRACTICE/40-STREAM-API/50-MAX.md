@@ -286,10 +286,60 @@ public static void main(String[] args) {
 ### 5 Highest Salary After Removing Duplicate Employees
 ### Solution
 ```java
+public static void main(String[] args) {
+
+	List<Employee> employees = Arrays.asList(
+		new Employee(5011, "Alpha",   "DEV",  950000),
+		new Employee(5012, "Bravo",   "QA",  1100000),
+		new Employee(5013, "Charlie", "PROD", 1250000),
+		new Employee(5012, "Bravo",   "QA",  1100000),  // duplicate
+		new Employee(5014, "Delta",   "DEV",  1450000),
+		new Employee(5015, "Echo",    "UI",  1350000),
+		new Employee(5013, "Charlie", "PROD", 1250000),  // duplicate
+		new Employee(5016, "Foxtrot", "QA",  1050000),
+		new Employee(5017, "Golf",    "PROD", 1400000)
+	);
+	
+	Optional<Employee> output = 
+			employees.stream()
+			.distinct()
+			.max(Comparator.comparing(Employee::getSalary));
+			
+	output.ifPresent(e -> {
+		System.out.println(e.getName() + " -> " + e.getSalary());
+	});
+
+}
 ```
 ### 6 Highest Salary With ID Tie-Breaking
 ### Solution
 ```java
+public static void main(String[] args) {
+
+	List<Employee> employees = Arrays.asList(
+		new Employee(6015, "Alpha",   "DEV",  1200000),
+		new Employee(6008, "Bravo",   "QA",   1450000),
+		new Employee(6012, "Charlie", "PROD", 1600000),
+		new Employee(6005, "Delta",   "DEV",  1600000),
+		new Employee(6018, "Echo",    "UI",   1600000),
+		new Employee(6009, "Foxtrot", "QA",  1350000),
+		new Employee(6021, "Golf",    "PROD", 1500000)
+	);
+	
+	Employee emp = 
+	employees.stream()
+			.max(
+				Comparator.comparingDouble(Employee::getSalary)
+					.thenComparing(
+						Employee::getId,
+						Comparator.reverseOrder()
+					)
+			)
+			.get();
+
+	System.out.println(emp);
+	
+}
 ```
 ### 7 Highest-Paid Employee Above Department Average
 ### Solution
