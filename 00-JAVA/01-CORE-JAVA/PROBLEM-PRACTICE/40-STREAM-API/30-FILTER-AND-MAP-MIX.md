@@ -235,16 +235,37 @@ public static void main(String[] args) {
 	
 	transactions.stream()
 			.filter(t -> t.getType().equals("PAYMENT") && 
-						t.getSuccessful() && t.getAmount() > 2_000)
+						t.getSuccessful() && 
+						t.getAmount() > 2_000
+					)
 			.map(t -> t.getAmount())
 			.forEach(amt -> {
 				System.out.print(amt + " ");
 			});
-
-	
 }
 ```
 ### 10 Complex Employee Processing
 ### Solution
 ```java
+public static void main(String[] args) {
+		
+	List<Employee> employees = Arrays.asList(
+		new Employee(101, "Alpha", 45000),
+		new Employee(102, "Bravo", 65000),
+		new Employee(103, "Charlie", 55000),
+		new Employee(104, "Delta", 80000),
+		new Employee(105, "Echo", 40000),
+		new Employee(106, "Foxtrot", 70000)
+	);
+	
+	employees.stream()
+			.filter(e -> ( e.getSalary() >= 60_000.0 ) &&
+						 ( (e.getId() & 1) == 0 )
+					)
+			.map(e -> e.getName() + " → " + e.getSalary())
+			.forEach(val -> {
+				System.out.println(val);
+			});
+
+}
 ```
