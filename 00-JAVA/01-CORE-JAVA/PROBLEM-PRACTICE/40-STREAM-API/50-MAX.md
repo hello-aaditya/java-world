@@ -199,31 +199,89 @@ public static void main(String[] args) {
 ```java
 public static void main(String[] args) {
 		
-		List<Employee> employees = Arrays.asList(
-		    new Employee(2031, "Alpha",   "DEV",  1100000),
-		    new Employee(2017, "Bravo",   "QA",   1350000),
-		    new Employee(2045, "Charlie", "PROD",  900000),
-		    new Employee(2022, "Delta",   "UI",   1200000),
-		    new Employee(2051, "Echo",    "DEV",  1050000),
-		    new Employee(2038, "Foxtrot", "QA",   980000),
-		    new Employee(2042, "Golf",    "PROD", 1250000)
-		);
-		
-		Employee emp = employees.stream()
-				.max(Comparator.comparing(Employee::getId))
-				.get();
-		
-		System.out.println("ID: " + emp.getId() + " -> " + emp.getName());
+	List<Employee> employees = Arrays.asList(
+		new Employee(2031, "Alpha",   "DEV",  1100000),
+		new Employee(2017, "Bravo",   "QA",   1350000),
+		new Employee(2045, "Charlie", "PROD",  900000),
+		new Employee(2022, "Delta",   "UI",   1200000),
+		new Employee(2051, "Echo",    "DEV",  1050000),
+		new Employee(2038, "Foxtrot", "QA",   980000),
+		new Employee(2042, "Golf",    "PROD", 1250000)
+	);
+	
+	Employee emp = employees.stream()
+			.max(Comparator.comparing(Employee::getId))
+			.get();
+	
+	System.out.println("ID: " + emp.getId() + " -> " + emp.getName());
 
-	}
+}
 ```
 ### 3 Highest Salary Among DEV Employees
 ### Solution
 ```java
+public static void main(String[] args) {
+		
+	List<Employee> employees = Arrays.asList(
+		new Employee(3011, "Alpha",   "QA",   1400000),
+		new Employee(3012, "Bravo",   "DEV",   950000),
+		new Employee(3013, "Charlie", "PROD", 1250000),
+		new Employee(3014, "Delta",   "DEV",  1450000),
+		new Employee(3015, "Echo",    "UI",   1600000),
+		new Employee(3016, "Foxtrot", "DEV",  1350000),
+		new Employee(3017, "Golf",    "QA",   1100000),
+		new Employee(3018, "Hotel",   "DEV",  1280000)
+	);
+	
+	Employee emp = 
+			employees.stream()
+			.filter(e -> e.getDepartment().equals("DEV"))
+			.max(Comparator.comparing(Employee::getSalary))
+			.get();
+
+	System.out.println(emp.getName() + " -> " + emp.getSalary());
+}
 ```
 ### 4 Highest Paid Employee in Each Department
 ### Solution
 ```java
+	public static void main(String[] args) {
+
+	List<Employee> employees = Arrays.asList(
+		new Employee(4011, "Alpha",   "DEV",  1000000),
+		new Employee(4012, "Bravo",   "DEV",  1450000),
+		new Employee(4013, "Charlie", "DEV",  1250000),
+
+		new Employee(4014, "Delta",   "QA",   900000),
+		new Employee(4015, "Echo",    "QA",   1350000),
+		new Employee(4016, "Foxtrot", "QA",   1150000),
+
+		new Employee(4017, "Golf",    "PROD", 1500000),
+		new Employee(4018, "Hotel",   "PROD", 1300000),
+		new Employee(4019, "India",   "PROD", 1420000),
+
+		new Employee(4020, "Juliett", "UI",   850000),
+		new Employee(4021, "Kilo",    "UI",   1050000),
+		new Employee(4022, "Lima",    "UI",   980000)
+	);
+	
+	Map<String, Optional<Employee>> output = 
+			employees.stream()
+			.collect(
+				Collectors.groupingBy(
+					Employee::getDepartment,
+					Collectors.maxBy(
+						Comparator.comparingDouble(Employee::getSalary)
+					)
+				)
+			);
+	
+	output.forEach((dept, emp) -> 
+		emp.ifPresent(e -> 
+			System.out.println(dept + " -> " + e.getName()))
+	);
+
+}
 ```
 ### 5 Highest Salary After Removing Duplicate Employees
 ### Solution
