@@ -1,37 +1,41 @@
 # `sorted()` Based Questions
-### 1 
+### 1 Sort Numbers in Ascending Order
 ### Solution
 ```java
 ```
-### 1 
+### 2 Sort Numbers in Descending Order
 ### Solution
 ```java
 ```
-### 1 
+### 3 Sort Names Alphabetically
 ### Solution
 ```java
 ```
-### 1 
+### 4 
 ### Solution
 ```java
 ```
-### 1 
+### 5 
 ### Solution
 ```java
 ```
-### 1 
+### 6 
 ### Solution
 ```java
 ```
-### 1 
+### 7 
 ### Solution
 ```java
 ```
-### 1 
+### 8 
 ### Solution
 ```java
 ```
-### 1 
+### 9 
+### Solution
+```java
+```
+### 10 
 ### Solution
 ```java
 ```
