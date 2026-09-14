@@ -344,14 +344,123 @@ public static void main(String[] args) {
 ### 7 Highest-Paid Employee Above Department Average
 ### Solution
 ```java
+public static void main(String[] args) {
+
+	List<Employee> employees = Arrays.asList(
+		new Employee(7011, "Alpha",   "DEV",  800000),
+		new Employee(7012, "Bravo",   "DEV", 1200000),
+		new Employee(7013, "Charlie", "DEV", 1600000),
+		new Employee(7014, "Delta",   "DEV", 1000000),
+
+		new Employee(7015, "Echo",    "QA",   700000),
+		new Employee(7016, "Foxtrot", "QA",  1100000),
+		new Employee(7017, "Golf",    "QA",   900000),
+
+		new Employee(7018, "Hotel",   "PROD", 1300000),
+		new Employee(7019, "India",   "PROD", 1700000),
+		new Employee(7020, "Juliett", "PROD", 1500000),
+
+		new Employee(7021, "Kilo",    "UI",   600000),
+		new Employee(7022, "Lima",    "UI",   800000),
+		new Employee(7023, "Mike",    "UI",   1000000)
+	);
+	
+	Map<String, Optional<Employee>> result = 
+	employees.stream()
+			.collect(
+				Collectors.groupingBy(
+					Employee::getDepartment,
+					Collectors.maxBy(
+						Comparator.comparing(Employee::getSalary)
+							.thenComparing(Employee::getId)
+					)
+				)
+			);
+	
+	result.forEach((dept, emp) -> {
+		System.out.println("\"" + dept + "\" -> " + emp.get().getName());
+	});
+	
+}
 ```
 ### 8 Maximum Salary Difference Between Two Employees
 ### Solution
 ```java
+public static void main(String[] args) {
+	
+	List<Employee> employees = Arrays.asList(
+		new Employee(8011, "Alpha",   "DEV",   850000),
+		new Employee(8012, "Bravo",   "QA",   1250000),
+		new Employee(8013, "Charlie", "PROD",  700000),
+		new Employee(8014, "Delta",   "DEV",  1600000),
+		new Employee(8015, "Echo",    "UI",   1050000),
+		new Employee(8016, "Foxtrot", "QA",   1350000),
+		new Employee(8017, "Golf",    "PROD",  950000),
+		new Employee(8018, "Hotel",   "UI",    800000)
+	);
+	
+	Employee empWithHighestSalary = 
+			employees.stream()
+				.max(Comparator.comparing(Employee::getSalary))
+				.get();
+	
+	Employee empWithMinimumSalary = 
+			employees.stream()
+				.min(Comparator.comparing(Employee::getSalary))
+				.get();
+	
+	double salaryDifference = 
+			empWithHighestSalary.getSalary() - empWithMinimumSalary.getSalary();
+	
+	System.out.println(salaryDifference);
+}
 ```
 ### 9 Highest-Paid Employee Per Department After Deduplication
 ### Solution
 ```java
+	public static void main(String[] args) {
+
+		List<Employee> employees = Arrays.asList(
+
+		    new Employee(9011, "Alpha",   "DEV",  1000000),
+		    new Employee(9011, "Alpha",   "DEV",  1000000), // duplicate ID
+
+		    new Employee(9012, "Bravo",   "DEV",  1500000),
+		    new Employee(9013, "Charlie", "DEV",  1500000),
+
+		    new Employee(9014, "Delta",   "QA",   900000),
+		    new Employee(9014, "Delta",   "QA",   900000),  // duplicate ID
+
+		    new Employee(9015, "Echo",    "QA",   1300000),
+		    new Employee(9016, "Foxtrot", "QA",   1300000),
+
+		    new Employee(9017, "Golf",    "PROD", 1400000),
+		    new Employee(9018, "Hotel",   "PROD", 1250000),
+		    new Employee(9019, "India",   "PROD", 1350000),
+
+		    new Employee(9020, "Juliett", "UI",   950000),
+		    new Employee(9021, "Kilo",    "UI",   1100000),
+		    new Employee(9021, "Kilo",    "UI",   1100000)  // duplicate ID
+		);
+		
+		Map<String, Optional<Employee>> result = 
+			employees.stream()
+					.distinct()
+					.collect(
+						Collectors.groupingBy(
+							Employee::getDepartment,
+							Collectors.maxBy(
+								Comparator.comparing(Employee::getSalary)
+									.thenComparing(Employee::getId)
+							)
+						)
+					);
+		
+		result.forEach((dept, emp) -> {
+			System.out.println("\"" + dept + "\"" + " -> " + emp.get().getName());
+		});
+				
+	}
 ```
 ### 10 Highest Salary Employee Using Composite Business Rules
 ### Solution
