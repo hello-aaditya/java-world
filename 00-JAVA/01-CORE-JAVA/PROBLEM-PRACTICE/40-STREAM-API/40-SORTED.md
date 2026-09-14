@@ -165,25 +165,39 @@ public static void main(String[] args) {
 ### 9 Filter Employees and Sort by Salary
 ### Solution
 ```java
-	public static void main(String[] args) {
-		
-		List<Employee> employees = Arrays.asList(
-		    new Employee(103, "Charlie", 65000),
-		    new Employee(101, "Alpha", 45000),
-		    new Employee(105, "Echo", 55000),
-		    new Employee(102, "Bravo", 75000),
-		    new Employee(104, "Delta", 50000),
-		    new Employee(106, "Foxtrot", 85000)
-		);
+public static void main(String[] args) {
+	
+	List<Employee> employees = Arrays.asList(
+		new Employee(103, "Charlie", 65000),
+		new Employee(101, "Alpha", 45000),
+		new Employee(105, "Echo", 55000),
+		new Employee(102, "Bravo", 75000),
+		new Employee(104, "Delta", 50000),
+		new Employee(106, "Foxtrot", 85000)
+	);
 
-		employees.stream()
-				.filter(e -> e.getSalary() >= 50_000)
-				.sorted(Comparator.comparing(Employee::getSalary).reversed())
-				.map(e -> e.getName() + " - " + e.getSalary())
-				.forEach(System.out::println);
-	}
-	```
+	employees.stream()
+			.filter(e -> e.getSalary() >= 50_000)
+			.sorted(Comparator.comparing(Employee::getSalary).reversed())
+			.map(e -> e.getName() + " - " + e.getSalary())
+			.forEach(System.out::println);
+}
+```
 ### 10 Sort Employees by Multiple Conditions
 ### Solution
 ```java
+public static void main(String[] args) {
+
+	List<Employee> employees = Arrays.asList(
+		new Employee(101, "Alpha", 60000), new Employee(102, "Bravo", 50000),
+		new Employee(103, "Charlie", 60000), new Employee(104, "Delta", 70000),
+		new Employee(105, "Echo", 50000), new Employee(106, "Foxtrot", 70000)
+	);
+
+	employees.stream()
+			.sorted(Comparator.comparing(Employee::getSalary).reversed().thenComparing(Employee::getName))
+			.map(e -> e.getName() + " - " + e.getSalary())
+			.forEach(System.out::println);
+
+}
 ```
