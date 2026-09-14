@@ -425,20 +425,3 @@ public static void main(String[] args) {
 
 }
 ```
-
-### Progression
-
-```
-Q1  -> sorted()
-Q2  -> sorted(Comparator)
-Q3  -> sorted() with String
-Q4  -> reverse Comparator
-
-Q5  -> filter() + sorted()
-Q6  -> map() + sorted()
-Q7  -> filter() + map() + sorted()
-
-Q8  -> Object + Comparator
-Q9  -> filter() + sorted() + map()
-Q10 -> Comparator + thenComparing()
-```
