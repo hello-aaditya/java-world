@@ -108,10 +108,40 @@ public static void main(String[] args) {
 ### 7 Shortest String With Tie-Breaking
 ### Solution
 ```java
+public static void main(String[] args) {
+	
+	List<String> words = Arrays.asList(
+		"Kubernetes", "XML", "Stream", "SQL", "Database",
+		"JSON", "Code", "API", "Lambda", "HTML"
+	);
+	
+	String result =
+		words.stream()
+				.min(Comparator.comparing(String::length)
+						.thenComparing(String::compareTo)
+				)
+				.get();
+	
+	System.out.println(result);
+
+}
 ```
 ### 8 Minimum Number by Absolute Value
 ### Solution
 ```java
+public static void main(String[] args) {
+
+	List<Integer> numbers = Arrays.asList(
+		-45, 18, -8, 34, 12, -3, 27, -15, 6, -21
+	);
+
+	int result = 
+		numbers.stream()
+				.min(Comparator.comparingInt(Math::abs))
+				.orElseThrow();
+	
+	System.out.println(result);
+}
 ```
 ### 9 Minimum Positive Even Number
 ### Solution
