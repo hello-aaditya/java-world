@@ -1,5 +1,5 @@
 # `min()` Based Questions
-### 1 
+### 1 Minimum Number
 ### Solution
 ```java
 public static void main(String[] args) {
@@ -16,39 +16,39 @@ public static void main(String[] args) {
 	System.out.println(minimumNumber);
 }
 ```
-### 2 
+### 2 Minimum Odd Number
 ### Solution
 ```java
 ```
-### 3 
+### 3 Minimum Number Greater Than 30
 ### Solution
 ```java
 ```
-### 4 
+### 4 Minimum Unique Number
 ### Solution
 ```java
 ```
-### 5 
+### 5 Lexicographically Minimum String
 ### Solution
 ```java
 ```
-### 6 
+### 6 Shortest String
 ### Solution
 ```java
 ```
-### 7 
+### 7 Shortest String With Tie-Breaking
 ### Solution
 ```java
 ```
-### 8 
+### 8 Minimum Number by Absolute Value
 ### Solution
 ```java
 ```
-### 9 
+### 9 Minimum Positive Even Number
 ### Solution
 ```java
 ```
-### 10 
+### 10 Minimum String Using Composite Rules
 ### Solution
 ```java
 ```
