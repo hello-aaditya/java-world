@@ -3,19 +3,33 @@
 ### Solution
 ```java
 public static void main(String[] args) {
-		
-		List<Integer> numbers = Arrays.asList(45, 12, 78, 23, 9, 56, 34);
-		
-		numbers.stream()
-				.sorted()
-				.map(n -> n + " ")
-				.forEach(System.out::print);
+	
+	List<Integer> numbers = Arrays.asList(
+		45, 12, 78, 23, 9, 56, 34
+	);
+	
+	numbers.stream()
+			.sorted()
+			.map(n -> n + " ")
+			.forEach(System.out::print);
 
-	}
-	```
+}
+```
 ### 2 Sort Numbers in Descending Order
 ### Solution
 ```java
+public static void main(String[] args) {
+		
+	List<Integer> numbers = Arrays.asList(
+		45, 12, 78, 23, 9, 56, 34
+	);
+	
+	numbers.stream()
+			.sorted(Comparator.reverseOrder())
+			.map(n -> n + " ")
+			.forEach(System.out::print);
+
+}
 ```
 ### 3 Sort Names Alphabetically
 ### Solution
