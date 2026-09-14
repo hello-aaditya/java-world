@@ -112,11 +112,77 @@ public static void main(String[] args) {
 ### 8 Sort Employees by Salary
 ### Solution
 ```java
+package streamApi.sorted;
+
+public class Employee {
+	
+	private int id;
+	private String name;
+	private double salary;
+	
+	public Employee (
+		int id,
+		String name,
+		double salary
+	) {
+		this.id = id;
+		this.name = name;
+		this.salary = salary;
+	}
+	
+	public int getId() {
+		return id;
+	}
+	
+	public String getName() {
+		return name;
+	}
+	
+	public double getSalary() {
+		return salary;
+	}
+}
+```
+
+```java
+public static void main(String[] args) {
+		
+	List<Employee> employees = Arrays.asList(
+		new Employee(103, "Charlie", 65000),
+		new Employee(101, "Alpha", 45000),
+		new Employee(105, "Echo", 55000),
+		new Employee(102, "Bravo", 75000),
+		new Employee(104, "Delta", 50000)
+	);
+	
+	employees.stream()
+			.sorted(Comparator.comparing(Employee::getSalary))
+			.map(e -> e.getName())
+			.forEach(e -> System.out.print(e + " "));
+	
+}
 ```
 ### 9 Filter Employees and Sort by Salary
 ### Solution
 ```java
-```
+	public static void main(String[] args) {
+		
+		List<Employee> employees = Arrays.asList(
+		    new Employee(103, "Charlie", 65000),
+		    new Employee(101, "Alpha", 45000),
+		    new Employee(105, "Echo", 55000),
+		    new Employee(102, "Bravo", 75000),
+		    new Employee(104, "Delta", 50000),
+		    new Employee(106, "Foxtrot", 85000)
+		);
+
+		employees.stream()
+				.filter(e -> e.getSalary() >= 50_000)
+				.sorted(Comparator.comparing(Employee::getSalary).reversed())
+				.map(e -> e.getName() + " - " + e.getSalary())
+				.forEach(System.out::println);
+	}
+	```
 ### 10 Sort Employees by Multiple Conditions
 ### Solution
 ```java
