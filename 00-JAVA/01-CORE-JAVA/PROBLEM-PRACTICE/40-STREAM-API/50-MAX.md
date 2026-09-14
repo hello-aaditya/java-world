@@ -51,14 +51,49 @@ public static void main(String[] args) {
 ### 4 Maximum Unique Number
 ### Solution
 ```java
+public static void main(String[] args) {
+	
+	List<Integer> numbers = Arrays.asList(
+		45, 78, 23, 78, 91, 45, 67, 91, 34, 89
+	);
+
+	int result = numbers.stream()
+			.distinct()
+			.max(Integer::compareTo).get();
+	
+	System.out.println(result);
+}
 ```
 ### 5 Lexicographically Maximum String
 ### Solution
 ```java
+public static void main(String[] args) {
+	
+	List<String> names = Arrays.asList(
+		"Alpha", "Charlie", "Bravo", "Delta", "Echo", "Frankie"
+	);
+	
+	String result = names.stream()
+			.max(String::compareTo).get();
+	
+	System.out.println(result);
+}
 ```
 ### 6 Longest String
 ### Solution
 ```java
+public static void main(String[] args) {
+	
+	List<String> keywords = Arrays.asList(
+		"Java", "Stream", "Collection", "Lambda", "Programming", "API"
+	);
+	
+	String result = keywords.stream()
+			.max(Comparator.comparingInt(String::length)).get();
+	
+	System.out.println(result);
+
+}
 ```
 ### 7 Longest String With Tie-Breaking
 ### Solution
