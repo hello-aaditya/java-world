@@ -445,18 +445,3 @@ public static void main(String[] args) {
 
 }
 ```
-
-### Progression
-
-| #  | Level    | `filter()`                      | `map()`                     |
-| -- | -------- | ------------------------------- | --------------------------- |
-| 1  | Easy     | Even                            | Square                      |
-| 2  | Easy     | -                               | Uppercase                   |
-| 3  | Easy     | > 20                            | Double                      |
-| 4  | Moderate | Length > 5                      | Uppercase                   |
-| 5  | Moderate | Even + range                    | Square                      |
-| 6  | Moderate | Salary > 50K                    | Employee -> Name            |
-| 7  | Moderate | Salary > 50K                    | Employee -> Increased salary |
-| 8  | Hard     | Salary > 50K                    | Employee -> Formatted String |
-| 9  | Hard     | Multiple transaction conditions | Transaction -> Amount        |
-| 10 | Hard     | Multiple employee conditions    | Employee -> Formatted String |
