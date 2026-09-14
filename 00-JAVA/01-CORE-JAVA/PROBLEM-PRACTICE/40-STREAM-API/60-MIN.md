@@ -2,6 +2,19 @@
 ### 1 
 ### Solution
 ```java
+public static void main(String[] args) {
+
+	List<Integer> numbers = Arrays.asList(
+		84, 37, 92, 15, 63, 48, 29, 71, 56, 22
+	);
+
+	int minimumNumber = 
+	numbers.stream()
+			.min(Integer::compareTo)
+			.get();
+	
+	System.out.println(minimumNumber);
+}
 ```
 ### 2 
 ### Solution
