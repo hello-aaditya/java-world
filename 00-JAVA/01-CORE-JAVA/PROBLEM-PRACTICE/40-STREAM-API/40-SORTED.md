@@ -80,10 +80,34 @@ public static void main(String[] args) {
 ### 6 Transform and Sort Numbers
 ### Solution
 ```java
+public static void main(String[] args) {
+	
+	List<Integer> numbers = Arrays.asList(
+		5, 2, 8, 3, 4, 1
+	);
+	
+	numbers.stream()
+			.map(n -> (int)Math.pow(n, 2))
+			.sorted()
+			.forEach(n -> System.out.print(n + " "));
+}
 ```
 ### 7 Filter, Transform and Sort
 ### Solution
 ```java
+public static void main(String[] args) {
+		
+	List<Integer> numbers = Arrays.asList(
+		15, 8, 23, 4, 42, 11, 30, 7
+	);
+	
+	numbers.stream()
+			.filter(n -> (n & 1) == 0)
+			.map(n -> n * 10)
+			.sorted(Comparator.reverseOrder())
+			.forEach(n -> System.out.print(n + " "));
+
+}
 ```
 ### 8 Sort Employees by Salary
 ### Solution
