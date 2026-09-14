@@ -170,3 +170,8 @@ public static void main(String[] args) {
 
 }
 ```
+# `max()` Based Custom Class Questions
+### 1 
+### Solution
+```java
+```
