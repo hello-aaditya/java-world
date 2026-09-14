@@ -98,10 +98,40 @@ public static void main(String[] args) {
 ### 7 Longest String With Tie-Breaking
 ### Solution
 ```java
+public static void main(String[] args) {
+	
+	List<String> words = Arrays.asList(
+		"Java", "Spring", "Docker", "Python", "Lambda", "Oracle"
+	);
+	
+	String result = 
+			words.stream()
+			.max(Comparator.comparingInt(String::length)
+					.thenComparing(Comparator.naturalOrder())
+			)
+			.orElse(null);
+
+	System.out.println(result);
+}
 ```
 ### 8 Maximum Number by Absolute Value
 ### Solution
 ```java
+public static void main(String[] args) {
+	
+	List<Integer> numbers = Arrays.asList(
+		-45, 12, -89, 34, 67, -23, 56, -91
+	);
+	
+	int result = numbers.stream()
+			.max(
+				Comparator.comparingInt(Math::abs)
+			)
+			.orElseThrow();
+	
+	
+	System.out.println(result);
+}
 ```
 ### 9 Maximum Even Number Greater Than 50
 ### Solution
