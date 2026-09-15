@@ -371,7 +371,7 @@ public static void main(String[] args) {
 	
 	Employee e =
 	employees.stream()
-			.min(Comparator.comparing(Employee::getSalary))
+			.min(Comparator.comparingDouble(Employee::getSalary))
 			.get();
 
 	System.out.println(e.getName() + " -> " + e.getSalary());
@@ -393,7 +393,7 @@ public static void main(String[] args) {
 	
 	Employee e = 
 		employees.stream()
-				.min(Comparator.comparing(Employee::getId))
+				.min(Comparator.comparingInt(Employee::getId))
 				.get();
 	
 	System.out.println(e.getId() + " -> " + e.getName() );
