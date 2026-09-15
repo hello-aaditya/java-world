@@ -515,6 +515,34 @@ public class Employee {
 ### 1 Group Employees by Department
 ### Solution
 ```java
+public static void main(String[] args) {
+	
+	List<Employee> employees = Arrays.asList(
+		new Employee(101, "Alpha", "DEV", "Developer", 850000, 2),
+		new Employee(102, "Bravo", "QA", "Tester", 720000, 3),
+		new Employee(103, "Charlie", "DEV", "Developer", 950000, 5),
+		new Employee(104, "Delta", "HR", "HR Executive", 680000, 4),
+		new Employee(105, "Echo", "QA", "Automation Tester", 880000, 6),
+		new Employee(106, "Foxtrot", "DEV", "Tech Lead", 1250000, 9),
+		new Employee(107, "Golf", "HR", "HR Manager", 1050000, 8)
+	);
+	
+	employees.stream()
+			.collect(
+				Collectors.groupingBy(e -> e.getDepartment()
+				)
+			)
+			.forEach((dept, employeeList) -> {
+				System.out.println (
+					dept + " -> " +
+						employeeList.stream()
+								.map(e -> e.getName())
+								.collect(Collectors.toList())
+				);
+			});
+			
+
+}
 ```
 ### 2 Group Employees by Designation
 ### Solution
