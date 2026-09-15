@@ -5,4 +5,4 @@
 5. [`sorted()`](./40-SORTED.md)
 6. [`max()`](./50-MAX.md)
 7. [`min()`](./60-MIN.md)
-8. skip(int ) and limit()
+8. `skip(long l)` and `limit(long l)`
