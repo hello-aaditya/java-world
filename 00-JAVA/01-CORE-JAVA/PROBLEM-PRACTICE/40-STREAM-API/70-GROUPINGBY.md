@@ -460,7 +460,7 @@ public static void main(String[] args) {
 
 }
 ```
-# `groupingBy()` Based Custom Class 
+# `groupingBy()` Based Custom Class
 ### Employee Class
 ```java
 public class Employee {
