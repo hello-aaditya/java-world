@@ -178,8 +178,48 @@ public static void main(String[] args) {
 ### 9 Group Words by Length and Find the Longest Word in Each Group
 ### Solution
 ```java
+public static void main(String[] args) {
+	
+	List<String> terms = Arrays.asList(
+		"API", "SQL", "JVM",
+		"Java", "Code", "Linux",
+		"Spring", "Docker", "Python",
+		"Database", "Kubernetes"
+	);
+	
+	terms.stream()
+			.collect(
+				Collectors.groupingBy(
+					term -> term.length(),
+					Collectors.maxBy(String::compareTo)	
+				)
+			)
+			.forEach((len, term) -> {
+				System.out.println(len + " = " + term.get());
+			});
+
+}
 ```
 ### 10 Group Words by Length and Join Them
 ### Solution
 ```java
+public static void main(String[] args) {
+	
+	List<String> keywords = Arrays.asList(
+		"Java", "SQL", "Git",
+		"Spring", "Docker", "Linux",
+		"API", "Kafka", "Cloud",
+		"Python", "Kubernetes"
+	);
+	
+	keywords.stream()
+			.collect(
+				Collectors.groupingBy(keyword -> keyword.length(),
+						Collectors.joining(",")
+				)
+			).forEach((len, listOfKeyword) -> {
+				System.out.println(len + " = " + listOfKeyword);
+			});
+
+}
 ```
