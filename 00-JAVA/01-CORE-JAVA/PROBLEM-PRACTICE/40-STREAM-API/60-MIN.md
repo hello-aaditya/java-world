@@ -980,7 +980,8 @@ Find the best employee using these priority rules in order:
 2. If tied, **DEV department** wins over others.
 3. If still tied, **lower employee ID** wins.
 
-> Lowest salary: Foxtrot (QA), Golf (DEV), Hotel (DEV), India (PROD). DEV wins → Golf (907) and Hotel (908). Lower ID → **Golf**.
+> Lowest salary: Foxtrot (QA), Golf (DEV), Hotel (DEV), India (PROD). DEV wins → Golf (907) and Hotel (908). 
+> Lower ID → **Golf**.
 
 **Expected output:**
 
@@ -1025,17 +1026,3 @@ public static void main(String[] args) {
 }
 ```
 
-### Progression
-
-| #  | Level         | Main concept                    |
-| -- | ------------- | ------------------------------- |
-| 1  | Easy          | Basic object comparison         |
-| 2  | Easy          | Minimum by ID                   |
-| 3  | Easy          | filter() + min()                |
-| 4  | Easy/Moderate | Conditional minimum             |
-| 5  | Moderate      | Minimum + tie-breaker           |
-| 6  | Moderate      | groupingBy() + min()            |
-| 7  | Moderate      | Filtering + different property  |
-| 8  | Moderate      | Filter + minimum                |
-| 9  | Advanced      | Grouping + composite comparator |
-| 10 | Advanced      | Multi-level business comparator |
