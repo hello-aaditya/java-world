@@ -578,6 +578,50 @@ public static void main(String[] args) {
 ### 9 Minimum Salary Per Department With Tie-Breaker
 ### Solution
 ```java
+	public static void main(String[] args) {
+		
+		List<Employee> employees = Arrays.asList(
+		    new Employee(801, "Alpha", "DEV", 700000),
+		    new Employee(805, "Bravo", "DEV", 650000),
+		    new Employee(803, "Charlie", "DEV", 650000),
+
+		    new Employee(806, "Delta", "QA", 720000),
+		    new Employee(809, "Echo", "QA", 680000),
+		    new Employee(807, "Foxtrot", "QA", 680000),
+
+		    new Employee(811, "Golf", "PROD", 900000),
+		    new Employee(814, "Hotel", "PROD", 850000),
+		    new Employee(812, "India", "PROD", 850000),
+
+		    new Employee(816, "Juliett", "UI", 600000),
+		    new Employee(819, "Kilo", "UI", 580000),
+		    new Employee(817, "Lima", "UI", 580000)
+		);
+		
+		Map<String, Optional<Employee>> result = 
+				employees.stream()
+						.collect(
+							Collectors.groupingBy(
+								Employee::getDepartment,
+								Collectors.minBy(
+									Comparator.comparing(Employee::getSalary)
+										.thenComparing(
+												Comparator.comparing(Employee::getId).reversed()
+										)
+								)
+							)
+						);
+		
+		result.forEach((dept, e) -> {
+			System.out.println(
+				dept + " -> " +
+				e.get().getName() + " -> " +
+				"ID " + e.get().getId() + " -> " +
+				e.get().getSalary()
+			);
+		});
+
+	}
 ```
 ### 10 Minimum Salary With Composite Business Rules
 ### Solution
