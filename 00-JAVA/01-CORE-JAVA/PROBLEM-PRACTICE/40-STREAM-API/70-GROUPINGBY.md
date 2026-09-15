@@ -578,10 +578,84 @@ public static void main(String[] args) {
 ### 3 Group Employees by Experience Level
 ### Solution
 ```java
+public static void main(String[] args) {
+	
+	List<Employee> employees = Arrays.asList(
+		new Employee(301, "Alpha", "DEV", "Developer", 700000, 1),
+		new Employee(302, "Bravo", "QA", "Tester", 720000, 2),
+		new Employee(303, "Charlie", "DEV", "Developer", 850000, 3),
+		new Employee(304, "Delta", "HR", "Executive", 800000, 5),
+		new Employee(305, "Echo", "QA", "Tester", 950000, 4),
+		new Employee(306, "Foxtrot", "DEV", "Tech Lead", 1300000, 6),
+		new Employee(307, "Golf", "HR", "Manager", 1200000, 8),
+		new Employee(308, "Hotel", "DEV", "Architect", 1600000, 10)
+	);
+
+	employees.stream()
+			.collect(
+				Collectors.groupingBy(e -> {
+					int experience = e.getExperience();
+					
+					if (experience <= 2) {
+						return "JUNIOR";
+					} else if (experience <= 5) {
+						return "MID_LEVEL";
+					} else {
+						return "SENIOR";
+					}
+				})
+			)
+			.forEach((exp, emp) -> {
+				System.out.println(
+					exp + " = " +
+					emp.stream()
+						.map(e -> e.getName())
+						.collect(Collectors.toList())
+				);
+			});
+}
 ```
 ### 4 Group Employees by Salary Band
 ### Solution
 ```java
+	public static void main(String[] args) {
+		
+		List<Employee> employees = Arrays.asList(
+		    new Employee(401, "Alpha", "DEV", "Developer", 750000, 2),
+		    new Employee(402, "Bravo", "QA", "Tester", 800000, 3),
+		    new Employee(403, "Charlie", "DEV", "Developer", 950000, 4),
+		    new Employee(404, "Delta", "HR", "Executive", 1100000, 5),
+		    new Employee(405, "Echo", "QA", "Tester", 1199999, 6),
+		    new Employee(406, "Foxtrot", "DEV", "Tech Lead", 1200000, 8),
+		    new Employee(407, "Golf", "HR", "Manager", 1450000, 10),
+		    new Employee(408, "Hotel", "DEV", "Architect", 1750000, 12)
+		);
+		
+		employees.stream()
+				.collect(
+					Collectors.groupingBy(e -> {
+						double salary = e.getSalary();
+						
+						if (salary < 800000) {
+							return "LOW";
+						} else if (salary >= 800000 && salary <= 1199999) {
+							return "MEDIUM";
+						} else {
+							return "HIGH";
+						}
+					})
+				)
+				.forEach((salary, emp) -> {
+					System.out.println(
+						salary + " = " +
+						emp.stream()
+							.map(e -> e.getName())
+							.collect(Collectors.toList())
+						
+					);
+				});
+
+	}
 ```
 ### 5 Count Employees in Each Department
 ### Solution
