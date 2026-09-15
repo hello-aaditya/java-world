@@ -86,10 +86,47 @@ public static void main(String[] args) {
 ### 5 Group Numbers by Number of Digits
 ### Solution
 ```java
+public static void main(String[] args) {
+	
+	List<Integer> invoiceNumbers = Arrays.asList(
+		42, 105, 7, 1284,
+		56, 903, 12, 4501,
+		86, 731, 19, 6023
+	);
+
+	invoiceNumbers.stream()
+			.collect(
+				Collectors.groupingBy(n -> String.valueOf(n).length())
+			)
+			.forEach((len, invoices) -> {
+				System.out.println(len + " = " + invoices);
+			});
+	
+}
 ```
 ### 6 Group Words by Their First and Last Character
 ### Solution
 ```java
+public static void main(String[] args) {
+	
+	List<String> commands = Arrays.asList(
+		"Build", "Bind",
+		"Deploy", "Debug",
+		"Commit", "Clone",
+		"Push", "Pull",
+		"Merge", "Move"
+	);
+	
+	commands.stream()
+			.collect(Collectors.groupingBy(command -> 
+				command.charAt(0) + "-" +
+				command.charAt(command.length()-1)
+			))
+			.forEach((firstAndLast, command) -> {
+				System.out.println(firstAndLast + " = " + command);
+			});
+
+}
 ```
 ### 7 Group Strings by Their Length and Count Each Group
 ### Solution
