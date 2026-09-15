@@ -431,6 +431,26 @@ public static void main(String[] args) {
 ### 4 Lowest Salary After Filtering Employees Above a Salary Threshold
 ### Solution
 ```java
+public static void main(String[] args) {
+	
+	List<Employee> employees = Arrays.asList(
+		new Employee(301, "Alpha", "DEV", 780000),
+		new Employee(302, "Bravo", "QA", 820000),
+		new Employee(303, "Charlie", "PROD", 950000),
+		new Employee(304, "Delta", "UI", 800000),
+		new Employee(305, "Echo", "DEV", 860000),
+		new Employee(306, "Foxtrot", "QA", 810000),
+		new Employee(307, "Golf", "PROD", 760000)
+	);
+	
+	Employee e = 
+		employees.stream()
+				.filter(emp -> emp.getSalary() > 8_00_000.0)
+				.min(Comparator.comparingDouble(Employee::getSalary))
+				.get();
+
+	System.out.println(e.getName() + " -> " + e.getSalary());
+}
 ```
 ### 5 Lowest Salary With ID Tie-Breaker
 ### Solution
