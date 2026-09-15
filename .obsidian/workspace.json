@@ -184,7 +184,8 @@
       }
     ],
     "direction": "horizontal",
-    "width": 300
+    "width": 300,
+    "collapsed": true
   },
   "left-ribbon": {
     "hiddenItems": {
@@ -200,8 +201,8 @@
   },
   "active": "3b296d2526aaffb2",
   "lastOpenFiles": [
-    "00-JAVA/01-CORE-JAVA/PROBLEM-PRACTICE/40-STREAM-API/60-MIN.md",
     "00-JAVA/01-CORE-JAVA/PROBLEM-PRACTICE/40-STREAM-API/50-MAX.md",
+    "00-JAVA/01-CORE-JAVA/PROBLEM-PRACTICE/40-STREAM-API/60-MIN.md",
     "00-JAVA/01-CORE-JAVA/PROBLEM-PRACTICE/40-STREAM-API/40-SORTED.md",
     "00-JAVA/01-CORE-JAVA/PROBLEM-PRACTICE/40-STREAM-API/00-INTERMEDIATE-OPERATIONS.md",
     "00-JAVA/01-CORE-JAVA/PROBLEM-PRACTICE/40-STREAM-API/30-FILTER-AND-MAP-MIX.md",
