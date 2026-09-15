@@ -606,7 +606,8 @@ public static void main(String[] args) {
 								Collectors.minBy(
 									Comparator.comparing(Employee::getSalary)
 										.thenComparing(
-												Comparator.comparing(Employee::getId).reversed()
+												Comparator.comparing(Employee::getId)
+													.reversed()
 										)
 								)
 							)
