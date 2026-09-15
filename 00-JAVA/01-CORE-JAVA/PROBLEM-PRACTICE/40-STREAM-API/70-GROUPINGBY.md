@@ -460,18 +460,7 @@ public static void main(String[] args) {
 
 }
 ```
-
-### Progression
-
-```
-1.  groupingBy()
-2.  calculated numeric key
-3.  String property
-4.  character-based key
-5.  calculated classification
-6.  composite classification key
-7.  groupingBy() + counting()
-8.  groupingBy() + summingInt()
-9.  groupingBy() + maxBy()
-10. groupingBy() + joining()
+# `groupingBy()` Based Custom Class 
+### Employee Class
+```java
 ```
