@@ -512,31 +512,31 @@ public class Employee {
 	}
 }
 ```
-### 1 
+### 1 Group Employees by Department
 ### Solution
 ```java
 ```
-### 2 
+### 2 Group Employees by Designation
 ### Solution
 ```java
 ```
-### 3 
+### 3 Group Employees by Experience Level
 ### Solution
 ```java
 ```
-### 4 
+### 4 Group Employees by Salary Band
 ### Solution
 ```java
 ```
-### 5 
+### 5 Count Employees in Each Department
 ### Solution
 ```java
 ```
-### 6 
+### 6 Calculate Total Salary Expense by Department
 ### Solution
 ```java
 ```
-### 7 
+### 7 Calculate Average Salary by Designation
 ### Solution
 ```java
 ```
