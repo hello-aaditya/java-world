@@ -688,10 +688,56 @@ public static void main(String[] args) {
 ### 6 Calculate Total Salary Expense by Department
 ### Solution
 ```java
+public static void main(String[] args) {
+	
+	List<Employee> employees = Arrays.asList(
+		new Employee(601, "Alpha", "DEV", "Developer", 800000, 2),
+		new Employee(602, "Bravo", "QA", "Tester", 700000, 3),
+		new Employee(603, "Charlie", "DEV", "Developer", 950000, 5),
+		new Employee(604, "Delta", "HR", "Executive", 650000, 4),
+		new Employee(605, "Echo", "QA", "Tester", 850000, 6),
+		new Employee(606, "Foxtrot", "DEV", "Tech Lead", 1250000, 9),
+		new Employee(607, "Golf", "HR", "Manager", 1100000, 8)
+	);
+	
+	employees.stream()
+			.collect(
+				Collectors.groupingBy(e -> e.getDepartment(),
+					Collectors.summingDouble(e -> e.getSalary())
+				)
+			)
+			.forEach((dept, totalAnnualSalary) -> {
+				System.out.println(dept + " = " + totalAnnualSalary);
+			});
+
+}
 ```
 ### 7 Calculate Average Salary by Designation
 ### Solution
 ```java
+public static void main(String[] args) {
+	
+	List<Employee> employees = Arrays.asList(
+		new Employee(701, "Alpha", "DEV", "Developer", 800000, 2),
+		new Employee(702, "Bravo", "QA", "Tester", 700000, 3),
+		new Employee(703, "Charlie", "DEV", "Developer", 900000, 4),
+		new Employee(704, "Delta", "QA", "Tester", 800000, 5),
+		new Employee(705, "Echo", "DEV", "Developer", 1000000, 6),
+		new Employee(706, "Foxtrot", "DEV", "Tech Lead", 1300000, 9),
+		new Employee(707, "Golf", "QA", "Tester", 900000, 7)
+	);
+	
+	employees.stream()
+			.collect(
+				Collectors.groupingBy(e -> e.getDesignation(),
+					Collectors.averagingDouble(e -> e.getSalary())
+				)
+			)
+			.forEach((designation, avgSalary) -> {
+				System.out.println(designation + " = " + avgSalary);
+			});
+
+}
 ```
 ### 8 Find the Highest-Paid Employee in Each Department
 ### Solution
