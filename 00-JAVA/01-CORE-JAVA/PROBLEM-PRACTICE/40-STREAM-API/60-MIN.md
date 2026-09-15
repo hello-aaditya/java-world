@@ -363,31 +363,31 @@ public static void main(String[] args) {
 ### Solution
 ```java
 ```
-### 3 
+### 3 Lowest Salary Among QA Employees
 ### Solution
 ```java
 ```
-### 4 
+### 4 Lowest Salary After Filtering Employees Above a Salary Threshold
 ### Solution
 ```java
 ```
-### 5 
+### 5 Lowest Salary With ID Tie-Breaker
 ### Solution
 ```java
 ```
-### 6 
+### 6 Lowest Salary in Each Department
 ### Solution
 ```java
 ```
-### 7 
+### 7 Youngest Employee Among Eligible Employees
 ### Solution
 ```java
 ```
-### 8 
+### 8 Minimum Salary Among Experienced Employees
 ### Solution
 ```java
 ```
-### 9 
+### 9 Minimum Salary Per Department With Tie-Breaker
 ### Solution
 ```java
 ```
