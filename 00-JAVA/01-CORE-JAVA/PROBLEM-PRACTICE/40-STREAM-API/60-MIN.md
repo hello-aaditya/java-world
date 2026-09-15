@@ -355,11 +355,11 @@ public static void main(String[] args) {
 }
 ```
 # `min()` Based Custom Class Questions
-### 1 
+### 1 Minimum Salary Employee
 ### Solution
 ```java
 ```
-### 2 
+### 2 Minimum Employee ID
 ### Solution
 ```java
 ```
@@ -367,31 +367,31 @@ public static void main(String[] args) {
 ### Solution
 ```java
 ```
-### 1 
+### 4 
 ### Solution
 ```java
 ```
-### 1 
+### 5 
 ### Solution
 ```java
 ```
-### 1 
+### 6 
 ### Solution
 ```java
 ```
-### 1 
+### 7 
 ### Solution
 ```java
 ```
-### 1 
+### 8 
 ### Solution
 ```java
 ```
-### 1 
+### 9 
 ### Solution
 ```java
 ```
-### 1 
+### 10 
 ### Solution
 ```java
 ```
