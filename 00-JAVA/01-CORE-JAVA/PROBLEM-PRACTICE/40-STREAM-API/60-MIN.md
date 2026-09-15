@@ -358,11 +358,48 @@ public static void main(String[] args) {
 ### 1 Minimum Salary Employee
 ### Solution
 ```java
+public static void main(String[] args) {
+	
+	List<Employee> employees = Arrays.asList(
+		new Employee(101, "Alpha", "DEV", 850000),
+		new Employee(102, "Bravo", "QA", 720000),
+		new Employee(103, "Charlie", "DEV", 950000),
+		new Employee(104, "Delta", "UI", 680000),
+		new Employee(105, "Echo", "PROD", 810000),
+		new Employee(106, "Foxtrot", "QA", 760000)
+	);
+	
+	Employee e =
+	employees.stream()
+			.min(Comparator.comparing(Employee::getSalary))
+			.get();
+
+	System.out.println(e.getName() + " -> " + e.getSalary());
+}
 ```
 ### 2 Minimum Employee ID
 ### Solution
 ```java
-```
+	public static void main(String[] args) {
+		
+		List<Employee> employees = Arrays.asList(
+		    new Employee(105, "Alpha", "DEV", 900000),
+		    new Employee(102, "Bravo", "QA", 1100000),
+		    new Employee(109, "Charlie", "PROD", 850000),
+		    new Employee(101, "Delta", "UI", 1250000),
+		    new Employee(107, "Echo", "DEV", 950000),
+		    new Employee(104, "Foxtrot", "QA", 1050000)
+		);
+		
+		Employee e = 
+			employees.stream()
+					.min(Comparator.comparing(Employee::getId))
+					.get();
+		
+		System.out.println(e.getId() + " -> " + e.getName() );
+
+	}
+	```
 ### 3 Lowest Salary Among QA Employees
 ### Solution
 ```java
