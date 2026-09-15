@@ -1,29 +1,29 @@
 # `groupingBy()` Based Questions
-### 1 
+### 1 Group Numbers by Even and Odd
 ### Solution
 ```java
 ```
-### 2 
+### 2 Group Numbers by Remainder
 ### Solution
 ```java
 ```
-### 3 
+### 3 Group Strings by Length
 ### Solution
 ```java
 ```
-### 4 
+### 4 Group Words by First Character
 ### Solution
 ```java
 ```
-### 5 
+### 5 Group Numbers by Number of Digits
 ### Solution
 ```java
 ```
-### 6 
+### 6 Group Words by Their First and Last Character
 ### Solution
 ```java
 ```
-### 7 
+### 7 Group Strings by Their Length and Count Each Group
 ### Solution
 ```java
 ```
