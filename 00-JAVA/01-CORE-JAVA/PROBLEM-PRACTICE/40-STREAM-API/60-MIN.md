@@ -391,7 +391,7 @@ public static void main(String[] args) {
 ### Solution
 ```java
 ```
-### 10 
+### 10 Minimum Salary With Composite Business Rules
 ### Solution
 ```java
 ```
