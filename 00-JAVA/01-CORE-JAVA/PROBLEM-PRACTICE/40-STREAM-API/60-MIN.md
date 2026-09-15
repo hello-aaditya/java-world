@@ -418,7 +418,7 @@ public static void main(String[] args) {
 	Employee emp =
 		employees.stream()
 				.filter(e -> e.getDepartment().equals("QA"))
-				.min(Comparator.comparing(Employee::getSalary))
+				.min(Comparator.comparingDouble(Employee::getSalary))
 				.get();
 
 	System.out.println(
