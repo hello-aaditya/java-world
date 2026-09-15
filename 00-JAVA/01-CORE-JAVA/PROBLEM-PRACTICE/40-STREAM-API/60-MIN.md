@@ -604,7 +604,8 @@ List<Employee> employees = Arrays.asList(
 
 Find the employee with the **lowest salary**. If multiple employees share the same lowest salary, pick the one with the **smaller ID**.
 
-> Three employees tie at 680000 — Bravo (402), Delta (401), Echo (407). Smaller ID wins → **Delta**.
+> Three employees tie at 680000 — Bravo (402), Delta (401), Echo (407). 
+> Smaller ID wins → **Delta**.
 
 **Expected output:**
 
@@ -716,25 +717,46 @@ public static void main(String[] args) {
 
 ```java
 public class Employee1 {
+	
 	private long id;
 	private String name;
 	private String department;
 	private double salary;
 	private int age;
-
-	public Employee1(long id, String name, String department, double salary, int age) {
+	
+	public Employee1 (
+		long id,
+		String name,
+		String department,
+		double salary,
+		int age
+	) {
 		this.id = id;
 		this.name = name;
 		this.department = department;
 		this.salary = salary;
 		this.age = age;
 	}
-
-	public long getId() { return id; }
-	public String getName() { return name; }
-	public String getDepartment() { return department; }
-	public double getSalary() { return salary; }
-	public int getAge() { return age; }
+	
+	public long getId() {
+		return id;
+	}
+	
+	public String getName() {
+		return name;
+	}
+	
+	public String getDepartment() {
+		return department;
+	}
+	
+	public double getSalary() {
+		return salary;
+	}
+	
+	public int getAge() {
+		return age;
+	}
 }
 ```
 
