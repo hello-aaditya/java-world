@@ -380,29 +380,53 @@ public static void main(String[] args) {
 ### 2 Minimum Employee ID
 ### Solution
 ```java
-	public static void main(String[] args) {
-		
-		List<Employee> employees = Arrays.asList(
-		    new Employee(105, "Alpha", "DEV", 900000),
-		    new Employee(102, "Bravo", "QA", 1100000),
-		    new Employee(109, "Charlie", "PROD", 850000),
-		    new Employee(101, "Delta", "UI", 1250000),
-		    new Employee(107, "Echo", "DEV", 950000),
-		    new Employee(104, "Foxtrot", "QA", 1050000)
-		);
-		
-		Employee e = 
-			employees.stream()
-					.min(Comparator.comparing(Employee::getId))
-					.get();
-		
-		System.out.println(e.getId() + " -> " + e.getName() );
+public static void main(String[] args) {
+	
+	List<Employee> employees = Arrays.asList(
+		new Employee(105, "Alpha", "DEV", 900000),
+		new Employee(102, "Bravo", "QA", 1100000),
+		new Employee(109, "Charlie", "PROD", 850000),
+		new Employee(101, "Delta", "UI", 1250000),
+		new Employee(107, "Echo", "DEV", 950000),
+		new Employee(104, "Foxtrot", "QA", 1050000)
+	);
+	
+	Employee e = 
+		employees.stream()
+				.min(Comparator.comparing(Employee::getId))
+				.get();
+	
+	System.out.println(e.getId() + " -> " + e.getName() );
 
-	}
-	```
+}
+```
 ### 3 Lowest Salary Among QA Employees
 ### Solution
 ```java
+public static void main(String[] args) {
+	
+	List<Employee> employees = Arrays.asList(
+		new Employee(201, "Alpha", "DEV", 700000),
+		new Employee(202, "Bravo", "QA", 850000),
+		new Employee(203, "Charlie", "PROD", 1200000),
+		new Employee(204, "Delta", "QA", 680000),
+		new Employee(205, "Echo", "UI", 950000),
+		new Employee(206, "Foxtrot", "QA", 720000),
+		new Employee(207, "Golf", "DEV", 900000)
+	);
+	
+	Employee emp =
+		employees.stream()
+				.filter(e -> e.getDepartment().equals("QA"))
+				.min(Comparator.comparing(Employee::getSalary))
+				.get();
+
+	System.out.println(
+		emp.getName() + " -> " + 
+		emp.getDepartment() + " -> " + 
+		emp.getSalary()
+	);
+}
 ```
 ### 4 Lowest Salary After Filtering Employees Above a Salary Threshold
 ### Solution
