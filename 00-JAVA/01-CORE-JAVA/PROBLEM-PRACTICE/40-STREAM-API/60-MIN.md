@@ -393,7 +393,7 @@ public static void main(String[] args) {
 	
 	Employee e = 
 		employees.stream()
-				.min(Comparator.comparingInt(Employee::getId))
+				.min(Comparator.comparingLong(Employee::getId))
 				.get();
 	
 	System.out.println(e.getId() + " -> " + e.getName() );
@@ -604,9 +604,9 @@ public static void main(String[] args) {
 							Collectors.groupingBy(
 								Employee::getDepartment,
 								Collectors.minBy(
-									Comparator.comparing(Employee::getSalary)
+									Comparator.comparingDouble(Employee::getSalary)
 										.thenComparing(
-												Comparator.comparing(Employee::getId)
+												Comparator.comparingLong(Employee::getId)
 													.reversed()
 										)
 								)
