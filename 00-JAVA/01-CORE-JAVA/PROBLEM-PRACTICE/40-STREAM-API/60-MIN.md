@@ -565,7 +565,7 @@ public static void main(String[] args) {
 	Employee1 e =
 		employees.stream()
 				.filter(emp -> emp.getAge() >= 30)
-				.min(Comparator.comparing(Employee1::getSalary)).get();
+				.min(Comparator.comparingDouble(Employee1::getSalary)).get();
 				
 	System.out.println(
 		e.getName() + " -> " +
