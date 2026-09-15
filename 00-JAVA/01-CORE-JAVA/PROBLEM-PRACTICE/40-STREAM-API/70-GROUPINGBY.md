@@ -618,48 +618,72 @@ public static void main(String[] args) {
 ### 4 Group Employees by Salary Band
 ### Solution
 ```java
-	public static void main(String[] args) {
-		
-		List<Employee> employees = Arrays.asList(
-		    new Employee(401, "Alpha", "DEV", "Developer", 750000, 2),
-		    new Employee(402, "Bravo", "QA", "Tester", 800000, 3),
-		    new Employee(403, "Charlie", "DEV", "Developer", 950000, 4),
-		    new Employee(404, "Delta", "HR", "Executive", 1100000, 5),
-		    new Employee(405, "Echo", "QA", "Tester", 1199999, 6),
-		    new Employee(406, "Foxtrot", "DEV", "Tech Lead", 1200000, 8),
-		    new Employee(407, "Golf", "HR", "Manager", 1450000, 10),
-		    new Employee(408, "Hotel", "DEV", "Architect", 1750000, 12)
-		);
-		
-		employees.stream()
-				.collect(
-					Collectors.groupingBy(e -> {
-						double salary = e.getSalary();
-						
-						if (salary < 800000) {
-							return "LOW";
-						} else if (salary >= 800000 && salary <= 1199999) {
-							return "MEDIUM";
-						} else {
-							return "HIGH";
-						}
-					})
-				)
-				.forEach((salary, emp) -> {
-					System.out.println(
-						salary + " = " +
-						emp.stream()
-							.map(e -> e.getName())
-							.collect(Collectors.toList())
-						
-					);
-				});
+public static void main(String[] args) {
+	
+	List<Employee> employees = Arrays.asList(
+		new Employee(401, "Alpha", "DEV", "Developer", 750000, 2),
+		new Employee(402, "Bravo", "QA", "Tester", 800000, 3),
+		new Employee(403, "Charlie", "DEV", "Developer", 950000, 4),
+		new Employee(404, "Delta", "HR", "Executive", 1100000, 5),
+		new Employee(405, "Echo", "QA", "Tester", 1199999, 6),
+		new Employee(406, "Foxtrot", "DEV", "Tech Lead", 1200000, 8),
+		new Employee(407, "Golf", "HR", "Manager", 1450000, 10),
+		new Employee(408, "Hotel", "DEV", "Architect", 1750000, 12)
+	);
+	
+	employees.stream()
+			.collect(
+				Collectors.groupingBy(e -> {
+					double salary = e.getSalary();
+					
+					if (salary < 800000) {
+						return "LOW";
+					} else if (salary >= 800000 && salary <= 1199999) {
+						return "MEDIUM";
+					} else {
+						return "HIGH";
+					}
+				})
+			)
+			.forEach((salary, emp) -> {
+				System.out.println(
+					salary + " = " +
+					emp.stream()
+						.map(e -> e.getName())
+						.collect(Collectors.toList())
+					
+				);
+			});
 
-	}
+}
 ```
 ### 5 Count Employees in Each Department
 ### Solution
 ```java
+public static void main(String[] args) {
+	
+	List<Employee> employees = Arrays.asList(
+		new Employee(501, "Alpha", "DEV", "Developer", 850000, 2),
+		new Employee(502, "Bravo", "QA", "Tester", 720000, 3),
+		new Employee(503, "Charlie", "DEV", "Developer", 950000, 5),
+		new Employee(504, "Delta", "HR", "Executive", 680000, 4),
+		new Employee(505, "Echo", "QA", "Tester", 880000, 6),
+		new Employee(506, "Foxtrot", "DEV", "Tech Lead", 1250000, 9),
+		new Employee(507, "Golf", "HR", "Manager", 1050000, 8),
+		new Employee(508, "Hotel", "DEV", "Developer", 900000, 4),
+		new Employee(509, "India", "QA", "Automation Tester", 980000, 7)
+	);
+	
+	employees.stream()
+			.collect(
+					Collectors.groupingBy( e -> e.getDepartment(),
+							Collectors.counting()
+					)
+			)
+			.forEach((dept, countOfEmp) -> {
+				System.out.println(dept + " = " + countOfEmp);
+			});
+}
 ```
 ### 6 Calculate Total Salary Expense by Department
 ### Solution
