@@ -357,3 +357,41 @@ public static void main(String[] args) {
 # `min()` Based Custom Class Questions
 ### 1 
 ### Solution
+```java
+```
+### 2 
+### Solution
+```java
+```
+### 3 
+### Solution
+```java
+```
+### 1 
+### Solution
+```java
+```
+### 1 
+### Solution
+```java
+```
+### 1 
+### Solution
+```java
+```
+### 1 
+### Solution
+```java
+```
+### 1 
+### Solution
+```java
+```
+### 1 
+### Solution
+```java
+```
+### 1 
+### Solution
+```java
+```
