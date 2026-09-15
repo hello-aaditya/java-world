@@ -627,38 +627,37 @@ public static void main(String[] args) {
 ### 10 Minimum Salary With Composite Business Rules
 ### Solution
 ```java
-	public static void main(String[] args) {
-		
-		List<Employee> employees = Arrays.asList(
-		    new Employee(901, "Alpha", "QA", 600000),
-		    new Employee(902, "Bravo", "PROD", 600000),
-		    new Employee(903, "Charlie", "DEV", 600000),
-		    new Employee(904, "Delta", "DEV", 600000),
-		    new Employee(905, "Echo", "UI", 650000),
-		    new Employee(906, "Foxtrot", "QA", 580000),
-		    new Employee(907, "Golf", "DEV", 580000),
-		    new Employee(908, "Hotel", "DEV", 580000),
-		    new Employee(909, "India", "PROD", 580000),
-		    new Employee(910, "Juliett", "QA", 700000)
-		);
-		
-		Optional<Employee> e = 
-			employees.stream()
-					.min(
-						// rule-1: lowest salary
-						Comparator.comparing(Employee::getSalary)
-						// rule-2: DEV first 
-						.thenComparing(emp -> emp.getDepartment().equals("DEV") ? 0 : 1)
-						// rule-3: lower id
-						.thenComparing(Employee::getId)
-					);
-		
-		System.out.println(
-			e.get().getName() + " -> " +
-			e.get().getDepartment() + " -> " + 
-			e.get().getSalary() + " -> " +
-			e.get().getId()
- 		);
-
-	}
+public static void main(String[] args) {
+	
+	List<Employee> employees = Arrays.asList(
+		new Employee(901, "Alpha", "QA", 600000),
+		new Employee(902, "Bravo", "PROD", 600000),
+		new Employee(903, "Charlie", "DEV", 600000),
+		new Employee(904, "Delta", "DEV", 600000),
+		new Employee(905, "Echo", "UI", 650000),
+		new Employee(906, "Foxtrot", "QA", 580000),
+		new Employee(907, "Golf", "DEV", 580000),
+		new Employee(908, "Hotel", "DEV", 580000),
+		new Employee(909, "India", "PROD", 580000),
+		new Employee(910, "Juliett", "QA", 700000)
+	);
+	
+	Optional<Employee> e = 
+		employees.stream()
+				.min(
+					// rule-1: lowest salary
+					Comparator.comparing(Employee::getSalary)
+					// rule-2: DEV first 
+					.thenComparing(emp -> emp.getDepartment().equals("DEV") ? 0 : 1)
+					// rule-3: lower id
+					.thenComparing(Employee::getId)
+				);
+	
+	System.out.println(
+		e.get().getName() + " -> " +
+		e.get().getDepartment() + " -> " + 
+		e.get().getSalary() + " -> " +
+		e.get().getId()
+	);
+}
 ```
