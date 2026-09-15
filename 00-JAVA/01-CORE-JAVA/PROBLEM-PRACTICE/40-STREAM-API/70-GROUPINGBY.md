@@ -540,15 +540,15 @@ public class Employee {
 ### Solution
 ```java
 ```
-### 8 
+### 8 Find the Highest-Paid Employee in Each Department
 ### Solution
 ```java
 ```
-### 9 
+### 9 Group Employees by Department and Then by Designation
 ### Solution
 ```java
 ```
-### 10 
+### 10 Department Performance Summary
 ### Solution
 ```java
 ```
