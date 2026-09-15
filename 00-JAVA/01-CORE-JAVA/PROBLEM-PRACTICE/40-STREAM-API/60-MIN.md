@@ -661,3 +661,375 @@ public static void main(String[] args) {
 	);
 }
 ```
+
+# `min()` Based Custom Class Questions
+
+### Employee class
+
+```java
+public class Employee {
+	private long id;
+	private String name;
+	private String department;
+	private double salary;
+
+	public Employee(long id, String name, String department, double salary) {
+		this.id = id;
+		this.name = name;
+		this.department = department;
+		this.salary = salary;
+	}
+
+	public long getId() { return id; }
+	public String getName() { return name; }
+	public String getDepartment() { return department; }
+	public double getSalary() { return salary; }
+}
+```
+
+### 1. Minimum Salary Employee
+
+Given:
+
+```java
+List<Employee> employees = Arrays.asList(
+    new Employee(101, "Alpha",   "DEV",   850000),
+    new Employee(102, "Bravo",   "QA",    720000),
+    new Employee(103, "Charlie", "DEV",   950000),
+    new Employee(104, "Delta",   "UI",    680000),
+    new Employee(105, "Echo",    "PROD",  810000),
+    new Employee(106, "Foxtrot", "QA",    760000)
+);
+```
+
+Find the employee with the **lowest salary** using `min()`. Do not use `sorted()`.
+
+**Expected output:**
+
+```
+Delta -> 680000.0
+```
+
+### Solution
+
+
+### 2. Minimum Employee ID
+
+Given:
+
+```java
+List<Employee> employees = Arrays.asList(
+    new Employee(105, "Alpha",   "DEV",  900000),
+    new Employee(102, "Bravo",   "QA",  1100000),
+    new Employee(109, "Charlie", "PROD",  850000),
+    new Employee(101, "Delta",   "UI",  1250000),
+    new Employee(107, "Echo",    "DEV",  950000),
+    new Employee(104, "Foxtrot", "QA",  1050000)
+);
+```
+
+Find the employee with the **smallest employee ID**. Return the complete `Employee` object.
+
+**Expected output:**
+
+```
+Delta -> ID 101
+```
+
+### Solution
+
+
+### 3. Lowest Salary Among QA Employees
+
+Given:
+
+```java
+List<Employee> employees = Arrays.asList(
+    new Employee(201, "Alpha",   "DEV",   700000),
+    new Employee(202, "Bravo",   "QA",    850000),
+    new Employee(203, "Charlie", "PROD", 1200000),
+    new Employee(204, "Delta",   "QA",    680000),
+    new Employee(205, "Echo",    "UI",    950000),
+    new Employee(206, "Foxtrot", "QA",    720000),
+    new Employee(207, "Golf",    "DEV",   900000)
+);
+```
+
+Filter only `QA` employees, then find the one with the **lowest salary**. Handle the case where no QA employee exists.
+
+**Expected output:**
+
+```
+Delta -> QA -> 680000.0
+```
+
+### Solution
+
+
+### 4. Lowest Salary Above a Salary Threshold
+
+Given:
+
+```java
+List<Employee> employees = Arrays.asList(
+    new Employee(301, "Alpha",   "DEV",   780000),
+    new Employee(302, "Bravo",   "QA",    820000),
+    new Employee(303, "Charlie", "PROD",  950000),
+    new Employee(304, "Delta",   "UI",    800000),
+    new Employee(305, "Echo",    "DEV",   860000),
+    new Employee(306, "Foxtrot", "QA",    810000),
+    new Employee(307, "Golf",    "PROD",  760000)
+);
+```
+
+Find the employee with the **lowest salary among employees whose salary is strictly greater than 800,000**. Employees with salary `<= 800000` must be excluded.
+
+**Expected output:**
+
+```
+Foxtrot -> 810000.0
+```
+
+### Solution
+
+
+### 5. Lowest Salary With ID Tie-Breaker
+
+Given:
+
+```java
+List<Employee> employees = Arrays.asList(
+    new Employee(405, "Alpha",   "DEV",   750000),
+    new Employee(402, "Bravo",   "QA",    680000),
+    new Employee(409, "Charlie", "PROD",  820000),
+    new Employee(401, "Delta",   "UI",    680000),
+    new Employee(407, "Echo",    "DEV",   680000),
+    new Employee(404, "Foxtrot", "QA",    760000)
+);
+```
+
+Find the employee with the **lowest salary**. If multiple employees share the same lowest salary, pick the one with the **smaller ID**.
+
+> Three employees tie at 680000 — Bravo (402), Delta (401), Echo (407). Smaller ID wins → **Delta**.
+
+**Expected output:**
+
+```
+Delta -> ID 401 -> 680000.0
+```
+
+### Solution
+
+
+### 6. Lowest Salary in Each Department
+
+Given:
+
+```java
+List<Employee> employees = Arrays.asList(
+    new Employee(501, "Alpha",   "DEV",  950000),
+    new Employee(502, "Bravo",   "DEV",  720000),
+    new Employee(503, "Charlie", "DEV",  850000),
+
+    new Employee(504, "Delta",   "QA",   680000),
+    new Employee(505, "Echo",    "QA",   820000),
+    new Employee(506, "Foxtrot", "QA",   750000),
+
+    new Employee(507, "Golf",    "PROD", 1100000),
+    new Employee(508, "Hotel",   "PROD",  900000),
+    new Employee(509, "India",   "PROD",  980000),
+
+    new Employee(510, "Juliett", "UI",   650000),
+    new Employee(511, "Kilo",    "UI",   780000),
+    new Employee(512, "Lima",    "UI",   700000)
+);
+```
+
+For each department, find the employee with the **lowest salary**. Result is a `Map<String, Employee>`.
+
+**Expected output:**
+
+```
+DEV  -> Bravo
+QA   -> Delta
+PROD -> Hotel
+UI   -> Juliett
+```
+
+### Solution
+
+
+### Extended Employee class (Q7 and Q8)
+
+```java
+public class Employee {
+	private long id;
+	private String name;
+	private String department;
+	private double salary;
+	private int age;
+
+	public Employee(long id, String name, String department, double salary, int age) {
+		this.id = id;
+		this.name = name;
+		this.department = department;
+		this.salary = salary;
+		this.age = age;
+	}
+
+	public long getId() { return id; }
+	public String getName() { return name; }
+	public String getDepartment() { return department; }
+	public double getSalary() { return salary; }
+	public int getAge() { return age; }
+}
+```
+
+### 7. Youngest Employee Among Eligible Employees
+
+Given:
+
+```java
+List<Employee> employees = Arrays.asList(
+    new Employee(601, "Alpha",   "DEV",   750000, 24),
+    new Employee(602, "Bravo",   "QA",    850000, 29),
+    new Employee(603, "Charlie", "PROD",  900000, 26),
+    new Employee(604, "Delta",   "DEV",   800000, 23),
+    new Employee(605, "Echo",    "UI",   1200000, 31),
+    new Employee(606, "Foxtrot", "QA",    820000, 25),
+    new Employee(607, "Golf",    "DEV",   780000, 21),
+    new Employee(608, "Hotel",   "PROD",  950000, 27)
+);
+```
+
+Filter employees whose salary is `>= 800000`, then find the **youngest** (minimum age) among them.
+
+> Golf (age 21) is excluded because salary `780000 < 800000`.
+
+**Expected output:**
+
+```
+Delta -> Age 23 -> Salary 800000.0
+```
+
+### Solution
+
+
+### 8. Minimum Salary Among Experienced Employees
+
+Given:
+
+```java
+List<Employee> employees = Arrays.asList(
+    new Employee(701, "Alpha",   "DEV",   950000, 28),
+    new Employee(702, "Bravo",   "QA",    780000, 32),
+    new Employee(703, "Charlie", "PROD", 1250000, 35),
+    new Employee(704, "Delta",   "DEV",   820000, 31),
+    new Employee(705, "Echo",    "UI",    700000, 27),
+    new Employee(706, "Foxtrot", "QA",    760000, 30),
+    new Employee(707, "Golf",    "PROD",  900000, 29),
+    new Employee(708, "Hotel",   "UI",    850000, 34)
+);
+```
+
+An employee is **experienced** if `age >= 30`. Find the experienced employee with the **minimum salary**.
+
+**Expected output:**
+
+```
+Foxtrot -> Age 30 -> Salary 760000.0
+```
+
+### Solution
+
+
+### 9. Minimum Salary Per Department With Tie-Breaker
+
+Given:
+
+```java
+List<Employee> employees = Arrays.asList(
+    new Employee(801, "Alpha",   "DEV",  700000),
+    new Employee(805, "Bravo",   "DEV",  650000),
+    new Employee(803, "Charlie", "DEV",  650000),
+
+    new Employee(806, "Delta",   "QA",   720000),
+    new Employee(809, "Echo",    "QA",   680000),
+    new Employee(807, "Foxtrot", "QA",   680000),
+
+    new Employee(811, "Golf",    "PROD", 900000),
+    new Employee(814, "Hotel",   "PROD", 850000),
+    new Employee(812, "India",   "PROD", 850000),
+
+    new Employee(816, "Juliett", "UI",   600000),
+    new Employee(819, "Kilo",    "UI",   580000),
+    new Employee(817, "Lima",    "UI",   580000)
+);
+```
+
+For each department, find the employee with the **lowest salary**. If two employees share the same minimum salary, pick the one with the **higher ID**. Result is a `Map<String, Employee>`.
+
+> Every department has a deliberate tie — e.g. DEV: Bravo (805) and Charlie (803) both at 650000. Higher ID wins → Bravo.
+
+**Expected output:**
+
+```
+DEV  -> Bravo   (ID 805, 650000)
+QA   -> Echo    (ID 809, 680000)
+PROD -> Hotel   (ID 814, 850000)
+UI   -> Kilo    (ID 819, 580000)
+```
+
+### Solution
+
+
+### 10. Minimum Salary With Composite Business Rules
+
+Given:
+
+```java
+List<Employee> employees = Arrays.asList(
+    new Employee(901, "Alpha",   "QA",    600000),
+    new Employee(902, "Bravo",   "PROD",  600000),
+    new Employee(903, "Charlie", "DEV",   600000),
+    new Employee(904, "Delta",   "DEV",   600000),
+    new Employee(905, "Echo",    "UI",    650000),
+    new Employee(906, "Foxtrot", "QA",    580000),
+    new Employee(907, "Golf",    "DEV",   580000),
+    new Employee(908, "Hotel",   "DEV",   580000),
+    new Employee(909, "India",   "PROD",  580000),
+    new Employee(910, "Juliett", "QA",    700000)
+);
+```
+
+Find the best employee using these priority rules in order:
+
+1. **Lowest salary** wins.
+2. If tied, **DEV department** wins over others.
+3. If still tied, **lower employee ID** wins.
+
+> Lowest salary: Foxtrot (QA), Golf (DEV), Hotel (DEV), India (PROD). DEV wins → Golf (907) and Hotel (908). Lower ID → **Golf**.
+
+**Expected output:**
+
+```
+Golf -> ID 907 -> DEV -> 580000.0
+```
+
+### Solution
+
+
+### Progression
+
+| #  | Level         | Main concept                    |
+| -- | ------------- | ------------------------------- |
+| 1  | Easy          | Basic object comparison         |
+| 2  | Easy          | Minimum by ID                   |
+| 3  | Easy          | filter() + min()                |
+| 4  | Easy/Moderate | Conditional minimum             |
+| 5  | Moderate      | Minimum + tie-breaker           |
+| 6  | Moderate      | groupingBy() + min()            |
+| 7  | Moderate      | Filtering + different property  |
+| 8  | Moderate      | Filter + minimum                |
+| 9  | Advanced      | Grouping + composite comparator |
+| 10 | Advanced      | Multi-level business comparator |
