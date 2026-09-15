@@ -461,7 +461,9 @@ public static void main(String[] args) {
 }
 ```
 # `groupingBy()` Based Custom Class
-### Employee Class
+
+### Employee class
+
 ```java
 public class Employee {
 	private int id;
@@ -512,11 +514,37 @@ public class Employee {
 	}
 }
 ```
-### 1 Group Employees by Department
+
+### 1. Group Employees by Department
+
+Given:
+
+```java
+List<Employee> employees = Arrays.asList(
+    new Employee(101, "Alpha",   "DEV", "Developer",         850000, 2),
+    new Employee(102, "Bravo",   "QA",  "Tester",            720000, 3),
+    new Employee(103, "Charlie", "DEV", "Developer",         950000, 5),
+    new Employee(104, "Delta",   "HR",  "HR Executive",      680000, 4),
+    new Employee(105, "Echo",    "QA",  "Automation Tester", 880000, 6),
+    new Employee(106, "Foxtrot", "DEV", "Tech Lead",        1250000, 9),
+    new Employee(107, "Golf",    "HR",  "HR Manager",       1050000, 8)
+);
+```
+
+Group all employees by their **department** using `groupingBy()`.
+
+**Expected output:**
+
+```
+DEV -> [Alpha, Charlie, Foxtrot]
+QA -> [Bravo, Echo]
+HR -> [Delta, Golf]
+```
+
 ### Solution
 ```java
 public static void main(String[] args) {
-	
+
 	List<Employee> employees = Arrays.asList(
 		new Employee(101, "Alpha", "DEV", "Developer", 850000, 2),
 		new Employee(102, "Bravo", "QA", "Tester", 720000, 3),
@@ -544,11 +572,40 @@ public static void main(String[] args) {
 
 }
 ```
-### 2 Group Employees by Designation
+
+### 2. Group Employees by Designation
+
+Given:
+
+```java
+List<Employee> employees = Arrays.asList(
+    new Employee(201, "Alpha",   "DEV", "Developer",         800000, 2),
+    new Employee(202, "Bravo",   "QA",  "Tester",            700000, 2),
+    new Employee(203, "Charlie", "DEV", "Developer",         900000, 4),
+    new Employee(204, "Delta",   "DEV", "Tech Lead",        1250000, 8),
+    new Employee(205, "Echo",    "QA",  "Tester",            760000, 3),
+    new Employee(206, "Foxtrot", "HR",  "HR Executive",      650000, 3),
+    new Employee(207, "Golf",    "DEV", "Developer",         870000, 3),
+    new Employee(208, "Hotel",   "QA",  "Automation Tester", 950000, 6)
+);
+```
+
+Group employees by their **designation** using `groupingBy()`.
+
+**Expected output:**
+
+```
+Developer = [Alpha, Charlie, Golf]
+Tester = [Bravo, Echo]
+Tech Lead = [Delta]
+HR Executive = [Foxtrot]
+Automation Tester = [Hotel]
+```
+
 ### Solution
 ```java
 public static void main(String[] args) {
-	
+
 	List<Employee> employees = Arrays.asList(
 		new Employee(201, "Alpha", "DEV", "Developer", 800000, 2),
 		new Employee(202, "Bravo", "QA", "Tester", 700000, 2),
@@ -575,11 +632,41 @@ public static void main(String[] args) {
 
 }
 ```
-### 3 Group Employees by Experience Level
+
+### 3. Group Employees by Experience Level
+
+Given:
+
+```java
+List<Employee> employees = Arrays.asList(
+    new Employee(301, "Alpha",   "DEV", "Developer", 700000,  1),
+    new Employee(302, "Bravo",   "QA",  "Tester",    720000,  2),
+    new Employee(303, "Charlie", "DEV", "Developer", 850000,  3),
+    new Employee(304, "Delta",   "HR",  "Executive", 800000,  5),
+    new Employee(305, "Echo",    "QA",  "Tester",    950000,  4),
+    new Employee(306, "Foxtrot", "DEV", "Tech Lead", 1300000, 6),
+    new Employee(307, "Golf",    "HR",  "Manager",   1200000, 8),
+    new Employee(308, "Hotel",   "DEV", "Architect", 1600000, 10)
+);
+```
+
+Group employees by **experience level**, calculated from the `experience` field:
+- `0–2 years` → `"JUNIOR"`
+- `3–5 years` → `"MID_LEVEL"`
+- `6+ years`  → `"SENIOR"`
+
+**Expected output:**
+
+```
+JUNIOR = [Alpha, Bravo]
+MID_LEVEL = [Charlie, Delta, Echo]
+SENIOR = [Foxtrot, Golf, Hotel]
+```
+
 ### Solution
 ```java
 public static void main(String[] args) {
-	
+
 	List<Employee> employees = Arrays.asList(
 		new Employee(301, "Alpha", "DEV", "Developer", 700000, 1),
 		new Employee(302, "Bravo", "QA", "Tester", 720000, 2),
@@ -615,11 +702,41 @@ public static void main(String[] args) {
 			});
 }
 ```
-### 4 Group Employees by Salary Band
+
+### 4. Group Employees by Salary Band
+
+Given:
+
+```java
+List<Employee> employees = Arrays.asList(
+    new Employee(401, "Alpha",   "DEV", "Developer", 750000,  2),
+    new Employee(402, "Bravo",   "QA",  "Tester",    800000,  3),
+    new Employee(403, "Charlie", "DEV", "Developer", 950000,  4),
+    new Employee(404, "Delta",   "HR",  "Executive", 1100000, 5),
+    new Employee(405, "Echo",    "QA",  "Tester",    1199999, 6),
+    new Employee(406, "Foxtrot", "DEV", "Tech Lead", 1200000, 8),
+    new Employee(407, "Golf",    "HR",  "Manager",   1450000, 10),
+    new Employee(408, "Hotel",   "DEV", "Architect", 1750000, 12)
+);
+```
+
+Group employees by **salary band**, calculated from the `salary` field:
+- `salary < 800000` → `"LOW"`
+- `800000 <= salary <= 1199999` → `"MEDIUM"`
+- `salary >= 1200000` → `"HIGH"`
+
+**Expected output:**
+
+```
+LOW = [Alpha]
+MEDIUM = [Bravo, Charlie, Delta, Echo]
+HIGH = [Foxtrot, Golf, Hotel]
+```
+
 ### Solution
 ```java
 public static void main(String[] args) {
-	
+
 	List<Employee> employees = Arrays.asList(
 		new Employee(401, "Alpha", "DEV", "Developer", 750000, 2),
 		new Employee(402, "Bravo", "QA", "Tester", 800000, 3),
@@ -657,11 +774,39 @@ public static void main(String[] args) {
 
 }
 ```
-### 5 Count Employees in Each Department
+
+### 5. Count Employees in Each Department
+
+Given:
+
+```java
+List<Employee> employees = Arrays.asList(
+    new Employee(501, "Alpha",   "DEV", "Developer",         850000, 2),
+    new Employee(502, "Bravo",   "QA",  "Tester",            720000, 3),
+    new Employee(503, "Charlie", "DEV", "Developer",         950000, 5),
+    new Employee(504, "Delta",   "HR",  "Executive",         680000, 4),
+    new Employee(505, "Echo",    "QA",  "Tester",            880000, 6),
+    new Employee(506, "Foxtrot", "DEV", "Tech Lead",        1250000, 9),
+    new Employee(507, "Golf",    "HR",  "Manager",          1050000, 8),
+    new Employee(508, "Hotel",   "DEV", "Developer",         900000, 4),
+    new Employee(509, "India",   "QA",  "Automation Tester", 980000, 7)
+);
+```
+
+Group by department and use a **downstream `counting()` collector** to count employees in each. Result is `Map<String, Long>`.
+
+**Expected output:**
+
+```
+DEV = 4
+QA = 3
+HR = 2
+```
+
 ### Solution
 ```java
 public static void main(String[] args) {
-	
+
 	List<Employee> employees = Arrays.asList(
 		new Employee(501, "Alpha", "DEV", "Developer", 850000, 2),
 		new Employee(502, "Bravo", "QA", "Tester", 720000, 3),
@@ -685,11 +830,37 @@ public static void main(String[] args) {
 			});
 }
 ```
-### 6 Calculate Total Salary Expense by Department
+
+### 6. Calculate Total Salary Expense by Department
+
+Given:
+
+```java
+List<Employee> employees = Arrays.asList(
+    new Employee(601, "Alpha",   "DEV", "Developer", 800000,  2),
+    new Employee(602, "Bravo",   "QA",  "Tester",    700000,  3),
+    new Employee(603, "Charlie", "DEV", "Developer", 950000,  5),
+    new Employee(604, "Delta",   "HR",  "Executive", 650000,  4),
+    new Employee(605, "Echo",    "QA",  "Tester",    850000,  6),
+    new Employee(606, "Foxtrot", "DEV", "Tech Lead", 1250000, 9),
+    new Employee(607, "Golf",    "HR",  "Manager",   1100000, 8)
+);
+```
+
+Group by department and use a **downstream `summingDouble()` collector** to calculate total salary per department.
+
+**Expected output:**
+
+```
+DEV = 3000000.0
+QA = 1550000.0
+HR = 1750000.0
+```
+
 ### Solution
 ```java
 public static void main(String[] args) {
-	
+
 	List<Employee> employees = Arrays.asList(
 		new Employee(601, "Alpha", "DEV", "Developer", 800000, 2),
 		new Employee(602, "Bravo", "QA", "Tester", 700000, 3),
@@ -712,11 +883,37 @@ public static void main(String[] args) {
 
 }
 ```
-### 7 Calculate Average Salary by Designation
+
+### 7. Calculate Average Salary by Designation
+
+Given:
+
+```java
+List<Employee> employees = Arrays.asList(
+    new Employee(701, "Alpha",   "DEV", "Developer",  800000, 2),
+    new Employee(702, "Bravo",   "QA",  "Tester",     700000, 3),
+    new Employee(703, "Charlie", "DEV", "Developer",  900000, 4),
+    new Employee(704, "Delta",   "QA",  "Tester",     800000, 5),
+    new Employee(705, "Echo",    "DEV", "Developer", 1000000, 6),
+    new Employee(706, "Foxtrot", "DEV", "Tech Lead", 1300000, 9),
+    new Employee(707, "Golf",    "QA",  "Tester",     900000, 7)
+);
+```
+
+Group by designation and use a **downstream `averagingDouble()` collector** to calculate average salary per designation.
+
+**Expected output:**
+
+```
+Developer = 900000.0
+Tester = 800000.0
+Tech Lead = 1300000.0
+```
+
 ### Solution
 ```java
 public static void main(String[] args) {
-	
+
 	List<Employee> employees = Arrays.asList(
 		new Employee(701, "Alpha", "DEV", "Developer", 800000, 2),
 		new Employee(702, "Bravo", "QA", "Tester", 700000, 3),
@@ -739,11 +936,40 @@ public static void main(String[] args) {
 
 }
 ```
-### 8 Find the Highest-Paid Employee in Each Department
+
+### 8. Find the Highest-Paid Employee in Each Department
+
+Given:
+
+```java
+List<Employee> employees = Arrays.asList(
+    new Employee(801, "Alpha",   "DEV", "Developer",          850000, 2),
+    new Employee(802, "Bravo",   "DEV", "Developer",         1100000, 5),
+    new Employee(803, "Charlie", "DEV", "Tech Lead",         1450000, 9),
+
+    new Employee(804, "Delta",   "QA",  "Tester",             720000, 3),
+    new Employee(805, "Echo",    "QA",  "Automation Tester",  950000, 6),
+    new Employee(806, "Foxtrot", "QA",  "QA Lead",           1200000, 8),
+
+    new Employee(807, "Golf",    "HR",  "Executive",          680000, 4),
+    new Employee(808, "Hotel",   "HR",  "Manager",           1050000, 8)
+);
+```
+
+Group by department and use a **downstream `maxBy()` collector** to find the highest-paid employee in each.
+
+**Expected output:**
+
+```
+DEV = Charlie
+QA = Foxtrot
+HR = Hotel
+```
+
 ### Solution
 ```java
 public static void main(String[] args) {
-	
+
 	List<Employee> employees = Arrays.asList(
 		new Employee(801, "Alpha", "DEV", "Developer", 850000, 2),
 		new Employee(802, "Bravo", "DEV", "Developer", 1100000, 5),
@@ -771,11 +997,49 @@ public static void main(String[] args) {
 
 }
 ```
-### 9 Group Employees by Department and Then by Designation
+
+### 9. Group Employees by Department and Then by Designation
+
+Given:
+
+```java
+List<Employee> employees = Arrays.asList(
+    new Employee(901, "Alpha",   "DEV", "Developer", 800000,  2),
+    new Employee(902, "Bravo",   "DEV", "Developer", 900000,  4),
+    new Employee(903, "Charlie", "DEV", "Tech Lead", 1300000, 8),
+
+    new Employee(904, "Delta",   "QA",  "Tester",    700000,  3),
+    new Employee(905, "Echo",    "QA",  "Tester",    800000,  5),
+    new Employee(906, "Foxtrot", "QA",  "QA Lead",   1150000, 8),
+
+    new Employee(907, "Golf",    "HR",  "Executive", 650000,  3),
+    new Employee(908, "Hotel",   "HR",  "Manager",   1050000, 7),
+    new Employee(909, "India",   "HR",  "Executive", 720000,  4)
+);
+```
+
+First group by **department**, then within each department further group by **designation** using nested `groupingBy()`. Result is `Map<String, Map<String, List<Employee>>>`.
+
+**Expected output:**
+
+```
+DEV
+     Developer = [Alpha, Bravo]
+     Tech Lead = [Charlie]
+
+QA
+     Tester = [Delta, Echo]
+     QA Lead = [Foxtrot]
+
+HR
+     Executive = [Golf, India]
+     Manager = [Hotel]
+```
+
 ### Solution
 ```java
 public static void main(String[] args) {
-	
+
 	List<Employee> employees = Arrays.asList(
 		new Employee(901, "Alpha", "DEV", "Developer", 800000, 2),
 		new Employee(902, "Bravo", "DEV", "Developer", 900000, 4),
@@ -802,8 +1066,8 @@ public static void main(String[] args) {
 					System.out.println(
 						" \t " + d + " = " +
 							listOfEmp.stream()
-								.map(e -> e.getName())
-								.collect(Collectors.toList())
+									.map(e -> e.getName())
+									.collect(Collectors.toList())
 					);
 				});
 			});
@@ -811,7 +1075,48 @@ public static void main(String[] args) {
 
 }
 ```
-### 10 Department Performance Summary
+
+### 10. Department Performance Summary
+
+Given:
+
+```java
+List<Employee> employees = Arrays.asList(
+    new Employee(1001, "Alpha",   "DEV", "Developer",         800000, 2),
+    new Employee(1002, "Bravo",   "DEV", "Developer",         950000, 4),
+    new Employee(1003, "Charlie", "DEV", "Tech Lead",        1400000, 9),
+
+    new Employee(1004, "Delta",   "QA",  "Tester",            700000, 3),
+    new Employee(1005, "Echo",    "QA",  "Automation Tester", 900000, 6),
+    new Employee(1006, "Foxtrot", "QA",  "QA Lead",          1200000, 8),
+
+    new Employee(1007, "Golf",    "HR",  "Executive",         650000, 3),
+    new Employee(1008, "Hotel",   "HR",  "Manager",          1050000, 7),
+    new Employee(1009, "India",   "HR",  "Executive",         750000, 5)
+);
+```
+
+For every department produce a summary containing all three of the following using `groupingBy()` and downstream collectors — **employee count**, **total salary**, **highest-paid employee**. Do not create a separate custom class for the result.
+
+**Expected output:**
+
+```
+DEV
+    count = 3
+    totalSalary = 3150000.0
+    highestPaidEmployee = Charlie
+
+QA
+    count = 3
+    totalSalary = 2800000.0
+    highestPaidEmployee = Foxtrot
+
+HR
+    count = 3
+    totalSalary = 2450000.0
+    highestPaidEmployee = Hotel
+```
+
 ### Solution
 ```java
 ```
