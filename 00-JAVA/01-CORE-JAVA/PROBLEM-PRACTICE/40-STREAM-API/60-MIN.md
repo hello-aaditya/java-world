@@ -455,10 +455,67 @@ public static void main(String[] args) {
 ### 5 Lowest Salary With ID Tie-Breaker
 ### Solution
 ```java
+public static void main(String[] args) {
+	
+	List<Employee> employees = Arrays.asList(
+		new Employee(405, "Alpha", "DEV", 750000),
+		new Employee(402, "Bravo", "QA", 680000),
+		new Employee(409, "Charlie", "PROD", 820000),
+		new Employee(401, "Delta", "UI", 680000),
+		new Employee(407, "Echo", "DEV", 680000),
+		new Employee(404, "Foxtrot", "QA", 760000)
+	);
+	
+	Employee e = 
+		employees.stream()
+				.min(Comparator.comparingDouble(Employee::getSalary)
+					.thenComparingLong(Employee::getId)
+				)
+				.get();
+
+	System.out.println(
+		e.getId() + " -> " +
+		e.getName() + " -> " +
+		e.getSalary()
+	);
+}
 ```
 ### 6 Lowest Salary in Each Department
 ### Solution
 ```java
+public static void main(String[] args) {
+	
+	List<Employee> employees = Arrays.asList(
+		new Employee(501, "Alpha", "DEV", 950000),
+		new Employee(502, "Bravo", "DEV", 720000),
+		new Employee(503, "Charlie", "DEV", 850000),
+
+		new Employee(504, "Delta", "QA", 680000),
+		new Employee(505, "Echo", "QA", 820000),
+		new Employee(506, "Foxtrot", "QA", 750000),
+
+		new Employee(507, "Golf", "PROD", 1100000),
+		new Employee(508, "Hotel", "PROD", 900000),
+		new Employee(509, "India", "PROD", 980000),
+
+		new Employee(510, "Juliett", "UI", 650000),
+		new Employee(511, "Kilo", "UI", 780000),
+		new Employee(512, "Lima", "UI", 700000)
+	);
+	
+	Map<String, Optional<Employee>> result =
+		employees.stream()
+				.collect(
+					Collectors.groupingBy(Employee::getDepartment,
+						Collectors.minBy(
+							Comparator.comparing(Employee::getSalary)
+						)
+					)
+				);
+	result.forEach((dept, e) -> {
+		System.out.println(dept + " -> " + e.get().getName());
+	});
+}
 ```
 ### 7 Youngest Employee Among Eligible Employees
 ### Solution
