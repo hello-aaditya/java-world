@@ -131,10 +131,49 @@ public static void main(String[] args) {
 ### 7 Group Strings by Their Length and Count Each Group
 ### Solution
 ```java
+public static void main(String[] args) {
+	
+	List<String> operations = Arrays.asList(
+		"GET", "POST", "PUT",
+		"PATCH", "DELETE",
+		"LOGIN", "LOGOUT",
+		"SEARCH", "UPDATE",
+		"CREATE"
+	);
+	
+	Map<Integer, Long> result = 
+		operations.stream()
+				.collect(Collectors.groupingBy(op -> op.length(),
+							Collectors.counting()
+						)
+				);
+
+	System.out.println(result);
+}
 ```
 ### 8 Group Numbers by Even/Odd and Find Their Sum
 ### Solution
 ```java
+public static void main(String[] args) {
+	
+	List<Integer> paymentAmounts = Arrays.asList(
+		120, 75, 240, 135,
+		80, 95, 310, 125,
+		60, 145
+	);
+	
+	Map<String, Integer> result =
+		paymentAmounts.stream()
+				.collect(Collectors.groupingBy(amount -> (amount & 1) == 0 ? "EVEN" : "ODD",
+							Collectors.summingInt(amount -> amount)
+						)
+				);
+	
+	result.forEach((key, sum) -> {
+		System.out.println(key + " = " + sum);
+	});
+
+}
 ```
 ### 9 Group Words by Length and Find the Longest Word in Each Group
 ### Solution
