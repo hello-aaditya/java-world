@@ -742,10 +742,74 @@ public static void main(String[] args) {
 ### 8 Find the Highest-Paid Employee in Each Department
 ### Solution
 ```java
+public static void main(String[] args) {
+	
+	List<Employee> employees = Arrays.asList(
+		new Employee(801, "Alpha", "DEV", "Developer", 850000, 2),
+		new Employee(802, "Bravo", "DEV", "Developer", 1100000, 5),
+		new Employee(803, "Charlie", "DEV", "Tech Lead", 1450000, 9),
+
+		new Employee(804, "Delta", "QA", "Tester", 720000, 3),
+		new Employee(805, "Echo", "QA", "Automation Tester", 950000, 6),
+		new Employee(806, "Foxtrot", "QA", "QA Lead", 1200000, 8),
+
+		new Employee(807, "Golf", "HR", "Executive", 680000, 4),
+		new Employee(808, "Hotel", "HR", "Manager", 1050000, 8)
+	);
+	
+	employees.stream()
+			.collect(
+				Collectors.groupingBy(e -> e.getDepartment(),
+					Collectors.maxBy(
+						Comparator.comparingDouble(e -> e.getSalary())
+					)
+				)
+			)
+			.forEach((dept, emp) -> {
+				System.out.println(dept + " = " + emp.get().getName());
+			});
+
+}
 ```
 ### 9 Group Employees by Department and Then by Designation
 ### Solution
 ```java
+public static void main(String[] args) {
+	
+	List<Employee> employees = Arrays.asList(
+		new Employee(901, "Alpha", "DEV", "Developer", 800000, 2),
+		new Employee(902, "Bravo", "DEV", "Developer", 900000, 4),
+		new Employee(903, "Charlie", "DEV", "Tech Lead", 1300000, 8),
+
+		new Employee(904, "Delta", "QA", "Tester", 700000, 3),
+		new Employee(905, "Echo", "QA", "Tester", 800000, 5),
+		new Employee(906, "Foxtrot", "QA", "QA Lead", 1150000, 8),
+
+		new Employee(907, "Golf", "HR", "Executive", 650000, 3),
+		new Employee(908, "Hotel", "HR", "Manager", 1050000, 7),
+		new Employee(909, "India", "HR", "Executive", 720000, 4)
+	);
+	
+	employees.stream()
+			.collect(
+				Collectors.groupingBy(e -> e.getDepartment(),
+					Collectors.groupingBy(e -> e.getDesignation())
+				)
+			)
+			.forEach((dept, desig) -> {
+				System.out.println(dept);
+				desig.forEach((d, listOfEmp) -> {
+					System.out.println(
+						" \t " + d + " = " +
+							listOfEmp.stream()
+								.map(e -> e.getName())
+								.collect(Collectors.toList())
+					);
+				});
+			});
+	
+
+}
 ```
 ### 10 Department Performance Summary
 ### Solution
