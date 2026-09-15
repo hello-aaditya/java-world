@@ -8,17 +8,13 @@
         "type": "tabs",
         "children": [
           {
-            "id": "2c9fda5c088b3247",
+            "id": "609c393d39f5e86b",
             "type": "leaf",
             "state": {
-              "type": "markdown",
-              "state": {
-                "file": "00-JAVA/01-CORE-JAVA/PROBLEM-PRACTICE/40-STREAM-API/60-MIN.md",
-                "mode": "source",
-                "source": false
-              },
+              "type": "empty",
+              "state": {},
               "icon": "lucide-file",
-              "title": "60-MIN"
+              "title": "New tab"
             }
           }
         ]
@@ -199,7 +195,7 @@
       "obsidian-git:Open Git source control": false
     }
   },
-  "active": "2c9fda5c088b3247",
+  "active": "609c393d39f5e86b",
   "lastOpenFiles": [
     "00-JAVA/01-CORE-JAVA/PROBLEM-PRACTICE/40-STREAM-API/60-MIN.md",
     "00-JAVA/01-CORE-JAVA/PROBLEM-PRACTICE/40-STREAM-API/50-MAX.md",
