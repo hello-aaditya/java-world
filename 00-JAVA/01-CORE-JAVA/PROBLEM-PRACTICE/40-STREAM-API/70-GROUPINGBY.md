@@ -547,6 +547,33 @@ public static void main(String[] args) {
 ### 2 Group Employees by Designation
 ### Solution
 ```java
+public static void main(String[] args) {
+	
+	List<Employee> employees = Arrays.asList(
+		new Employee(201, "Alpha", "DEV", "Developer", 800000, 2),
+		new Employee(202, "Bravo", "QA", "Tester", 700000, 2),
+		new Employee(203, "Charlie", "DEV", "Developer", 900000, 4),
+		new Employee(204, "Delta", "DEV", "Tech Lead", 1250000, 8),
+		new Employee(205, "Echo", "QA", "Tester", 760000, 3),
+		new Employee(206, "Foxtrot", "HR", "HR Executive", 650000, 3),
+		new Employee(207, "Golf", "DEV", "Developer", 870000, 3),
+		new Employee(208, "Hotel", "QA", "Automation Tester", 950000, 6)
+	);
+	
+	employees.stream()
+			.collect(
+				Collectors.groupingBy(e -> e.getDesignation())
+			)
+			.forEach((designation, employeeList) -> {
+				System.out.println(
+					designation + " = " +
+					employeeList.stream()
+							.map(e -> e.getName())
+							.collect(Collectors.toList())
+				);
+			});
+
+}
 ```
 ### 3 Group Employees by Experience Level
 ### Solution
