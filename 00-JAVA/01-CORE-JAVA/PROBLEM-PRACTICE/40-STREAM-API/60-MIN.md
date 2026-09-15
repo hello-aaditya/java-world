@@ -520,10 +520,60 @@ public static void main(String[] args) {
 ### 7 Youngest Employee Among Eligible Employees
 ### Solution
 ```java
+public static void main(String[] args) {
+	
+	List<Employee1> employees = Arrays.asList(
+		new Employee1(601, "Alpha", "DEV", 750000, 24),
+		new Employee1(602, "Bravo", "QA", 850000, 29),
+		new Employee1(603, "Charlie", "PROD", 900000, 26),
+		new Employee1(604, "Delta", "DEV", 800000, 23),
+		new Employee1(605, "Echo", "UI", 1200000, 31),
+		new Employee1(606, "Foxtrot", "QA", 820000, 25),
+		new Employee1(607, "Golf", "DEV", 780000, 21),
+		new Employee1(608, "Hotel", "PROD", 950000, 27)
+	);
+
+	Employee1 e =
+		employees.stream()
+				.filter(emp -> emp.getSalary() >= 8_00_000.0)
+				.min(Comparator.comparing(Employee1::getAge))
+				.get();
+	
+	System.out.println(
+		e.getName() + " -> " +
+		"Age " + e.getAge() + " -> " +
+		"Salary " + e.getSalary()
+	);
+}
 ```
 ### 8 Minimum Salary Among Experienced Employees
 ### Solution
 ```java
+public static void main(String[] args) {
+	
+	List<Employee1> employees = Arrays.asList(
+		new Employee1(701, "Alpha", "DEV", 950000, 28),
+		new Employee1(702, "Bravo", "QA", 780000, 32),
+		new Employee1(703, "Charlie", "PROD", 1250000, 35),
+		new Employee1(704, "Delta", "DEV", 820000, 31),
+		new Employee1(705, "Echo", "UI", 700000, 27),
+		new Employee1(706, "Foxtrot", "QA", 760000, 30),
+		new Employee1(707, "Golf", "PROD", 900000, 29),
+		new Employee1(708, "Hotel", "UI", 850000, 34)
+	);
+	
+	Employee1 e =
+		employees.stream()
+				.filter(emp -> emp.getAge() >= 30)
+				.min(Comparator.comparing(Employee1::getSalary)).get();
+				
+	System.out.println(
+		e.getName() + " -> " +
+		"Age " + e.getAge() + " -> " +
+		"Salary " + e.getSalary()
+	);
+			
+}
 ```
 ### 9 Minimum Salary Per Department With Tie-Breaker
 ### Solution
