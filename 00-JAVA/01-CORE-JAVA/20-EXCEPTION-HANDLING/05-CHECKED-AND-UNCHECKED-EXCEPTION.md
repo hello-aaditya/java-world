@@ -12,6 +12,7 @@
 - Runtime Exception and its child-classes, Error and its child-classes are Unchecked Exception.
 	Except these remaining are Checked Exception.
 	![exception-hierarchy-checked-and-unchecked](./images/exception-hierarchy-checked-and-unchecked.drawio.svg)
+	>[]
 ## Fully Checked vs Partially Checked
 - A Checked Exception is said to be fully checked if and only if all its child-classes also checked.
 	Example: `IOException`, `InterruptedException`
