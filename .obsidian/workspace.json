@@ -4,21 +4,17 @@
     "type": "split",
     "children": [
       {
-        "id": "5e8805246d0bb029",
+        "id": "14328a24e518815c",
         "type": "tabs",
         "children": [
           {
-            "id": "f8e960788f08f8da",
+            "id": "d831eee144f24d87",
             "type": "leaf",
             "state": {
-              "type": "markdown",
-              "state": {
-                "file": "00-JAVA/01-CORE-JAVA/40-STREAM-API/01-TYPES-OF-OPERATIONS-IN-STREAM.md",
-                "mode": "source",
-                "source": false
-              },
+              "type": "empty",
+              "state": {},
               "icon": "lucide-file",
-              "title": "01-TYPES-OF-OPERATIONS-IN-STREAM"
+              "title": "New tab"
             }
           }
         ]
@@ -198,10 +194,10 @@
       "obsidian-git:Open Git source control": false
     }
   },
-  "active": "f8e960788f08f8da",
+  "active": "d831eee144f24d87",
   "lastOpenFiles": [
-    "00-JAVA/01-CORE-JAVA/40-STREAM-API/20-QUESTIONS.md",
     "00-JAVA/01-CORE-JAVA/40-STREAM-API/01-TYPES-OF-OPERATIONS-IN-STREAM.md",
+    "00-JAVA/01-CORE-JAVA/40-STREAM-API/20-QUESTIONS.md",
     "00-JAVA/01-CORE-JAVA/PROBLEM-PRACTICE/40-STREAM-API/00-OPERATION.md",
     "00-JAVA/01-CORE-JAVA/PROBLEM-PRACTICE/40-STREAM-API/70-GROUPINGBY.md",
     "00-JAVA/01-CORE-JAVA/PROBLEM-PRACTICE/40-STREAM-API/60-MIN.md",
