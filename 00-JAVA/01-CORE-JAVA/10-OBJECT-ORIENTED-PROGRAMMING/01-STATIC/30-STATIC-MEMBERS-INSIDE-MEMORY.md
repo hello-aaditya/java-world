@@ -45,7 +45,7 @@ When we execute a Java program, the RAM is divided into **4 segments**:
 2. **Stack Segment** (**Method Area**)– Stores method activation records (method calls)
 3. **Static Segment (Static Space)** – Stores static variables, static methods, and static blocks
 4. **Heap Segment (Object Space)** – Stores objects created using `new` keyword
-![Memory](./images/jvm_memory.pn
+![Memory](./images/jvm_memory.png)
 ---
 ### Step-by-Step Execution Flow:
 - **Step-1:** Program Loading
