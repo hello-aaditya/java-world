@@ -37,7 +37,7 @@ Balance           : 0.0
 Interest Rate     : 0.0
 Is Account Active : false
 ```
-![Invalid-State-Example](./images/invalidState.drawio.svg)
+![Invalid-State-Example](invalidState.drawio.svg)
 ### The Gap: Expectation vs Reality
 
 | Field            | Expected                    | Actual  | Problem                                                           |
@@ -127,4 +127,4 @@ Is Account Active : true
 > Not every field needs external input; some are business-rule-driven defaults.
 > This is exactly why the earlier definition said "initial state" and not just "parameters."
 
-![Valid vs Invalid State](./images/valid-vs-invalid-state-constructor.drawio.svg)
+![Valid vs Invalid State](valid-vs-invalid-state-constructor.drawio.svg)

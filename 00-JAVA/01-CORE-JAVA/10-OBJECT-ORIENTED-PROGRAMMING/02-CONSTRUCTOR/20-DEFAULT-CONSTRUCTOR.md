@@ -42,7 +42,7 @@ public Account() {
 	super();
 }
 ```
-![Before-VS-After](./images/BEFORE-VS-AFTER-CONSTRUCTOR.drawio.svg)
+![Before-VS-After](BEFORE-VS-AFTER-CONSTRUCTOR.drawio.svg)
 > [!NOTE]
 > The "After Compilation" code is a conceptual representation to explain what `javac` generates. The compiler does not modify the original `.java` source file.
 #### Output
