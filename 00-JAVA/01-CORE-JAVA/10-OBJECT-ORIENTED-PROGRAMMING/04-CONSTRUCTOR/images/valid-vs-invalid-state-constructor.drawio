@@ -1,0 +1,58 @@
+<mxfile host="Electron">
+  <diagram name="Page-1" id="HnjHjgd2s_FWm9hTMUoN">
+    <mxGraphModel dx="1235" dy="767" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="1300" pageHeight="1800" math="0" shadow="0">
+      <root>
+        <mxCell id="0" />
+        <mxCell id="1" parent="0" />
+        <mxCell id="OOU1N-MX46h0Tttl05ei-4" parent="1" style="rounded=0;whiteSpace=wrap;html=1;align=left;container=0;fillColor=light-dark(#FFDE59,#FFDE59);" value="" vertex="1">
+          <mxGeometry height="220" width="300" x="925" y="91" as="geometry" />
+        </mxCell>
+        <mxCell id="OOU1N-MX46h0Tttl05ei-1" parent="1" style="rounded=0;whiteSpace=wrap;html=1;align=left;container=0;fillColor=light-dark(#FFDE59,#FFDE59);" value="" vertex="1">
+          <mxGeometry height="220" width="300" x="390" y="90" as="geometry" />
+        </mxCell>
+        <mxCell id="OOU1N-MX46h0Tttl05ei-11" parent="1" style="text;html=1;whiteSpace=wrap;strokeColor=none;fillColor=none;align=center;verticalAlign=middle;rounded=0;fontFamily=Georgia;fontSize=15;" value="&lt;font&gt;&lt;span&gt;&lt;b&gt;Heap: Account Object&lt;/b&gt;&lt;/span&gt;&lt;/font&gt;&lt;div&gt;&lt;font&gt;&lt;span&gt;&lt;b&gt;state: invalid&lt;/b&gt;&lt;/span&gt;&lt;/font&gt;&lt;/div&gt;" vertex="1">
+          <mxGeometry height="50" width="150" x="465" y="100" as="geometry" />
+        </mxCell>
+        <mxCell id="OOU1N-MX46h0Tttl05ei-12" parent="1" style="text;html=1;whiteSpace=wrap;strokeColor=none;fillColor=none;align=center;verticalAlign=middle;rounded=0;fontFamily=Georgia;fontSize=15;" value="&lt;font&gt;&lt;span&gt;&lt;b&gt;Heap: Account Object&lt;/b&gt;&lt;/span&gt;&lt;/font&gt;&lt;div&gt;&lt;font&gt;&lt;span&gt;&lt;b&gt;state: valid&lt;/b&gt;&lt;/span&gt;&lt;/font&gt;&lt;/div&gt;" vertex="1">
+          <mxGeometry height="50" width="150" x="1000" y="101" as="geometry" />
+        </mxCell>
+        <mxCell id="OOU1N-MX46h0Tttl05ei-14" parent="1" style="text;html=1;whiteSpace=wrap;strokeColor=none;fillColor=none;align=center;verticalAlign=middle;rounded=0;fontFamily=Georgia;fontSize=15;" value="&lt;font&gt;&lt;span&gt;no constructor ran&lt;/span&gt;&lt;/font&gt;" vertex="1">
+          <mxGeometry height="30" width="190" x="445" y="270" as="geometry" />
+        </mxCell>
+        <mxCell id="OOU1N-MX46h0Tttl05ei-15" parent="1" style="text;html=1;whiteSpace=wrap;strokeColor=none;fillColor=none;align=center;verticalAlign=middle;rounded=0;fontFamily=Georgia;fontSize=15;" value="&lt;font&gt;&lt;span&gt;constructor set values&lt;/span&gt;&lt;/font&gt;" vertex="1">
+          <mxGeometry height="30" width="190" x="980" y="271" as="geometry" />
+        </mxCell>
+        <mxCell id="OOU1N-MX46h0Tttl05ei-19" connectable="0" parent="1" style="group;fillColor=#FFF1BB;" value="" vertex="1">
+          <mxGeometry height="110" width="220" x="965" y="156" as="geometry" />
+        </mxCell>
+        <mxCell id="OOU1N-MX46h0Tttl05ei-18" parent="OOU1N-MX46h0Tttl05ei-19" style="rounded=0;whiteSpace=wrap;html=1;align=left;container=0;" value="" vertex="1">
+          <mxGeometry height="110" width="220" as="geometry" />
+        </mxCell>
+        <mxCell id="OOU1N-MX46h0Tttl05ei-3" parent="OOU1N-MX46h0Tttl05ei-19" style="text;html=1;whiteSpace=wrap;strokeColor=none;fillColor=default;align=left;verticalAlign=middle;rounded=0;container=0;" value="&lt;font face=&quot;Courier New&quot; style=&quot;font-size: 15px;&quot;&gt;accountId = &quot;ACC1001&quot;&lt;/font&gt;&lt;div style=&quot;&quot;&gt;&lt;font face=&quot;Courier New&quot; style=&quot;font-size: 15px;&quot;&gt;balance = 25000.00&lt;/font&gt;&lt;/div&gt;&lt;div style=&quot;&quot;&gt;&lt;font face=&quot;Courier New&quot; style=&quot;font-size: 15px;&quot;&gt;interestRate = 4.5&lt;/font&gt;&lt;/div&gt;&lt;div style=&quot;&quot;&gt;&lt;font face=&quot;Courier New&quot; style=&quot;font-size: 15px;&quot;&gt;isActive = true&lt;/font&gt;&lt;/div&gt;" vertex="1">
+          <mxGeometry height="80" width="200" x="10" y="15" as="geometry" />
+        </mxCell>
+        <mxCell id="OOU1N-MX46h0Tttl05ei-20" connectable="0" parent="1" style="group;fillColor=#FFF1BB;" value="" vertex="1">
+          <mxGeometry height="100" width="185" x="450" y="160" as="geometry" />
+        </mxCell>
+        <mxCell id="OOU1N-MX46h0Tttl05ei-17" parent="OOU1N-MX46h0Tttl05ei-20" style="rounded=0;whiteSpace=wrap;html=1;align=left;container=0;" value="" vertex="1">
+          <mxGeometry height="100" width="185" as="geometry" />
+        </mxCell>
+        <mxCell id="OOU1N-MX46h0Tttl05ei-2" parent="OOU1N-MX46h0Tttl05ei-20" style="text;html=1;whiteSpace=wrap;strokeColor=none;fillColor=none;align=left;verticalAlign=middle;rounded=0;container=0;" value="&lt;font face=&quot;Courier New&quot; style=&quot;font-size: 15px;&quot;&gt;accountId = null&lt;/font&gt;&lt;div style=&quot;&quot;&gt;&lt;font face=&quot;Courier New&quot; style=&quot;font-size: 15px;&quot;&gt;balance = 0.0&lt;/font&gt;&lt;/div&gt;&lt;div style=&quot;&quot;&gt;&lt;font face=&quot;Courier New&quot; style=&quot;font-size: 15px;&quot;&gt;interestRate = 0&lt;/font&gt;&lt;/div&gt;&lt;div style=&quot;&quot;&gt;&lt;font face=&quot;Courier New&quot; style=&quot;font-size: 15px;&quot;&gt;isActive = false&lt;/font&gt;&lt;/div&gt;" vertex="1">
+          <mxGeometry height="75" width="160" x="12.5" y="12.5" as="geometry" />
+        </mxCell>
+        <mxCell id="OOU1N-MX46h0Tttl05ei-24" edge="1" parent="1" source="OOU1N-MX46h0Tttl05ei-21" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;entryX=0.5;entryY=0;entryDx=0;entryDy=0;" target="OOU1N-MX46h0Tttl05ei-1">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="OOU1N-MX46h0Tttl05ei-21" parent="1" style="text;html=1;whiteSpace=wrap;strokeColor=none;fillColor=none;align=center;verticalAlign=middle;rounded=0;fontFamily=Courier New;fontSize=18;" value="new Account();" vertex="1">
+          <mxGeometry height="30" width="180" x="449.5" y="20" as="geometry" />
+        </mxCell>
+        <mxCell id="OOU1N-MX46h0Tttl05ei-25" edge="1" parent="1" source="OOU1N-MX46h0Tttl05ei-22" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;entryX=0.5;entryY=0;entryDx=0;entryDy=0;" target="OOU1N-MX46h0Tttl05ei-4">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="OOU1N-MX46h0Tttl05ei-22" parent="1" style="text;html=1;whiteSpace=wrap;strokeColor=none;fillColor=none;align=center;verticalAlign=middle;rounded=0;fontFamily=Courier New;fontSize=18;" value="&lt;p&gt;&lt;font&gt;new Account(&quot;ACC1001&quot;, 25000.00, 4.5f);&lt;/font&gt;&lt;/p&gt;" vertex="1">
+          <mxGeometry height="30" width="430" x="860" y="20" as="geometry" />
+        </mxCell>
+      </root>
+    </mxGraphModel>
+  </diagram>
+</mxfile>

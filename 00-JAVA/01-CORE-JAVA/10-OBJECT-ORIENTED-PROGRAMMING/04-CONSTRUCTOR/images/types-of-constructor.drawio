@@ -1,0 +1,60 @@
+<mxfile host="Electron">
+  <diagram name="Page-1" id="uyNrVzGIyGT6crfWssCK">
+    <mxGraphModel dx="1359" dy="844" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="1300" pageHeight="1800" math="0" shadow="0">
+      <root>
+        <mxCell id="0" />
+        <mxCell id="1" parent="0" />
+        <mxCell id="9zUfdAsHwsllggprlEjU-7" edge="1" parent="1" source="9zUfdAsHwsllggprlEjU-1" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;strokeColor=#FF3333;strokeWidth=2;" target="9zUfdAsHwsllggprlEjU-2">
+          <mxGeometry relative="1" as="geometry">
+            <Array as="points">
+              <mxPoint x="650" y="140" />
+              <mxPoint x="290" y="140" />
+            </Array>
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="9zUfdAsHwsllggprlEjU-8" edge="1" parent="1" source="9zUfdAsHwsllggprlEjU-1" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;entryX=0.5;entryY=0;entryDx=0;entryDy=0;strokeColor=#FF3333;strokeWidth=2;" target="9zUfdAsHwsllggprlEjU-3">
+          <mxGeometry relative="1" as="geometry">
+            <Array as="points">
+              <mxPoint x="650" y="140" />
+              <mxPoint x="530" y="140" />
+            </Array>
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="9zUfdAsHwsllggprlEjU-9" edge="1" parent="1" source="9zUfdAsHwsllggprlEjU-1" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;strokeColor=#FF3333;strokeWidth=2;" target="9zUfdAsHwsllggprlEjU-4">
+          <mxGeometry relative="1" as="geometry">
+            <Array as="points">
+              <mxPoint x="650" y="140" />
+              <mxPoint x="770" y="140" />
+            </Array>
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="9zUfdAsHwsllggprlEjU-10" edge="1" parent="1" source="9zUfdAsHwsllggprlEjU-1" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;strokeColor=#FF3333;strokeWidth=2;" target="9zUfdAsHwsllggprlEjU-5">
+          <mxGeometry relative="1" as="geometry">
+            <Array as="points">
+              <mxPoint x="650" y="140" />
+              <mxPoint x="1010" y="140" />
+            </Array>
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="9zUfdAsHwsllggprlEjU-1" parent="1" style="rounded=0;whiteSpace=wrap;html=1;fontFamily=Georgia;fontSize=18;fillColor=light-dark(#FFDE59,#FFDE59);strokeColor=#FF3333;" value="&lt;b&gt;&lt;font style=&quot;font-size: 20px;&quot;&gt;Constructor&lt;/font&gt;&lt;/b&gt;" vertex="1">
+          <mxGeometry height="50" width="190" x="555" y="60" as="geometry" />
+        </mxCell>
+        <mxCell id="9zUfdAsHwsllggprlEjU-6" connectable="0" parent="1" style="group" value="" vertex="1">
+          <mxGeometry height="60" width="880" x="210" y="200" as="geometry" />
+        </mxCell>
+        <mxCell id="9zUfdAsHwsllggprlEjU-2" parent="9zUfdAsHwsllggprlEjU-6" style="rounded=0;whiteSpace=wrap;html=1;fontFamily=Georgia;fontSize=18;fillColor=#FFF1BB;strokeColor=#FF3333;" value="Default&lt;div&gt;Constructor&lt;/div&gt;" vertex="1">
+          <mxGeometry height="60" width="160" as="geometry" />
+        </mxCell>
+        <mxCell id="9zUfdAsHwsllggprlEjU-3" parent="9zUfdAsHwsllggprlEjU-6" style="rounded=0;whiteSpace=wrap;html=1;fontFamily=Georgia;fontSize=18;fillColor=#FFF1BB;strokeColor=#FF3333;" value="No-Args&lt;div&gt;Constructor&lt;/div&gt;" vertex="1">
+          <mxGeometry height="60" width="160" x="240" as="geometry" />
+        </mxCell>
+        <mxCell id="9zUfdAsHwsllggprlEjU-4" parent="9zUfdAsHwsllggprlEjU-6" style="rounded=0;whiteSpace=wrap;html=1;fontFamily=Georgia;fontSize=18;fillColor=#FFF1BB;strokeColor=#FF3333;" value="Parameterized&lt;div&gt;Constructor&lt;/div&gt;" vertex="1">
+          <mxGeometry height="60" width="160" x="480" as="geometry" />
+        </mxCell>
+        <mxCell id="9zUfdAsHwsllggprlEjU-5" parent="9zUfdAsHwsllggprlEjU-6" style="rounded=0;whiteSpace=wrap;html=1;fontFamily=Georgia;fontSize=18;fillColor=#FFF1BB;strokeColor=#FF3333;" value="Copy&lt;div&gt;Constructor&lt;/div&gt;" vertex="1">
+          <mxGeometry height="60" width="160" x="720" as="geometry" />
+        </mxCell>
+      </root>
+    </mxGraphModel>
+  </diagram>
+</mxfile>
