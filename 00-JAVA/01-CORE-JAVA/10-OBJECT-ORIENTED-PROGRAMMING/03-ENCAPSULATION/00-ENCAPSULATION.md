@@ -65,8 +65,7 @@ So, instead of allowing anyone to change the data directly, we need a way to con
 ## How encapsulation is achieved in Java
 In Java, Encapsulation is commonly achieved by-
 - Declare variables as private.
-- Provide **getters and setters** methods to read and modify them and if some validation is required, that validation is perform
-- Provide public methods to access those data members or update the data whenever needed but Validate the data before assigning it to the data members.
+- Provide **getters and setters** methods to read and modify them and if some validation is required, that validation is performed inside the method.
 
 ![With-Encapsulation](with-encapsulation.drawio.svg)
 ### Example
