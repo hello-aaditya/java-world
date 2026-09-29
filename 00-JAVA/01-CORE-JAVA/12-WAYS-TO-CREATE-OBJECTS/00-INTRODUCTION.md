@@ -4,4 +4,4 @@ Ways to create Object:
 3. [By using **`clone()` method**](./30-CLONE.md)
 4. By using **Copy Constructor**
 5. By using **newInstance()**
-6. By using Factory
+6. By using **Factory Methods**
