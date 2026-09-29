@@ -6,9 +6,9 @@
 2. To access **parent class variable**
 3. To access **parent class method**
 ## 1. `super()` in Constructors
-> The keyword `super()` is used to **call the constructor of the immediate parent class**.
->
-It must always be written in the **first line** of the child class constructor.
+> `super()` keyword is used to call parent class constructor.
+
+Rule: Inside Child class constructor
 ### Example 1 — Implicit `super()`
 #### Parent Class
 ```java
