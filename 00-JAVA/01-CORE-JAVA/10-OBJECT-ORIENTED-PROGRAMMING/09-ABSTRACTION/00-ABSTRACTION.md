@@ -31,7 +31,7 @@ Now the question is:
 - Should it contain the logic for UPI Payment?
 - Or Credit Card Payment?
 - Or Wallet Payment?
-![Problem-Without-Abstraction](abstraction.drawio.svg)
+![Problem-Without-Abstraction](./images/abstraction.drawio.svg)
 
 # Abstraction
 > Abstraction is a process of writing program where developer exposes only required behavior of an object and hide core implementation.
@@ -50,6 +50,6 @@ Abstraction is required whenever a super class knows **which operations should e
 
 ## How Does Java achieve Abstraction?
 Java provides two ways to achieve abstraction:
-1. [**Abstraction Class**](10-ABSTRACT-CLASS.md)
-2. Interface
+1. [**Abstract Class**](10-ABSTRACT-CLASS-METHOD.md)
+2. [**Interface**](./20-INTERFACE.md)
 
