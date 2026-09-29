@@ -124,9 +124,6 @@ balance    → NOT serialized
 	
 	**Why?**
 	Because during deserialization, Java **does not call the constructor of the Serializable class to recreate the object**. The object's serialized state is restored from the serialized data.
-	
-	> [!NOTE]
-	> Make sure the class has `serialVersionUID` then removing constructor before deserialization does not give any error.
 
 > [!NOTE]
 > Make sure the class has `serialVersionUID` then removing constructor before deserialization does not give any error.
