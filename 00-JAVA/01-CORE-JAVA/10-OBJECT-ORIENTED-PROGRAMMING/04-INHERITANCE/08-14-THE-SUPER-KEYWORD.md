@@ -1,5 +1,5 @@
 # The `super` Keyword in Java
-> The `super` keyword in Java is a **reference variable** that is used to refer to the **immediate parent class object**.  
+> The `super` keyword in Java is a **reference variable** that is used to refer to the **immediate parent class object**. 
 > 
 It comes into the picture whenever both parent and child classes have the **same variable names**, **same method names**, or when the **child wants to call the parent’s constructor**.
 
