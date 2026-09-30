@@ -11,10 +11,14 @@
             "id": "3078d80c9045a127",
             "type": "leaf",
             "state": {
-              "type": "empty",
-              "state": {},
+              "type": "markdown",
+              "state": {
+                "file": "00-JAVA/01-CORE-JAVA/10-OBJECT-ORIENTED-PROGRAMMING/04-INHERITANCE/01.md",
+                "mode": "source",
+                "source": false
+              },
               "icon": "lucide-file",
-              "title": "New tab"
+              "title": "01"
             }
           }
         ]
@@ -79,7 +83,8 @@
       }
     ],
     "direction": "horizontal",
-    "width": 337.66015625
+    "width": 337.66015625,
+    "collapsed": true
   },
   "right": {
     "id": "da37fefebc188a99",
@@ -193,8 +198,9 @@
       "obsidian-git:Open Git source control": false
     }
   },
-  "active": "8bf0306927ff6ed0",
+  "active": "3078d80c9045a127",
   "lastOpenFiles": [
+    "00-JAVA/01-CORE-JAVA/10-OBJECT-ORIENTED-PROGRAMMING/04-INHERITANCE/00-IS-A-RELATIONSHIP.md",
     "00-JAVA/01-CORE-JAVA/12-WAYS-TO-CREATE-OBJECTS/00-INTRODUCTION.md",
     "00-JAVA/01-CORE-JAVA/10-OBJECT-ORIENTED-PROGRAMMING/04-INHERITANCE/08-00-INHERITANCE.md",
     "00-JAVA/01-CORE-JAVA/10-OBJECT-ORIENTED-PROGRAMMING/04-INHERITANCE/08-13-METHOD-OVERRIDING-WITH-RETURN-TYPE.md",
@@ -224,7 +230,6 @@
     "00-JAVA/01-CORE-JAVA/10-OBJECT-ORIENTED-PROGRAMMING/00-INTRODUCTION-TO-OOP/30-NORMAL-ANONYMOUS-GARBAGE-OBJECTS.md",
     "00-JAVA/01-CORE-JAVA/10-OBJECT-ORIENTED-PROGRAMMING/00-INTRODUCTION-TO-OOP/20-JAVA-VARIABLES.md",
     "00-JAVA/01-CORE-JAVA/10-OBJECT-ORIENTED-PROGRAMMING/00-INTRODUCTION-TO-OOP/10-OOP-AND-MEMORY-MANAGEMENT.md",
-    "00-JAVA/01-CORE-JAVA/10-OBJECT-ORIENTED-PROGRAMMING/00-INTRODUCTION-TO-OOP/00-OOP.md",
     "00-JAVA/01-CORE-JAVA/10-OBJECT-ORIENTED-PROGRAMMING/06-ABSTRACTION/images/abstraction.drawio.svg",
     "00-JAVA/01-CORE-JAVA/10-OBJECT-ORIENTED-PROGRAMMING/06-ABSTRACTION/images/abstraction.drawio",
     "00-JAVA/01-CORE-JAVA/10-OBJECT-ORIENTED-PROGRAMMING/06-ABSTRACTION/images",
