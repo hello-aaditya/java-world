@@ -186,7 +186,7 @@ public class BankCustomer {
 	}
 }
 ```
-![UML-Class-Diagram](./images/BankCustomerClassDiagram.svg)
+![UML-Class-Diagram](BankCustomerClassDiagram.svg)
 #### Driver
 ```java
 package com.practice;
