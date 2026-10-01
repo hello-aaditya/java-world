@@ -14,6 +14,7 @@
 | 2   | `TreeSet set = new TreeSet(Comparator c);` | Creates an empty `TreeSet` object where the elements will be inserted according to customized sorting order specified by `Comparator` object. |
 | 3   | `TreeSet set = new TreeSet(Collection c);` |                                                                                                                                               |
 | 4   | `TreeSet set = new TreeSet(SortedSet s);`  |                                                                                                                                               |
+
 **Example-1**:
 ```java
 package collection.set.treeSet;
