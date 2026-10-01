@@ -21,7 +21,8 @@
 ## 2. `List` (I)
 - It is the child interface of `Collection`.
 - If we want to represent a group of individual objects as a single entity where duplicates are allowed and insertion order must be preserved then we should go for **`List`**.
-	![List](list.drawio.svg)
+
+	![List](./images/list.drawio.svg)
 
 >[!NOTE]
 >In Java-1.2 version **`Vector`** & **`Stack`** class are re-engineered to implement `List` interface.
@@ -29,7 +30,7 @@
 - It is the child interface of `Collection`.
 - If we want to represent a group of individual objects as a single entity where duplicates are not allowed and insertion order not required then we should go for `Set`.
 
-	![set](set.drawio.svg)
+	![set](./images/set.drawio.svg)
 ## 4. `SortedSet` (I)
 - It is the child interface of `Set`.
 - If we want to represent a group of individual object as a single entity where duplicates are not allowed and object should be inserted according to some sorting order then we should for `SortedSet`.
@@ -50,7 +51,7 @@
 
 	Example: Before sending a mail all mail-IDs we have to store in some data-structure.
 	In which order we added main-IDs in the same order only mail should be deliver. for this requirement `Queue` is best choice.
-	![queue](queue.drawio.svg)
+	![queue](./images/queue.drawio.svg)
 
 >[!NOTE]
 >All the above interfaces (`Collection`, `List`, `SortedSet`, `NavigableSet` and `Queue`) meant for representing a group of individual objects.
