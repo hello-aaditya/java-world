@@ -129,7 +129,7 @@ Example:
 `ListIterator itr = l.listIterator();` → where 'l' is any `List` object.
 ### `ListIterator` Specific Methods
 - `ListIterator` is the child interface of `Iterator` and hence all methods present in `Iterator` by-default available to the `ListIterator`.
-	![ListIterator-is-child-of-Iterator](ListIterator-is-child-of-Iterator.drawio.svg)
+	![ListIterator-is-child-of-Iterator](./images/ListIterator-is-child-of-Iterator.drawio.svg)
 - `ListIterator` defines the following 9 methods:
 	
 
