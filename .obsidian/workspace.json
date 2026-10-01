@@ -14,7 +14,7 @@
               "type": "markdown",
               "state": {
                 "file": "00-JAVA/01-CORE-JAVA/30-COLLECTION-FRAMEWORK/130-TREE-SET.md",
-                "mode": "source",
+                "mode": "preview",
                 "source": false
               },
               "icon": "lucide-file",
@@ -184,8 +184,7 @@
       }
     ],
     "direction": "horizontal",
-    "width": 300,
-    "collapsed": true
+    "width": 300
   },
   "left-ribbon": {
     "hiddenItems": {

@@ -52,7 +52,7 @@ public class TreeSetDemo {
 - for empty `TreeSet` as the first element `null` is allowed but after inserting that `null`, if we are trying any other than we will get `RuntimeException : NullPointerException`.
 
 >[!WARNING]
->- Untill Java-1.6v `null` is allowed at the first element to empty `TreeSet` but from Java-1.6v onwards `null` is not allowed even as the first element i.e., `null` such type of story is not applicable for `TreeSet` from Java-1.7v onwards.
+>Untill Java-1.6v `null` is allowed at the first element to empty `TreeSet` but from Java-1.6v onwards `null` is not allowed even as the first element i.e., `null` such type of story is not applicable for `TreeSet` from Java 1.7 onwards.
 
 **Example-2**:
 ```java
@@ -81,6 +81,7 @@ public class TreeSetDemo1 {
 - An object is said to be comparable if-and-only-if corresponding class implements `Compararble` interface.
 - `String` class and all wrapper classes already implement `Comparable` but `StringBuffer` class doesn't implement `Comparable` interface hence we got `ClassCastException` in the above example.
 - If we are depending on default natural sorting order then while adding objects into the `TreeSet` JVM will call `compareTo()` method.
+
 	![TreeSet-objects-insertion](./images/TreeSet-objects-insertion.drawio.svg)
 
 >[!IMPORTANT]  
