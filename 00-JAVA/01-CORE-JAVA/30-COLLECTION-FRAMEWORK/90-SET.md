@@ -1,5 +1,5 @@
 # `Set` (I)
-![set-hierarchy](set-hierarchy.drawio.svg)
+![set-hierarchy](./images/set-hierarchy.drawio.svg)
 
 - `Set` is child interface of `Collection`.
 - If we want to represent a group of individual object as a single entity where duplicates are not allowed and insertion order not preserved then we should go for `Set`.
