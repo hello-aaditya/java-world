@@ -11,5 +11,5 @@
 	6. **`int indexOf(Object o)`** → returns index of first occurrence of 'o'
 	7. **`int lastIndexOf(Object)`**
 	8. **`ListIterator listIterator();`**
-	![List](list.drawio.svg)
+	![List](./images/list.drawio.svg)
 
