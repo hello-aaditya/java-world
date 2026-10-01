@@ -83,7 +83,8 @@
       }
     ],
     "direction": "horizontal",
-    "width": 337.66015625
+    "width": 337.66015625,
+    "collapsed": true
   },
   "right": {
     "id": "da37fefebc188a99",
@@ -183,7 +184,8 @@
       }
     ],
     "direction": "horizontal",
-    "width": 300
+    "width": 300,
+    "collapsed": true
   },
   "left-ribbon": {
     "hiddenItems": {
@@ -197,7 +199,7 @@
       "obsidian-git:Open Git source control": false
     }
   },
-  "active": "8bf0306927ff6ed0",
+  "active": "3078d80c9045a127",
   "lastOpenFiles": [
     "00-JAVA/01-CORE-JAVA/10-OBJECT-ORIENTED-PROGRAMMING/45-METHOD-SIGNATURE/images/method-signature-inside-method-table.drawio",
     "00-JAVA/01-CORE-JAVA/10-OBJECT-ORIENTED-PROGRAMMING/45-METHOD-SIGNATURE/images/method-signature.drawio.svg",
