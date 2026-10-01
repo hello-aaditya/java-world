@@ -184,8 +184,7 @@
       }
     ],
     "direction": "horizontal",
-    "width": 300,
-    "collapsed": true
+    "width": 300
   },
   "left-ribbon": {
     "hiddenItems": {
@@ -199,7 +198,7 @@
       "obsidian-git:Open Git source control": false
     }
   },
-  "active": "33771788695acd4c",
+  "active": "3b82857056536616",
   "lastOpenFiles": [
     "00-JAVA/01-CORE-JAVA/10-OBJECT-ORIENTED-PROGRAMMING/40-INHERITANCE/01-HAS-A-RELATIONSHIP.md",
     "00-JAVA/01-CORE-JAVA/10-OBJECT-ORIENTED-PROGRAMMING/45-METHOD-SIGNATURE/images/method-signature-inside-method-table.drawio",

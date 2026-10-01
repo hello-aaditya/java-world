@@ -61,10 +61,10 @@
 - `Map` is **not** child interface of `Collection`.
 - If we want to represent a group of objects as **key-value** pairs then we should go for `Map`.
 	Eaxmple:
-	![map-visualization](map-visualization.drawio.svg)
+	![map-visualization](./images/map-visualization.drawio.svg)
 - Both keys and values are objects only.
 - Duplicates keys are not allowed but values can be duplicated.
-	![map](map.drawio.svg)
+	![map](./images/map.drawio.svg)
 ## 8. `SortedMap` (I)
 - It is child interface of `Map`.
 - If we want to represent a group of key-value pairs according to some **sorting order of keys** then we should go for `SortedMap`.
