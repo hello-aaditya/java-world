@@ -184,7 +184,8 @@
       }
     ],
     "direction": "horizontal",
-    "width": 300
+    "width": 300,
+    "collapsed": true
   },
   "left-ribbon": {
     "hiddenItems": {
@@ -198,7 +199,7 @@
       "obsidian-git:Open Git source control": false
     }
   },
-  "active": "3b82857056536616",
+  "active": "33771788695acd4c",
   "lastOpenFiles": [
     "00-JAVA/01-CORE-JAVA/30-COLLECTION-FRAMEWORK/10-9-KEYS-INTERFACE.md",
     "00-JAVA/01-CORE-JAVA/10-OBJECT-ORIENTED-PROGRAMMING/40-INHERITANCE/01-HAS-A-RELATIONSHIP.md",
