@@ -49,7 +49,8 @@ public class TreeSetDemo {
 ```
 ## `null` Acceptance
 - for non-empty `TreeSet` if we are trying to insert `null` then we will get `NullPointerException`.
-- for empty `TreeSet` as the first element `null` is allowed but after inserting that `null`, if we are trying any other than we will get `RuntimeException` saying- `NullPointerException`.
+- for empty `TreeSet` as the first element `null` is allowed but after inserting that `null`, if we are trying any other than we will get `RuntimeException : NullPointerException`.
+
 >[!WARNING]
 >- Untill Java-1.6v `null` is allowed at the first element to empty `TreeSet` but from Java-1.6v onwards `null` is not allowed even as the first element i.e., `null` such type of story is not applicable for `TreeSet` from Java-1.7v onwards.
 
