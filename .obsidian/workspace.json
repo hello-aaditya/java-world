@@ -83,8 +83,7 @@
       }
     ],
     "direction": "horizontal",
-    "width": 337.66015625,
-    "collapsed": true
+    "width": 337.66015625
   },
   "right": {
     "id": "da37fefebc188a99",
@@ -184,7 +183,8 @@
       }
     ],
     "direction": "horizontal",
-    "width": 300
+    "width": 300,
+    "collapsed": true
   },
   "left-ribbon": {
     "hiddenItems": {
@@ -198,7 +198,7 @@
       "obsidian-git:Open Git source control": false
     }
   },
-  "active": "3b82857056536616",
+  "active": "33771788695acd4c",
   "lastOpenFiles": [
     "00-JAVA/01-CORE-JAVA/10-OBJECT-ORIENTED-PROGRAMMING/40-INHERITANCE/01-HAS-A-RELATIONSHIP.md",
     "00-JAVA/01-CORE-JAVA/10-OBJECT-ORIENTED-PROGRAMMING/45-METHOD-SIGNATURE/images/method-signature-inside-method-table.drawio",
