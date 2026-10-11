@@ -11,10 +11,10 @@
             "id": "6e2828d7be52fbfa",
             "type": "leaf",
             "state": {
-              "type": "empty",
+              "type": "graph",
               "state": {},
-              "icon": "lucide-file",
-              "title": "New tab"
+              "icon": "lucide-git-fork",
+              "title": "Graph view"
             }
           }
         ]
@@ -193,7 +193,7 @@
       "obsidian-git:Open Git source control": false
     }
   },
-  "active": "8bf0306927ff6ed0",
+  "active": "6e2828d7be52fbfa",
   "lastOpenFiles": [
     "00-JAVA/20-ADVANCED-JAVA",
     "00-JAVA/10-CORE-JAVA/10-OBJECT-ORIENTED-PROGRAMMING/30-ENCAPSULATION/00-ENCAPSULATION.md",
