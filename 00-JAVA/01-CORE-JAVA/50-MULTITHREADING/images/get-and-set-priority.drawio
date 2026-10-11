@@ -1,0 +1,58 @@
+<mxfile host="Electron">
+  <diagram name="Page-1" id="SIAPgkAfiSv8FqPAm1wI">
+    <mxGraphModel dx="975" dy="581" grid="1" gridSize="2" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="1300" pageHeight="1800" math="0" shadow="0">
+      <root>
+        <mxCell id="0" />
+        <mxCell id="1" parent="0" />
+        <mxCell id="g8OC4mVoU7z2PdqvHJ-W-1" parent="1" style="text;html=1;whiteSpace=wrap;strokeColor=none;fillColor=none;align=center;verticalAlign=middle;rounded=0;fontFamily=Georgia;fontSize=18;" value="&lt;p&gt;&lt;/p&gt;&lt;p&gt;Thread class defines the following methods to get  and set priority of a thread:&lt;/p&gt;" vertex="1">
+          <mxGeometry height="30" width="630" x="335" y="30" as="geometry" />
+        </mxCell>
+        <mxCell id="g8OC4mVoU7z2PdqvHJ-W-2" parent="1" style="rounded=0;whiteSpace=wrap;html=1;fontFamily=Georgia;fontSize=17;" value="public final int getPriority();" vertex="1">
+          <mxGeometry height="40" width="360" x="382" y="70" as="geometry" />
+        </mxCell>
+        <mxCell id="g8OC4mVoU7z2PdqvHJ-W-3" parent="1" style="rounded=0;whiteSpace=wrap;html=1;fontFamily=Georgia;fontSize=17;" value="public final void setPriority( int p );" vertex="1">
+          <mxGeometry height="40" width="360" x="382" y="130" as="geometry" />
+        </mxCell>
+        <mxCell id="g8OC4mVoU7z2PdqvHJ-W-14" parent="1" style="shape=curlyBracket;whiteSpace=wrap;html=1;rounded=1;flipH=1;labelPosition=right;verticalLabelPosition=middle;align=left;verticalAlign=middle;legacyAnchorPoints=0;fontFamily=Georgia;fontSize=15;rotation=90;" value="" vertex="1">
+          <mxGeometry height="32" width="12" x="647" y="148" as="geometry" />
+        </mxCell>
+        <mxCell id="g8OC4mVoU7z2PdqvHJ-W-15" edge="1" parent="1" source="g8OC4mVoU7z2PdqvHJ-W-14" style="endArrow=classic;html=1;fontFamily=Georgia;fontSize=15;exitX=0.1;exitY=0.5;exitDx=0;exitDy=0;exitPerimeter=0;" target="g8OC4mVoU7z2PdqvHJ-W-16" value="">
+          <mxGeometry height="50" relative="1" width="50" as="geometry">
+            <mxPoint x="599" y="204" as="sourcePoint" />
+            <mxPoint x="653" y="194" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="g8OC4mVoU7z2PdqvHJ-W-16" parent="1" style="text;html=1;whiteSpace=wrap;strokeColor=none;fillColor=none;align=center;verticalAlign=middle;rounded=0;fontFamily=Georgia;fontSize=15;" value="&lt;span style=&quot;color: rgb(81, 43, 164);&quot;&gt;Allowed values range:&lt;/span&gt;&lt;div&gt;&lt;span style=&quot;color: rgb(81, 43, 164);&quot;&gt;&lt;b&gt;1 to 10&lt;/b&gt;&lt;/span&gt;&lt;/div&gt;" vertex="1">
+          <mxGeometry height="40" width="148" x="579" y="190" as="geometry" />
+        </mxCell>
+        <mxCell id="g8OC4mVoU7z2PdqvHJ-W-18" parent="1" style="text;html=1;whiteSpace=wrap;strokeColor=none;fillColor=none;align=center;verticalAlign=middle;rounded=0;fontFamily=Georgia;fontSize=15;" value="otherwise" vertex="1">
+          <mxGeometry height="30" width="60" x="507" y="250" as="geometry" />
+        </mxCell>
+        <mxCell id="g8OC4mVoU7z2PdqvHJ-W-19" parent="1" style="line;strokeWidth=2;direction=south;html=1;fontFamily=Georgia;fontSize=15;strokeColor=#512BA4;" value="" vertex="1">
+          <mxGeometry height="42" width="10" x="569" y="190" as="geometry" />
+        </mxCell>
+        <mxCell id="g8OC4mVoU7z2PdqvHJ-W-22" connectable="0" parent="1" style="group;fillColor=none;" value="" vertex="1">
+          <mxGeometry height="21" width="50" x="517" y="200.5" as="geometry" />
+        </mxCell>
+        <mxCell id="g8OC4mVoU7z2PdqvHJ-W-20" edge="1" parent="g8OC4mVoU7z2PdqvHJ-W-22" style="endArrow=none;html=1;fontFamily=Georgia;fontSize=15;strokeColor=#512BA4;" value="">
+          <mxGeometry height="50" relative="1" width="50" as="geometry">
+            <mxPoint x="8" y="21" as="sourcePoint" />
+            <mxPoint x="50" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="g8OC4mVoU7z2PdqvHJ-W-21" edge="1" parent="g8OC4mVoU7z2PdqvHJ-W-22" style="endArrow=none;html=1;fontFamily=Georgia;fontSize=15;strokeColor=#512BA4;" value="">
+          <mxGeometry height="50" relative="1" width="50" as="geometry">
+            <mxPoint x="8" y="21" as="sourcePoint" />
+            <mxPoint y="8" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="g8OC4mVoU7z2PdqvHJ-W-23" parent="1" style="text;html=1;whiteSpace=wrap;strokeColor=none;fillColor=none;align=center;verticalAlign=middle;rounded=0;fontFamily=Georgia;fontSize=15;fontColor=#FF0000;" value="RuntimeException :&amp;nbsp;IllegalArgumentException" vertex="1">
+          <mxGeometry height="30" width="314" x="577" y="250" as="geometry" />
+        </mxCell>
+        <mxCell id="g8OC4mVoU7z2PdqvHJ-W-24" parent="1" style="line;strokeWidth=2;direction=south;html=1;fontFamily=Georgia;fontSize=15;strokeColor=#FF0000;fontColor=#FF0000;" value="" vertex="1">
+          <mxGeometry height="42" width="10" x="569" y="244" as="geometry" />
+        </mxCell>
+      </root>
+    </mxGraphModel>
+  </diagram>
+</mxfile>

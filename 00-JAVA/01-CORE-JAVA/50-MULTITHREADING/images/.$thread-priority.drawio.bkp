@@ -1,0 +1,40 @@
+<mxfile host="Electron">
+  <diagram name="Page-1" id="SIAPgkAfiSv8FqPAm1wI">
+    <mxGraphModel dx="1418" dy="844" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="1300" pageHeight="1800" math="0" shadow="0">
+      <root>
+        <mxCell id="0" />
+        <mxCell id="1" parent="0" />
+        <mxCell id="g8OC4mVoU7z2PdqvHJ-W-1" parent="1" style="text;html=1;whiteSpace=wrap;strokeColor=none;fillColor=none;align=center;verticalAlign=middle;rounded=0;fontFamily=Georgia;fontSize=17;" value="&lt;p&gt;Thread class defines the following constants to represent some standard priorities:&lt;/p&gt;" vertex="1">
+          <mxGeometry height="30" width="630" x="335" y="30" as="geometry" />
+        </mxCell>
+        <mxCell id="g8OC4mVoU7z2PdqvHJ-W-8" edge="1" parent="1" source="g8OC4mVoU7z2PdqvHJ-W-2" style="edgeStyle=none;html=1;fontFamily=Georgia;fontSize=15;" target="g8OC4mVoU7z2PdqvHJ-W-7" value="">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="g8OC4mVoU7z2PdqvHJ-W-2" parent="1" style="rounded=0;whiteSpace=wrap;html=1;fontFamily=Georgia;fontSize=15;fillColor=#d5e8d4;strokeColor=#82b366;" value="Thread.MIN_PRIORITY" vertex="1">
+          <mxGeometry height="40" width="360" x="435" y="70" as="geometry" />
+        </mxCell>
+        <mxCell id="g8OC4mVoU7z2PdqvHJ-W-11" edge="1" parent="1" source="g8OC4mVoU7z2PdqvHJ-W-3" style="edgeStyle=none;html=1;fontFamily=Georgia;fontSize=15;" target="g8OC4mVoU7z2PdqvHJ-W-9" value="">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="g8OC4mVoU7z2PdqvHJ-W-3" parent="1" style="rounded=0;whiteSpace=wrap;html=1;fontFamily=Georgia;fontSize=15;fillColor=#fff2cc;strokeColor=#d6b656;" value="Thread.NORM_PRIORITY" vertex="1">
+          <mxGeometry height="40" width="360" x="435" y="130" as="geometry" />
+        </mxCell>
+        <mxCell id="g8OC4mVoU7z2PdqvHJ-W-12" edge="1" parent="1" source="g8OC4mVoU7z2PdqvHJ-W-4" style="edgeStyle=none;html=1;fontFamily=Georgia;fontSize=15;" target="g8OC4mVoU7z2PdqvHJ-W-10" value="">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="g8OC4mVoU7z2PdqvHJ-W-4" parent="1" style="rounded=0;whiteSpace=wrap;html=1;fontFamily=Georgia;fontSize=15;fillColor=#f8cecc;strokeColor=#b85450;" value="Thread.MAX_PRIORITY" vertex="1">
+          <mxGeometry height="40" width="360" x="435" y="190" as="geometry" />
+        </mxCell>
+        <mxCell id="g8OC4mVoU7z2PdqvHJ-W-7" parent="1" style="text;html=1;whiteSpace=wrap;strokeColor=default;fillColor=#FFDD59;align=center;verticalAlign=middle;rounded=0;fontFamily=Georgia;fontSize=18;" value="&lt;b&gt;1&lt;/b&gt;" vertex="1">
+          <mxGeometry height="30" width="30" x="835" y="75" as="geometry" />
+        </mxCell>
+        <mxCell id="g8OC4mVoU7z2PdqvHJ-W-9" parent="1" style="text;html=1;whiteSpace=wrap;strokeColor=default;fillColor=#FFDD59;align=center;verticalAlign=middle;rounded=0;fontFamily=Georgia;fontSize=18;" value="&lt;b&gt;5&lt;/b&gt;" vertex="1">
+          <mxGeometry height="30" width="30" x="835" y="135" as="geometry" />
+        </mxCell>
+        <mxCell id="g8OC4mVoU7z2PdqvHJ-W-10" parent="1" style="text;html=1;whiteSpace=wrap;strokeColor=default;fillColor=#FFDD59;align=center;verticalAlign=middle;rounded=0;fontFamily=Georgia;fontSize=18;" value="&lt;b&gt;10&lt;/b&gt;" vertex="1">
+          <mxGeometry height="30" width="30" x="835" y="195" as="geometry" />
+        </mxCell>
+      </root>
+    </mxGraphModel>
+  </diagram>
+</mxfile>
