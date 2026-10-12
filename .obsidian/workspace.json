@@ -179,8 +179,7 @@
       }
     ],
     "direction": "horizontal",
-    "width": 300,
-    "collapsed": true
+    "width": 300
   },
   "left-ribbon": {
     "hiddenItems": {
@@ -196,11 +195,13 @@
   },
   "active": "8bf0306927ff6ed0",
   "lastOpenFiles": [
-    "00-JAVA/20-ADVANCED-JAVA/MAVEN/images/maven-central-repo.png",
-    "00-JAVA/20-ADVANCED-JAVA/MAVEN/images",
-    "00-JAVA/20-ADVANCED-JAVA/MAVEN/10-POM.XML.md",
-    "00-JAVA/20-ADVANCED-JAVA/MAVEN/00-INTRODUCTION.md",
-    "00-JAVA/20-ADVANCED-JAVA/MAVEN",
+    "00-JAVA/10-CORE-JAVA/10-OBJECT-ORIENTED-PROGRAMMING/00-INDEX.md",
+    "07-00-CONSTRUCTOR.md",
+    "00-JAVA/20-ADVANCED-JAVA/10-MAVEN/images/maven-central-repo.png",
+    "00-JAVA/20-ADVANCED-JAVA/10-MAVEN/images",
+    "00-JAVA/20-ADVANCED-JAVA/10-MAVEN/10-POM.XML.md",
+    "00-JAVA/20-ADVANCED-JAVA/10-MAVEN/00-INTRODUCTION.md",
+    "00-JAVA/20-ADVANCED-JAVA/10-MAVEN",
     "00-JAVA/20-ADVANCED-JAVA/00-JAR/images/step-4.png",
     "00-JAVA/20-ADVANCED-JAVA/00-JAR/images/step-3.png",
     "00-JAVA/20-ADVANCED-JAVA/00-JAR/images/step-1.png",
@@ -230,7 +231,6 @@
     "00-JAVA/10-CORE-JAVA/50-MULTITHREADING/140-INTERRUPTION-IN-A-THREAD.md",
     "00-JAVA/10-CORE-JAVA/50-MULTITHREADING/130-SLEEP-METHOD.md",
     "00-JAVA/10-CORE-JAVA/50-MULTITHREADING/120-JOIN-METHOD.md",
-    "00-JAVA/10-CORE-JAVA/50-MULTITHREADING/110-YIELD-METHOD.md",
     "00-JAVA/10-CORE-JAVA/50-MULTITHREADING/images/yield-method.drawio.svg",
     "00-JAVA/10-CORE-JAVA/50-MULTITHREADING/images/yield-method.drawio",
     "00-JAVA/10-CORE-JAVA/50-MULTITHREADING/images/yield-method-inside-thread0.png",
@@ -239,7 +239,6 @@
     "00-JAVA/10-CORE-JAVA/50-MULTITHREADING/images/yield-method-diagram.drawio",
     "00-JAVA/10-CORE-JAVA/50-MULTITHREADING/images/yield-method-demo.drawio.svg",
     "00-JAVA/10-CORE-JAVA/50-MULTITHREADING/images/yield-method-demo.drawio",
-    "00-JAVA/10-CORE-JAVA/50-MULTITHREADING/images/wait-notify-example1.drawio.svg",
     "00-JAVA/10-CORE-JAVA/50-MULTITHREADING/images/wait-notify-example1.drawio",
     "00-JAVA/10-CORE-JAVA/50-MULTITHREADING/images/thread-priority.drawio"
   ]

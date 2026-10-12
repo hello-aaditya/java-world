@@ -41,7 +41,7 @@ Example
     <scope>test</scope>
 </dependency>
 ```
-![Maven Central Repo](./images/maven-central-repo.png)
+![Maven Central Repo](maven-central-repo.png)
 
 6. Paste this code inside the `<dependencies></dependencies>` section of your `pom.xml`.
 7. Save the file. In Eclipse, right-click the project and select **Maven → Update Project**, or press `Alt + F5`. This allows Maven to resolve the dependency.
