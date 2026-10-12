@@ -194,8 +194,21 @@
       "obsidian-git:Open Git source control": false
     }
   },
-  "active": "6e2828d7be52fbfa",
+  "active": "8bf0306927ff6ed0",
   "lastOpenFiles": [
+    "00-JAVA/20-ADVANCED-JAVA/MAVEN/images/maven-central-repo.png",
+    "00-JAVA/20-ADVANCED-JAVA/MAVEN/images",
+    "00-JAVA/20-ADVANCED-JAVA/MAVEN/10-POM.XML.md",
+    "00-JAVA/20-ADVANCED-JAVA/MAVEN/00-INTRODUCTION.md",
+    "00-JAVA/20-ADVANCED-JAVA/MAVEN",
+    "00-JAVA/20-ADVANCED-JAVA/00-JAR/images/step-4.png",
+    "00-JAVA/20-ADVANCED-JAVA/00-JAR/images/step-3.png",
+    "00-JAVA/20-ADVANCED-JAVA/00-JAR/images/step-1.png",
+    "00-JAVA/20-ADVANCED-JAVA/00-JAR/images/step-2.png",
+    "00-JAVA/20-ADVANCED-JAVA/00-JAR/images",
+    "00-JAVA/20-ADVANCED-JAVA/00-JAR/10-ADD-JAR-AS-A-DEPENDENCY.md",
+    "00-JAVA/20-ADVANCED-JAVA/00-JAR/00-JAR-AND-DEPENDENCIES.md",
+    "00-JAVA/20-ADVANCED-JAVA/00-JAR",
     "00-JAVA/20-ADVANCED-JAVA",
     "00-JAVA/10-CORE-JAVA/10-OBJECT-ORIENTED-PROGRAMMING/30-ENCAPSULATION/00-ENCAPSULATION.md",
     "00-JAVA/10-CORE-JAVA/50-MULTITHREADING/MCQS.md",
@@ -218,10 +231,6 @@
     "00-JAVA/10-CORE-JAVA/50-MULTITHREADING/130-SLEEP-METHOD.md",
     "00-JAVA/10-CORE-JAVA/50-MULTITHREADING/120-JOIN-METHOD.md",
     "00-JAVA/10-CORE-JAVA/50-MULTITHREADING/110-YIELD-METHOD.md",
-    "00-JAVA/10-CORE-JAVA/50-MULTITHREADING/100-PREVENT-THREAD-EXECUTION.md",
-    "00-JAVA/10-CORE-JAVA/50-MULTITHREADING/90-THREAD-PRIORITIES.md",
-    "00-JAVA/10-CORE-JAVA/50-MULTITHREADING/80-GETTING-AND-SETTING-NAME-OF-THREAD.md",
-    "00-JAVA/10-CORE-JAVA/50-MULTITHREADING/70-THREAD-CLASS-CONSTRUCTOR.md",
     "00-JAVA/10-CORE-JAVA/50-MULTITHREADING/images/yield-method.drawio.svg",
     "00-JAVA/10-CORE-JAVA/50-MULTITHREADING/images/yield-method.drawio",
     "00-JAVA/10-CORE-JAVA/50-MULTITHREADING/images/yield-method-inside-thread0.png",
@@ -232,15 +241,6 @@
     "00-JAVA/10-CORE-JAVA/50-MULTITHREADING/images/yield-method-demo.drawio",
     "00-JAVA/10-CORE-JAVA/50-MULTITHREADING/images/wait-notify-example1.drawio.svg",
     "00-JAVA/10-CORE-JAVA/50-MULTITHREADING/images/wait-notify-example1.drawio",
-    "00-JAVA/10-CORE-JAVA/50-MULTITHREADING/images/ThreadDemo.png",
-    "00-JAVA/10-CORE-JAVA/50-MULTITHREADING/images/ThreadDemo-by-implements-Runnable.png",
-    "00-JAVA/10-CORE-JAVA/50-MULTITHREADING/images/ThreadDemo-by-extending-Thread-Class.png",
-    "00-JAVA/10-CORE-JAVA/50-MULTITHREADING/images/thread-priority.drawio.svg",
-    "00-JAVA/10-CORE-JAVA/50-MULTITHREADING/images/thread-priority.drawio",
-    "00-JAVA/10-CORE-JAVA/50-MULTITHREADING/images/thread-lifecycle.drawio",
-    "00-JAVA/10-CORE-JAVA/50-MULTITHREADING/images/thread-lifecycle-with-waiting-to-acquire-lock-state.drawio",
-    "00-JAVA/10-CORE-JAVA/50-MULTITHREADING/images/thread-lifecycle-with-waiting-state.drawio",
-    "00-JAVA/10-CORE-JAVA/50-MULTITHREADING/images/thread-lifecycle-with-sleeping-state.drawio",
-    "00-JAVA/10-CORE-JAVA/50-MULTITHREADING/images/thread-creation-by-implements-Runnable-interface.drawio"
+    "00-JAVA/10-CORE-JAVA/50-MULTITHREADING/images/thread-priority.drawio"
   ]
 }
