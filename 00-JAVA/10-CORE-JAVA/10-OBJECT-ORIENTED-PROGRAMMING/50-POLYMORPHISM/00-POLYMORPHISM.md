@@ -10,7 +10,7 @@ Means,
 
 ## Basic Upcasting Example
 #### Example 1
-![](devObject.drawio.svg)
+![](./images/devObject.drawio.svg)
 ```java
 Developer dev = new JavaDeveloper();
 dev.work();
