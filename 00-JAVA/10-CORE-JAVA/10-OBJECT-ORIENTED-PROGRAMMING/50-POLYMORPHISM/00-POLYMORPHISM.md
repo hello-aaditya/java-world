@@ -18,7 +18,7 @@ dev.project();
 ```
 
 #### Example 2
-![](devObject3.drawio.svg)
+![](./images/devObject3.drawio.svg)
 ```java
 Developer dev = new PythonDeveloper();
 dev.work();
@@ -42,7 +42,7 @@ Java checks:
 
 
 ---
-![Developer](polymorphism.drawio.svg)
+![Developer](./images/polymorphism.drawio.svg)
 ##### Developer.java
 ```java
 public class Developer {
@@ -106,7 +106,7 @@ Python Developer is doing project
 ```
 
 #### Memory Visual
-![](polymorphismMemoryMap.drawio.svg)**Now the question is — if I use a parent type reference (Developer dev), can I still call the child class overridden methods?**  
+![](./images/polymorphismMemoryMap.drawio.svg)**Now the question is — if I use a parent type reference (Developer dev), can I still call the child class overridden methods?**  
 Because till now, we called `work()` and `project()` using child references (`JavaDeveloper jd`, `PythonDeveloper pd`).  
 But what happens if the reference is from the parent class?
 
@@ -166,13 +166,13 @@ public class Main {
 ```
 ##### Explanation:
 1. **`Developer dev;`**
-	![](dev.drawio.svg)
+	![](./images/dev.drawio.svg)
 	- Only a **reference variable** is created in stack memory.
 	- No object is created yet.
 	- `dev` can _point to_ any object that is a Developer or its child.
 2. **`dev = new JavaDeveloper();`**
 	Now in **heap memory**, a `JavaDeveloper` object is created:
-	![](devObject.drawio.svg)
+	![](./images/devObject.drawio.svg)
 	- The `dev` reference now **points to** this JavaDeveloper object.
 	- It _automatically uses_ JavaDeveloper’s overridden methods.
 	So:
@@ -182,7 +182,7 @@ public class Main {
 	```
 3. **`dev = new PythonDeveloper();`**
 	Now this line **changes the object** that `dev` points to.
-	![](devObject2.drawio.svg)
+	![](./images/devObject2.drawio.svg)
 	- The previous JavaDeveloper object still exists (until GC).
 	- `dev` now points to a **new PythonDeveloper** in heap.
 	So, 
