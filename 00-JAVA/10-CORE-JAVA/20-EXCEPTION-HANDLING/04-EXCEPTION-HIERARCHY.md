@@ -43,4 +43,4 @@ Q. `Throwable` class contain how many child classes?
 Q. What is the difference between Exception & Error?
 →
 
-![Exception Hierarchy](./images/exception-hierarchy1.drawio.svg)
+![Exception Hierarchy](../images/exception-hierarchy1.drawio.svg)
